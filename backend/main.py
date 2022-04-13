@@ -12,6 +12,5 @@ from helpers import distanseBeetweenTwoPoints
 # TODO:
 # - Booking API - hotels etc.
 # - ?? Informacje o mieście, jakieś zdjęcia, atrakcje?
-# Miasto - nazwa / koordynaty / booking name / kraj po angeielsku + nazwa
 
 
