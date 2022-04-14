@@ -93,5 +93,3 @@ def getTravelDestinations(startingLocation, weatherForecastDays, numberOfPeople,
 
     return data
 
-
-getTravelDestinations("Łódź", 4, 2, "2022-09-30", "2022-10-01", 1)

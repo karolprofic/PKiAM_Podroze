@@ -1,6 +1,7 @@
 import json
 from Get.covid import getCovidStatistics
 from flask import Flask, request, jsonify
+from destinations import getTravelDestinations
 
 app = Flask(__name__)
 #######################################################################
@@ -26,27 +27,26 @@ app = Flask(__name__)
 # Strana główna
 @app.route("/availableCities/")
 def availableCities():
-    return jsonify({'Tresc': "Strona główna"})
+    file = open('Data/cities.json', encoding="utf8")
+    data = json.load(file)
+    return jsonify(data)
 
 # Lista potencjalnych kierunków
 @app.route("/travelDestinations/")
 def travelDestinations():
-    startDate = request.args.get('startDate', None)
-    endDate = request.args.get('endDate', None)
     startingCity = request.args.get('startingCity', "Łódź")
+    weatherForecastDays = request.args.get('weatherForecastDays', 10)
     numberOfPeople = request.args.get('numberOfPeople', 1)
+    startDate = request.args.get('startDate', "2022-09-30")
+    endDate = request.args.get('endDate', "2022-10-01")
     pageNumber = request.args.get('pageNumber', 1)
-    return jsonify({'Miasto startowe': startingCity})
+    data = getTravelDestinations(startingCity, weatherForecastDays, numberOfPeople, startDate, endDate, pageNumber)
+    return jsonify(data)
 
-
-
-print(json.dumps(getCovidStatistics("Czechia"), indent=2))
-# print(json.dumps(getWeatherForecast(10, 37.773972, -122.431297), indent=2)) # los angeles
-# print(distanseBeetweenTwoPoints(52.2296756, 21.0122287, 52.406374, 16.9251681))
-
-
-# TODO:
-# - Booking API - hotels etc.
-# - ?? Informacje o mieście, jakieś zdjęcia, atrakcje?
-
+# Lista potencjalnych kierunków - bez wykorzystywania limitów
+@app.route("/fakeTravelDestinations/")
+def fakeTravelDestinations():
+    file = open('Data/destinations.json', encoding="utf8")
+    data = json.load(file)
+    return jsonify(data)
 
