@@ -7,6 +7,7 @@ API_BOOKING_URL = "https://booking-com.p.rapidapi.com/v1/hotels/search"
 API_BOOKING_KEY = "29eefaae15mshfb32eab96aade47p18cf99jsn3e2b70595940"
 API_BOOKING_HOST = "booking-com.p.rapidapi.com"
 
+
 def getHotelsInCity(checkinDate, checkoutDate, numberOfPeople, cityID):
 
     querystring = {
@@ -38,7 +39,7 @@ def getHotelsInCity(checkinDate, checkoutDate, numberOfPeople, cityID):
         hotel = {
             "name": hotel["hotel_name"],
             "address": hotel["address_trans"],
-            "stars": hotel["class"],
+            "score": hotel["review_score"],
             "url": hotel["url"],
             "image": hotel["max_photo_url"],
             "price": hotel["min_total_price"],

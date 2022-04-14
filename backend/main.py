@@ -1,10 +1,6 @@
-import requests
 import json
-from covid import getCovidStatistics
-from weather import getWeatherForecast
-from helpers import distanseBeetweenTwoPoints
+from Get.covid import getCovidStatistics
 from flask import Flask, request, jsonify
-from markupsafe import escape
 
 app = Flask(__name__)
 

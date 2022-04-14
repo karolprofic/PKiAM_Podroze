@@ -7,6 +7,7 @@ API_WEATHER_URL = "https://community-open-weather-map.p.rapidapi.com/forecast/da
 API_WEATHER_KEY = "29eefaae15mshfb32eab96aade47p18cf99jsn3e2b70595940"
 API_WEATHER_HOST = "community-open-weather-map.p.rapidapi.com"
 
+
 def getWeatherForecast(numberOfDays, locationLatitude, locationLongitude):
     querystring = {
         "lat": locationLatitude,
