@@ -36,6 +36,10 @@ def users(user_id):
         return jsonify({'Tresc': "Błąd"})
 
 # Ulubione
+@app.route('/favourites/delete', methods = ['POST'])
+def deleteFromFavourites():
+    id = request.get_json().get('id')
+
 @app.route('/favourites/<user_id>', methods = ['GET', 'PUT', 'DELETE'])
 def favourites(user_id):
     if request.method == 'GET':
@@ -64,7 +68,7 @@ def travelDestinations():
 
 
 
-# print(json.dumps(getCovidStatistics("Ghana"), indent=2))
+print(json.dumps(getCovidStatistics("Czechia"), indent=2))
 # print(json.dumps(getWeatherForecast(10, 37.773972, -122.431297), indent=2)) # los angeles
 # print(distanseBeetweenTwoPoints(52.2296756, 21.0122287, 52.406374, 16.9251681))
 

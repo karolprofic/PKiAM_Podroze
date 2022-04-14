@@ -33,9 +33,4 @@ def getWeatherForecast(numberOfDays, locationLatitude, locationLongitude):
         }
         daysWhetherInfo.append(dayWhetherInfo)
 
-    whetherData = {
-        "cityName": response["city"]["name"],
-        "daysWhetherForecast": daysWhetherInfo
-    }
-
-    return whetherData
+    return daysWhetherInfo

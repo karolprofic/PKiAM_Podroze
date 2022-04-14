@@ -1,20 +1,220 @@
 {
- "Cities": [
+ "cities": [
     {
-      "NamePL": "Łódź",
-      "NameENG": "Lodz",
-      "NameBooking": "??",
+      "namePL": "Łódź",
+      "nameENG": "Lodz",
+      "nameBooking": "-513922",
       "country": "Poland",
-      "latitude": 4.23,
-      "longitude": 5.34
+      "latitude": 51.759277,
+      "longitude": 19.458532,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Piotrkowska_Street_at_Dusk_-_Lodz_-_Poland_-_02_%289234837828%29.jpg"
     },
     {
-      "NamePL": "Warszawa",
-      "NameENG": "Warsaw",
-      "NameBooking": "??",
+      "namePL": "Warszawa",
+      "nameENG": "Warsaw",
+      "nameBooking": "-534433",
       "country": "Poland",
-      "latitude": 4.23,
-      "longitude": 5.34
+      "latitude": 52.229553,
+      "longitude": 21.008821,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Panorama_siekierkowski.jpg"
+    },
+    {
+      "namePL": "Kraków",
+      "nameENG": "Krakow",
+      "nameBooking": "-510625",
+      "country": "Poland",
+      "latitude": 50.063,
+      "longitude": 19.937,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/XII%2C_XIV%2C_XIX%2C_Krak%C3%B3w.jpg"
+    },
+    {
+      "namePL": "Berlin",
+      "nameENG": "Berlin",
+      "nameBooking": "-1746443",
+      "country": "Germany",
+      "latitude": 52.516212,
+      "longitude": 13.376817,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Brandenburger_Tor_Blaue_Stunde.jpg"
+    },
+    {
+      "namePL": "Praga",
+      "nameENG": "Prague",
+      "nameBooking": "-553173",
+      "country": "Czechia",
+      "latitude": 52.239437,
+      "longitude": 14.421133,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Prague_%286365119737%29.jpg"
+    },
+    {
+      "namePL": "Bratysława",
+      "nameENG": "Bratislava",
+      "nameBooking": "-840999",
+      "country": "Slovakia",
+      "latitude": 48.14326,
+      "longitude": 17.108229,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Bratislava_Panorama_R01.jpg"
+    },
+    {
+      "namePL": "Ateny",
+      "nameENG": "Athens",
+      "nameBooking": "-814876",
+      "country": "Greece",
+      "latitude": 37.97566,
+      "longitude": 23.734865,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/The_Acropolis_of_Athens_viewed_from_the_Hill_of_the_Muses_%2814220794964%29.jpg"
+    },
+    {
+      "namePL": "Wilno",
+      "nameENG": "Vilnius",
+      "nameBooking": "-2620663",
+      "country": "Lithuania",
+      "latitude": 54.687096,
+      "longitude": 25.282297,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/99/Gediminas_Avenue_in_autumn.jpg"
+    },
+    {
+      "namePL": "Wiedeń",
+      "nameENG": "Vienna",
+      "nameBooking": "-1995499",
+      "country": "Austria",
+      "latitude": 48.2086,
+      "longitude": 16.373491,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Opera-Vienna-Austria-2005.jpg"
+    },
+    {
+      "namePL": "Rzym",
+      "nameENG": "Rome",
+      "nameBooking": "-126693",
+      "country": "Italy",
+      "latitude": 41.89587,
+      "longitude": 12.482617,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Colosseo_Romano_Rome_04_2016_6289.jpg"
+    },
+    {
+      "namePL": "Paryż",
+      "nameENG": "Paris",
+      "nameBooking": "-1456928",
+      "country": "France",
+      "latitude": 48.85668,
+      "longitude": 2.351476,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg"
+    },
+    {
+      "namePL": "Kair",
+      "nameENG": "Cair",
+      "nameBooking": "-290692",
+      "country": "Egypt",
+      "latitude": 30.044493,
+      "longitude": 31.235569,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Cairo%2C_evening_view_from_the_Tower_of_Cairo%2C_Egypt%2C_Oct_2004.jpg"
+    },
+    {
+      "namePL": "Budapeszt",
+      "nameENG": "Budapest",
+      "nameBooking": "-850553",
+      "country": "Hungary",
+      "latitude": 47.4974,
+      "longitude": 19.0559,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/eb/20190502_View_of_Buda_Castle_from_Gell%C3%A9rt_Hill_1636_2135_DxO.jpg"
+    },
+    {
+      "namePL": "Belgrad",
+      "nameENG": "Belgrade",
+      "nameBooking": "-74897",
+      "country": "Serbia",
+      "latitude": 44.816372,
+      "longitude": 20.460342,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/%D0%94%D0%BE%D0%BC_%D0%9D%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B5_%D0%A1%D0%BA%D1%83%D0%BF%D1%88%D1%82%D0%B8%D0%BD%D0%B5_%D0%A1%D1%80%D0%B1%D0%B8%D1%98%D0%B5.jpg"
+    },
+    {
+      "namePL": "Milan",
+      "nameENG": "Mediolan",
+      "nameBooking": "-121726",
+      "country": "Italy",
+      "latitude": 45.4643,
+      "longitude": 9.18878,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/85/GalleriaVittorioEmanueleII20020323.JPG"
+    },
+    {
+      "namePL": "Madryt",
+      "nameENG": "Madrid",
+      "nameBooking": "-390625",
+      "country": "Spain",
+      "latitude": 40.4167,
+      "longitude": -3.70342,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/03/Palaciorealycatedraldelaalmudena.jpg"
+    },
+    {
+      "namePL": "Lizbona",
+      "nameENG": "Lisbon",
+      "nameBooking": "-2167973",
+      "country": "Portugal",
+      "latitude": 38.72458,
+      "longitude": -9.139315,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Belem_Tower_-_April_2019_%282%29.jpg"
+    },
+    {
+      "namePL": "Tunis",
+      "nameENG": "Tunis",
+      "nameBooking": "-731701",
+      "country": "Tunisia",
+      "latitude": 36.8002,
+      "longitude": 10.186194,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/MosqueeEzzeitounaTunis_1.JPG"
+    },
+    {
+      "namePL": "Londyn",
+      "nameENG": "London",
+      "nameBooking": "-2601889",
+      "country": "UK",
+      "latitude": 51.507282,
+      "longitude": -0.13493559,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall.jpg"
+    },
+    {
+      "namePL": "Dubaj",
+      "nameENG": "Dubai",
+      "nameBooking": "-782831",
+      "country": "UAE",
+      "latitude": 25.195175,
+      "longitude": 55.27268,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Dubai_Creek_Harbour_1.jpg"
+    },
+    {
+      "namePL": "Bangkok",
+      "nameENG": "Bangkok",
+      "nameBooking": "-3414440",
+      "country": "Thailand",
+      "latitude": 13.755838,
+      "longitude": 100.50564,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Aerial_view_of_Rajdamri_Road.jpg"
+    },
+    {
+      "namePL": "Tokio",
+      "nameENG": "Tokio",
+      "nameBooking": "-246227",
+      "country": "Japan",
+      "latitude": 35.68596,
+      "longitude": 139.72952,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Colorful_neon_street_signs_in_Kabukich%C5%8D%2C_Shinjuku%2C_Tokyo.jpg"
+    },
+    {
+      "namePL": "Ankara",
+      "nameENG": "Ankara",
+      "nameBooking": "-735338",
+      "country": "Turkey",
+      "latitude": 39.91235,
+      "longitude": 32.85127,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/Ankara_from_bus_station.jpg"
+    },
+    {
+      "namePL": "Algier",
+      "nameENG": "Alger",
+      "nameBooking": "-458371",
+      "country": "Algeria",
+      "latitude": 36.7631,
+      "longitude": 3.05056,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Algiers_coast.jpg"
     }
   ]
 }
