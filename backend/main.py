@@ -3,49 +3,25 @@ from Get.covid import getCovidStatistics
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
-
-# Uwierzytelnianie
-# @app.route("/login")
-# def login():
-#     return jsonify({'Tresc': "Logowanie"})
-#
-# @app.route("/logout")
-# def logout():
-#     return jsonify({'Tresc': "Wylogowywanie"})
-
-# Użytkownik
-@app.route('/users/<user_id>', methods = ['GET', 'POST', 'PUT', 'DELETE'])
-def users(user_id):
-    if request.method == 'GET':
-        return jsonify({'Tresc': "Zwrócono dane uzytkownika"})
-    if request.method == 'POST':
-        # username = request.form.get('username')
-        # password = request.form.get('password')
-        # city = request.form.get('city')
-        # currency = request.form.get('currency')
-        return jsonify({'Tresc': "Uaktualnienie danych uzytkownika"})
-    if request.method == 'PUT':
-        return jsonify({'Tresc': "Dodano nowego uzytkownika"})
-    if request.method == 'DELETE':
-        return jsonify({'Tresc': "Usunieto uzytkownika"})
-    else:
-        return jsonify({'Tresc': "Błąd"})
-
+#######################################################################
+# TODO
+#######################################################################
+# Autoryzacja
+# - login
+# - logout
+# - token is valid
+#######################################################################
 # Ulubione
-@app.route('/favourites/delete', methods = ['POST'])
-def deleteFromFavourites():
-    id = request.get_json().get('id')
-
-@app.route('/favourites/<user_id>', methods = ['GET', 'PUT', 'DELETE'])
-def favourites(user_id):
-    if request.method == 'GET':
-        return jsonify({'Tresc': "Zwrócono wszystkie ulubione miejsca dla konkretnego uzytkownika"})
-    if request.method == 'PUT':
-        return jsonify({'Tresc': "Dodano miejsce do ulubionych uzytkownika"})
-    if request.method == 'DELETE':
-        return jsonify({'Tresc': "Usunięto miejsce z ulubionych uzytkownika"})
-    else:
-        return jsonify({'Tresc': "Błąd"})
+# - PUT | Dodaj do ulubionych (userID, cityData)
+# - DEL | Usuń z ulubionych (userID, cityIdentyficator)
+# - GET | Pobierz wszystko z ulubionych (userID)
+#######################################################################
+# Użytkownik
+# - GET  | Zwróć dane użytkownika (userID)
+# - PUT  | Dodaj nowego użytkownika (userData)
+# - DEL  | Usuń użytkownika (userID)
+# - POST | Uaktualnij dane użytkownika (userID, userData)
+#######################################################################
 
 # Strana główna
 @app.route("/availableCities/")

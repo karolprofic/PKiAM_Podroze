@@ -60,12 +60,9 @@ def getTravelDestinations(startingLocation, weatherForecastDays, numberOfPeople,
 
     data = []
     for city in cities:
-        covidThread = ThreadWithResult(target=getCovidStatistics,
-                                       args=(city["country"]))
-        weatherThread = ThreadWithResult(target=getWeatherForecast,
-                                         args=(weatherForecastDays, city["latitude"], city["longitude"]))
-        hotelsThread = ThreadWithResult(target=getHotelsInCity,
-                                        args=(startDate, endDate, numberOfPeople, city["nameBooking"]))
+        covidThread = ThreadWithResult(target=getCovidStatistics, args=(city["country"],))
+        weatherThread = ThreadWithResult(target=getWeatherForecast,args=(weatherForecastDays, city["latitude"], city["longitude"],))
+        hotelsThread = ThreadWithResult(target=getHotelsInCity, args=(startDate, endDate, numberOfPeople, city["nameBooking"],))
 
         covidThread.start()
         weatherThread.start()
@@ -81,16 +78,17 @@ def getTravelDestinations(startingLocation, weatherForecastDays, numberOfPeople,
 
         listElement = {
             "name": city["namePL"],
-            "image": city["image"],
-            "weather": weatherData,
-            "covid": covidData,
+            "imageURL": city["image"],
             "bookingURL": hotelsData["bookingURL"],
             "numberOfHotels": hotelsData["numberOfHotels"],
+            "distance": city["distance"],
+            "weather": weatherData,
+            "covid": covidData,
             "hotels": hotelsData["hotels"]
         }
         data.append(listElement)
 
-    with open('Data/requestCopy.json', 'w') as newFile:
+    with open('Data/destinations.json', 'w') as newFile:
         json.dump(data, newFile)
 
     return data
