@@ -50,6 +50,37 @@ def filterCitiesByPage(cities, pageNumber):
     return filteredCities
 
 
+def dffdsfsdfdsfdsfdsdfs(city, weatherForecastDays, numberOfPeople, startDate, endDate):
+    covidThread = ThreadWithResult(target=getCovidStatistics, args=(city["country"],))
+    weatherThread = ThreadWithResult(target=getWeatherForecast,
+                                     args=(weatherForecastDays, city["latitude"], city["longitude"],))
+    hotelsThread = ThreadWithResult(target=getHotelsInCity,
+                                    args=(startDate, endDate, numberOfPeople, city["nameBooking"],))
+
+    covidThread.start()
+    weatherThread.start()
+    hotelsThread.start()
+
+    covidThread.join()
+    weatherThread.join()
+    hotelsThread.join()
+
+    covidData = covidThread.result
+    weatherData = weatherThread.result
+    hotelsData = hotelsThread.result
+
+    listElement = {
+        "name": city["namePL"],
+        "imageURL": city["image"],
+        "bookingURL": hotelsData["bookingURL"],
+        "numberOfHotels": hotelsData["numberOfHotels"],
+        "distance": city["distance"],
+        "weather": weatherData,
+        "covid": covidData,
+        "hotels": hotelsData["hotels"]
+    }
+    return listElement
+
 def getTravelDestinations(startingLocation, weatherForecastDays, numberOfPeople, startDate, endDate, pageNumber):
     file = open('Data/cities.json', encoding="utf8")
     cities = json.load(file)
@@ -59,37 +90,26 @@ def getTravelDestinations(startingLocation, weatherForecastDays, numberOfPeople,
     cities = filterCitiesByPage(cities, pageNumber)
 
     data = []
+    citiesThreads = []
+
     for city in cities:
-        covidThread = ThreadWithResult(target=getCovidStatistics, args=(city["country"],))
-        weatherThread = ThreadWithResult(target=getWeatherForecast,args=(weatherForecastDays, city["latitude"], city["longitude"],))
-        hotelsThread = ThreadWithResult(target=getHotelsInCity, args=(startDate, endDate, numberOfPeople, city["nameBooking"],))
+        citiesThreads.append(ThreadWithResult(target=dffdsfsdfdsfdsfdsdfs, args=(city, weatherForecastDays, numberOfPeople, startDate, endDate,)))
 
-        covidThread.start()
-        weatherThread.start()
-        hotelsThread.start()
+    for thread in citiesThreads:
+        thread.start()
 
-        covidThread.join()
-        weatherThread.join()
-        hotelsThread.join()
+    for thread in citiesThreads:
+        thread.join()
 
-        covidData = covidThread.result
-        weatherData = weatherThread.result
-        hotelsData = hotelsThread.result
-
-        listElement = {
-            "name": city["namePL"],
-            "imageURL": city["image"],
-            "bookingURL": hotelsData["bookingURL"],
-            "numberOfHotels": hotelsData["numberOfHotels"],
-            "distance": city["distance"],
-            "weather": weatherData,
-            "covid": covidData,
-            "hotels": hotelsData["hotels"]
-        }
-        data.append(listElement)
+    for thread in citiesThreads:
+        data.append(thread.result)
 
     with open('Data/destinations.json', 'w') as newFile:
         json.dump(data, newFile)
 
     return data
+
+# TODO: Wpisywanie dowolnej miejscowości - pobranie koordynatów
+# TODO: Podział zapytań do bookingu na wątki 
+getTravelDestinations("Łódź", 10, 1, "2022-09-30", "2022-10-01", 1)
 
