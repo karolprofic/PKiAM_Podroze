@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  frontend:
+    image: app_frontend
+    build: ./frontend
+    container_name: podroze_frontend
+    ports:
+      - 3000:3000
+    volumes:
+      - ./frontend:/app/
+      - /app/frontend/node_modules    
