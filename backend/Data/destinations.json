@@ -1,0 +1,2542 @@
+[
+   {
+      "name":"Warszawa",
+      "imageURL":"https://upload.wikimedia.org/wikipedia/commons/2/2a/Panorama_siekierkowski.jpg",
+      "bookingURL":"https://www.booking.com/city/ pl/Warsaw.html",
+      "numberOfHotels":2694,
+      "distance":118.32,
+      "weather":[
+         {
+            "unixTime":1650016800,
+            "dayTemperature":10.55,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650103200,
+            "dayTemperature":8.39,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650189600,
+            "dayTemperature":6.79,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650276000,
+            "dayTemperature":7.88,
+            "weatherIcon":"Clear"
+         },
+         {
+            "unixTime":1650362400,
+            "dayTemperature":9.94,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650448800,
+            "dayTemperature":7.16,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650535200,
+            "dayTemperature":9.04,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650621600,
+            "dayTemperature":14.08,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650708000,
+            "dayTemperature":12.49,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650794400,
+            "dayTemperature":12.29,
+            "weatherIcon":"Rain"
+         }
+      ],
+      "covid":{
+         "casesNew":1186,
+         "casesActive":532945,
+         "casesCritical":268,
+         "casesRecovered":5333944,
+         "casesPerOneMillion":158385,
+         "casesTotal":5982664,
+         "deathsNew":39,
+         "deathsPerOneMillion":3065,
+         "deathsTotal":115775,
+         "testsPerOneMillion":950704,
+         "testsTotal":35910845
+      },
+      "hotels":[
+         {
+            "name":"Novotel Warszawa Airport",
+            "address":"Ul. 1 Sierpnia 1",
+            "score":8.6,
+            "url":"https://www.booking.com/hotel/pl/warszawa-airport.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/309463784.jpg?k=101e00f945cdaa6831450d4d622952afa70245938762fbdf80c1a2da408b565f&o=",
+            "price":225,
+            "currency":"PLN"
+         },
+         {
+            "name":"Courtyard by Marriott Warsaw Airport",
+            "address":"ul. \u017bwirki i Wigury 1J",
+            "score":9.0,
+            "url":"https://www.booking.com/hotel/pl/courtyardwarsawairport.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/262346193.jpg?k=fd833abecc31b10c7b67432b5cdae4cf80f1e7715f9876dd53eca8aaa42b311f&o=",
+            "price":348.84,
+            "currency":"PLN"
+         },
+         {
+            "name":"Radisson Blu Sobieski",
+            "address":"Plac Artura Zawiszy 1",
+            "score":8.5,
+            "url":"https://www.booking.com/hotel/pl/warsaw_sobieski.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/347606169.jpg?k=bd1f39103ab6c7c662f43f46bb8b0545b9539b5f4bafb7e36198b184788bf183&o=",
+            "price":342,
+            "currency":"PLN"
+         },
+         {
+            "name":"Novotel Warszawa Centrum",
+            "address":"Marsza\u0142kowska 94/98",
+            "score":8.6,
+            "url":"https://www.booking.com/hotel/pl/novotelwarszawacentrumwarszawa.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/309069059.jpg?k=120375d789c98340fa14756d6d14e73970e052d5e7788df7dc8aeb8906350d64&o=",
+            "price":410,
+            "currency":"PLN"
+         },
+         {
+            "name":"NYX Hotel Warsaw by Leonardo Hotels",
+            "address":"71 Chmielna",
+            "score":9.3,
+            "url":"https://www.booking.com/hotel/pl/nyx-warsaw-by-leonardo-hotels.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/294206427.jpg?k=a473a9fab540cf3db188731f395d5f5e402b436f51f18ae83e4a85a9f9b9475b&o=",
+            "price":429,
+            "currency":"PLN"
+         },
+         {
+            "name":"Airport Hotel Ok\u0119cie",
+            "address":"ul. Komitetu Obrony Robotnik\u00f3w 24",
+            "score":9.1,
+            "url":"https://www.booking.com/hotel/pl/airporthotelwarsaw.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/266577914.jpg?k=2720b0681c95693d610be4893dcc99c04b2eb92bbbde2a2c86fb9345a7d3aea7&o=",
+            "price":259,
+            "currency":"PLN"
+         },
+         {
+            "name":"Mercure Warszawa Ursus Station",
+            "address":"Cykady 2",
+            "score":9.0,
+            "url":"https://www.booking.com/hotel/pl/mercure-warszawa-ursus-station.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/335750274.jpg?k=3afedcdfcd4fb7c931b12565543e027794a913fedf6a26e77309f5f05b5cc864&o=",
+            "price":206.1,
+            "currency":"PLN"
+         },
+         {
+            "name":"Golden Tulip Warsaw Airport",
+            "address":"235 aleja Krakowska",
+            "score":8.9,
+            "url":"https://www.booking.com/hotel/pl/golden-tulip-warsaw-airport.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/105957685.jpg?k=e9517b6976fb2c1fab479ab6ba49dde988b1c59712ee4a3eb90d2798f7339677&o=",
+            "price":193.5,
+            "currency":"PLN"
+         },
+         {
+            "name":"Residence St. Andrew's Palace",
+            "address":"ul. Chmielna 30",
+            "score":8.6,
+            "url":"https://www.booking.com/hotel/pl/andrewspalace.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/77271287.jpg?k=ff70fe75907702762244eeb15e3880b9e782cdb423f6a04598ab009cb9523e2c&o=",
+            "price":198,
+            "currency":"PLN"
+         },
+         {
+            "name":"Focus Hotel Premium Warszawa",
+            "address":"15 Suwak",
+            "score":9.1,
+            "url":"https://www.booking.com/hotel/pl/focus-premium-warszawa.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/339008923.jpg?k=802a3a258765649bca773e18cdb4a6e0cf167df3f9675a0de6096d1e6bc1cfd5&o=",
+            "price":305.1,
+            "currency":"PLN"
+         },
+         {
+            "name":"Mercure Warszawa Grand",
+            "address":"Krucza 28",
+            "score":8.5,
+            "url":"https://www.booking.com/hotel/pl/mercuregrand.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/318227135.jpg?k=7ead706f193c50ac58e82f2a9167a9ac6afe639198847f8c801317d7bdc5585a&o=",
+            "price":395,
+            "currency":"PLN"
+         },
+         {
+            "name":"Vienna House Mokotow Warsaw Airport",
+            "address":"ul. Post\u0119pu 4",
+            "score":9.1,
+            "url":"https://www.booking.com/hotel/pl/vienna-house-mokotow-warsaw.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/185812659.jpg?k=7c882360a365294b1688ef4d132fcbf376451b7bdfb64126be942094e3bc6b01&o=",
+            "price":336,
+            "currency":"PLN"
+         },
+         {
+            "name":"Mercure Warszawa Centrum",
+            "address":"Z\u0142ota 48/54",
+            "score":8.7,
+            "url":"https://www.booking.com/hotel/pl/holiday-inn-warszawa.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/285904852.jpg?k=06ec7e6e66bbaff64f39ab7d564cf0d3ee75e0a62fc880ed505206802ee7616f&o=",
+            "price":450,
+            "currency":"PLN"
+         },
+         {
+            "name":"Arche Hotel Krakowska",
+            "address":"237 Aleja Krakowska",
+            "score":8.9,
+            "url":"https://www.booking.com/hotel/pl/arche-krakowska-warszawa.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/164201495.jpg?k=43cdafbc91393c4d18aef2d721fc5d74d58e2ce32274383f2b20df07dcb9b66f&o=",
+            "price":285.66,
+            "currency":"PLN"
+         },
+         {
+            "name":"Hotel \"Zajazd Napoleo\u0144ski\"",
+            "address":"ul. P\u0142owiecka 83",
+            "score":7.8,
+            "url":"https://www.booking.com/hotel/pl/zajazd-napoleonski.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/31779006.jpg?k=a591f1a26307856226861ae4fd0775c75b7687c522879c99bd56914626829611&o=",
+            "price":230,
+            "currency":"PLN"
+         },
+         {
+            "name":"Leonardo Royal Hotel Warsaw",
+            "address":"ul. Grzybowska 45",
+            "score":8.6,
+            "url":"https://www.booking.com/hotel/pl/leonardo-royal-hotel-warszawa.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/133099876.jpg?k=4f09c3a0db0094b2c786d079bd8d400a2ccb02a906c9d7384bb56f655acb188d&o=",
+            "price":342,
+            "currency":"PLN"
+         },
+         {
+            "name":"DoubleTree by Hilton Hotel & Conference Centre Warsaw",
+            "address":"Skalnicowa 21",
+            "score":8.8,
+            "url":"https://www.booking.com/hotel/pl/doubletree-centre-warsaw.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/345182183.jpg?k=ef40b41ec64cc4a9ab8cc2bc312b7aab7ab8ba2295bfec898cd7fa9e8c1dcdbe&o=",
+            "price":491.39,
+            "currency":"PLN"
+         },
+         {
+            "name":"Four Points by Sheraton Warsaw Mokotow",
+            "address":"Suwak 7B",
+            "score":9.2,
+            "url":"https://www.booking.com/hotel/pl/four-points-by-sheraton-warsaw-mokotow.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/199656331.jpg?k=1f37205e96a1f0400b12742d70efcd40b212d44ca8c53be194611713ec38b0d2&o=",
+            "price":366.12,
+            "currency":"PLN"
+         },
+         {
+            "name":"Hotel Lord - Warsaw Airport",
+            "address":"Al. Krakowska 218",
+            "score":8.5,
+            "url":"https://www.booking.com/hotel/pl/lord.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/144274408.jpg?k=daef057f751b932abb4788cd9973fecb5a1bc2af783cc93fb18a8d263d6c57a6&o=",
+            "price":220,
+            "currency":"PLN"
+         },
+         {
+            "name":"PURO Warszawa Centrum",
+            "address":"Ul. Widok 9",
+            "score":9.3,
+            "url":"https://www.booking.com/hotel/pl/puro-warszawa-centrum.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/266820583.jpg?k=9b0976cbb590ab6b50613368463cbb6e8ae0eafc82bf229a3b5a2022f1dcdb13&o=",
+            "price":503.1,
+            "currency":"PLN"
+         }
+      ]
+   },
+   {
+      "name":"Krak\u00f3w",
+      "imageURL":"https://upload.wikimedia.org/wikipedia/commons/0/06/XII%2C_XIV%2C_XIX%2C_Krak%C3%B3w.jpg",
+      "bookingURL":"https://www.booking.com/city/ pl/Krak\u00f3w.html",
+      "numberOfHotels":2186,
+      "distance":191.58,
+      "weather":[
+         {
+            "unixTime":1650016800,
+            "dayTemperature":11.83,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650103200,
+            "dayTemperature":5.41,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650189600,
+            "dayTemperature":6.26,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650276000,
+            "dayTemperature":6.14,
+            "weatherIcon":"Snow"
+         },
+         {
+            "unixTime":1650362400,
+            "dayTemperature":7.94,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650448800,
+            "dayTemperature":5.63,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650535200,
+            "dayTemperature":5.89,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650621600,
+            "dayTemperature":9.18,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650708000,
+            "dayTemperature":13.59,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650794400,
+            "dayTemperature":12.74,
+            "weatherIcon":"Rain"
+         }
+      ],
+      "covid":{
+         "casesNew":1186,
+         "casesActive":532945,
+         "casesCritical":268,
+         "casesRecovered":5333944,
+         "casesPerOneMillion":158385,
+         "casesTotal":5982664,
+         "deathsNew":39,
+         "deathsPerOneMillion":3065,
+         "deathsTotal":115775,
+         "testsPerOneMillion":950704,
+         "testsTotal":35910845
+      },
+      "hotels":[
+         {
+            "name":"Sky Hotel Krakow",
+            "address":"Lubicz 9",
+            "score":9.4,
+            "url":"https://www.booking.com/hotel/pl/sky-krakow.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/330716003.jpg?k=3a3a6cbcc8575dc7c9e0ee98c0e79c343911d1929f81358ba548a8e52c3501c4&o=",
+            "price":315,
+            "currency":"PLN"
+         },
+         {
+            "name":"Aparthotel Vanilla",
+            "address":"ul. Bobrzy\u0144skiego 33",
+            "score":9.1,
+            "url":"https://www.booking.com/hotel/pl/aparthotel-vanilla-krakow.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/316692871.jpg?k=5927ed25cc58c8c4dbbf67d7923d61aa13002a523a4024836c2c10f160e2615d&o=",
+            "price":247.5,
+            "currency":"PLN"
+         },
+         {
+            "name":"Residence9",
+            "address":"Szewska 9",
+            "score":9.4,
+            "url":"https://www.booking.com/hotel/pl/apartments-residence-9.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/92015842.jpg?k=8ac8b1ddd3b584f1d970696c57729e8ca289ec926c139d0248a8d48aac165d00&o=",
+            "price":270,
+            "currency":"PLN"
+         },
+         {
+            "name":"Home Office Kopernika 8'1 - Market Square & Old Town",
+            "address":"8 Miko\u0142aja Kopernika",
+            "score":9.0,
+            "url":"https://www.booking.com/hotel/pl/ewm-kopernika-8-1-market-square-old-town.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/255789614.jpg?k=a50837b2846f2ae20bf10719b3d4d8c77b4a64dc2a755ed09b5ba26e2001c033&o=",
+            "price":144.07,
+            "currency":"PLN"
+         },
+         {
+            "name":"Home Office Unique Brick 2 - Old Town & Market Square",
+            "address":"19 Krowoderska",
+            "score":8.8,
+            "url":"https://www.booking.com/hotel/pl/ewm-unique-brick-2-old-town-market-square.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/255769150.jpg?k=d58546ff19dcc4eeff9fd0eb3e829ec61dd36755ed9be7a4c5df8fe7edd62095&o=",
+            "price":173.05,
+            "currency":"PLN"
+         },
+         {
+            "name":"DoubleTree by Hilton Krakow Hotel & Convention Center",
+            "address":"ul. D\u0105bska 5   ",
+            "score":9.0,
+            "url":"https://www.booking.com/hotel/pl/doubletree-by-hilton-krakow-convention-center.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/264865059.jpg?k=42a3b6bb7c866ec6abb9c4cee9ae573a5e4ef648e3ed2aaaf10e7d5abc46a98c&o=",
+            "price":370.99,
+            "currency":"PLN"
+         },
+         {
+            "name":"Apartments 17 Szewska",
+            "address":"17 Szewska",
+            "score":9.4,
+            "url":"https://www.booking.com/hotel/pl/apartments-17.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/218621685.jpg?k=f21c73e0c26ce7e789da29bd74d8554019041cbad11a563cb3652b49581bab13&o=",
+            "price":344.86,
+            "currency":"PLN"
+         },
+         {
+            "name":"Hilton Garden Inn Krakow Airport",
+            "address":"Medweckiego 3",
+            "score":8.9,
+            "url":"https://www.booking.com/hotel/pl/hilton-garden-inn-krakow-airport.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/273073349.jpg?k=e2807e551ec34b1111090e95b5992ad44da457cb6de33b997a049bda6609e4c1&o=",
+            "price":445,
+            "currency":"PLN"
+         },
+         {
+            "name":"Home Office Unique Brick 4 - Old Town & Market Square",
+            "address":"19 Krowoderska",
+            "score":8.9,
+            "url":"https://www.booking.com/hotel/pl/ewm-unique-brick-4-old-town-market-square.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/255775757.jpg?k=6f11898791c04edfae0cbd40bda5c19a043c81b766b339ac1fc64bf0d136aa33&o=",
+            "price":165.6,
+            "currency":"PLN"
+         },
+         {
+            "name":"Home Office Unique Brick 1 - Old Town & Market Square",
+            "address":"19 Krowoderska",
+            "score":8.9,
+            "url":"https://www.booking.com/hotel/pl/ewm-unique-brick-1-old-town-market-square.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/255687655.jpg?k=8e15a5ddef9fe2c031db7710173c9ce83235e1f2d232b45005e0ac501e55e8c3&o=",
+            "price":164.77,
+            "currency":"PLN"
+         },
+         {
+            "name":"Warszauer Hotel",
+            "address":"10 Warszauera",
+            "score":9.9,
+            "url":"https://www.booking.com/hotel/pl/warszauer.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/331840452.jpg?k=e48725bcd4facc79a092aeb4ced5e15c7d2a1fb3cac76d612e1413e173bb67e9&o=",
+            "price":600,
+            "currency":"PLN"
+         },
+         {
+            "name":"Conrad Hotel",
+            "address":"ul. Josepha Conrada 29",
+            "score":8.7,
+            "url":"https://www.booking.com/hotel/pl/conrad-spa-krakow.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/60642804.jpg?k=738e27ba140c85e698ded1b1707d5c31fde4aa85d9de4c3bdd775459b18a6ddf&o=",
+            "price":207,
+            "currency":"PLN"
+         },
+         {
+            "name":"Apartament Golden Place 2",
+            "address":"Ul.\u015aw.Wawrzy\u0144ca 21/93b",
+            "score":9.8,
+            "url":"https://www.booking.com/hotel/pl/apartment-golden-place.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/188743019.jpg?k=5c7c0f9334da0365f31a72c7f6b5701e3395d412c1933ef3a1941555ba4d0ae5&o=",
+            "price":290.4,
+            "currency":"PLN"
+         },
+         {
+            "name":"ap4you Tauron Cracow",
+            "address":"Ostatnia 2d/71",
+            "score":9.8,
+            "url":"https://www.booking.com/hotel/pl/ap4you-krakow1.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/273835803.jpg?k=769c8c598a046b3190c90f100c5e2868c296cb20695f5d0bc2039fe8f221cd58&o=",
+            "price":434.7,
+            "currency":"PLN"
+         },
+         {
+            "name":"The Loft All-Inclusive Hotel Adults Only",
+            "address":"ul. Dietla 113",
+            "score":9.5,
+            "url":"https://www.booking.com/hotel/pl/the-loft-hotel-adults-only.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/203978971.jpg?k=694517bb2a2e360c458b0f9b3b23e470ad798135d8583070a2e04b5c064965dd&o=",
+            "price":414,
+            "currency":"PLN"
+         },
+         {
+            "name":"Hotel Estera",
+            "address":"Ul. Estery 6",
+            "score":9.3,
+            "url":"https://www.booking.com/hotel/pl/estera.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/338017790.jpg?k=c55cc5f3b53fd6b3898544a56c2f6ed9a3e0f4e07a95c753da3a1c881a649bc4&o=",
+            "price":369,
+            "currency":"PLN"
+         },
+         {
+            "name":"Metropolo by Golden Tulip Krakow",
+            "address":"Ul. Orzechowa 11",
+            "score":9.1,
+            "url":"https://www.booking.com/hotel/pl/metropolo-by-golden-tulip-krakow.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/270306034.jpg?k=eec8f6a072a804f996d2e5d6250e2851f03de2d7ea3179952c69d7ebf9d20f0e&o=",
+            "price":301.5,
+            "currency":"PLN"
+         },
+         {
+            "name":"Premier Krak\u00f3w Hotel",
+            "address":"ul. Opolska 14A",
+            "score":8.1,
+            "url":"https://www.booking.com/hotel/pl/premierkrakow.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/197064904.jpg?k=7c77645d9cf95e7d5ff426232b8899ea209a4c7d092c6652c591a9747850cb7c&o=",
+            "price":396,
+            "currency":"PLN"
+         },
+         {
+            "name":"AC Hotel by Marriott Krakow",
+            "address":"Aleja 3 Maja 51",
+            "score":9.3,
+            "url":"https://www.booking.com/hotel/pl/ac-by-marriott-krakow.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/318342102.jpg?k=b5163b93927733b7cc528a56a42098e553daab1123790421735fa14506a13b57&o=",
+            "price":595,
+            "currency":"PLN"
+         },
+         {
+            "name":"Home Office Unique Brick 3 - Old Town & Market Square",
+            "address":"Krowoderska",
+            "score":9.0,
+            "url":"https://www.booking.com/hotel/pl/ewm-unique-brick-3-old-town-market-square.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/230520717.jpg?k=d1e9a3f3ee8870704b1bfa3257f925c0b7ee4769adf20abd700dd96bea1af4e5&o=",
+            "price":164.77,
+            "currency":"PLN"
+         }
+      ]
+   },
+   {
+      "name":"Praga",
+      "imageURL":"https://upload.wikimedia.org/wikipedia/commons/a/a7/Prague_%286365119737%29.jpg",
+      "bookingURL":"https://www.booking.com/city/ cz/Prague 1.html",
+      "numberOfHotels":1707,
+      "distance":348.89,
+      "weather":[
+         {
+            "unixTime":1650020400,
+            "dayTemperature":8.68,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650106800,
+            "dayTemperature":9.65,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650193200,
+            "dayTemperature":11.71,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650279600,
+            "dayTemperature":12.47,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650366000,
+            "dayTemperature":13.35,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650452400,
+            "dayTemperature":14.32,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650538800,
+            "dayTemperature":14.23,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650625200,
+            "dayTemperature":13.63,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650711600,
+            "dayTemperature":15.23,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650798000,
+            "dayTemperature":8.64,
+            "weatherIcon":"Rain"
+         }
+      ],
+      "covid":{
+         "casesNew":3464,
+         "casesActive":41174,
+         "casesCritical":71,
+         "casesRecovered":3794875,
+         "casesPerOneMillion":360749,
+         "casesTotal":3875994,
+         "deathsNew":4,
+         "deathsPerOneMillion":3718,
+         "deathsTotal":39945,
+         "testsPerOneMillion":5117356,
+         "testsTotal":54982426
+      },
+      "hotels":[
+         {
+            "name":"Boat Hotel Matylda",
+            "address":"Masarykovo nabrezi",
+            "score":8.8,
+            "url":"https://www.booking.com/hotel/cz/boat-matylda.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/23592324.jpg?k=23f8ce48c7b13886e2f9828fbd1613e7542b1d43e900e076150c01e8fe5ec298&o=",
+            "price":63,
+            "currency":"EUR"
+         },
+         {
+            "name":"Villa St. Tropez",
+            "address":"Ruzynska 197/14",
+            "score":8.2,
+            "url":"https://www.booking.com/hotel/cz/elegant.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/19972286.jpg?k=a116ad70b4b1d21c9e1955f0dd92bc8e0d0b37b229f2f35cdbdd81c328aece49&o=",
+            "price":49.5,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Mal\u00e1 Strana",
+            "address":"Melnick\u00e1 9",
+            "score":8.6,
+            "url":"https://www.booking.com/hotel/cz/residence-mala-strana.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/20896690.jpg?k=7c12f8ff7f9831a19902a8b30c91a14558ed8fd1d5058abdb2e8d36b2379fb2a&o=",
+            "price":123.2,
+            "currency":"EUR"
+         },
+         {
+            "name":"Amarilis",
+            "address":"\u0160t\u011bp\u00e1nsk\u00e1 18",
+            "score":8.6,
+            "url":"https://www.booking.com/hotel/cz/amarilis-jerome.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/194443180.jpg?k=143e18ab849716fc873f4362161ab0c3c0a8a09b88fee3a8f11aeb7a7de4e007&o=",
+            "price":75,
+            "currency":"EUR"
+         },
+         {
+            "name":"Angelis",
+            "address":"Pivovarsk\u00e1 5",
+            "score":8.4,
+            "url":"https://www.booking.com/hotel/cz/angelis.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/63811191.jpg?k=b26fac58927e91e67ca5ffc3275fa017c9864e55b96e3975f4d63b0528c9d45d&o=",
+            "price":90.9,
+            "currency":"EUR"
+         },
+         {
+            "name":"Holiday Inn Prague Airport, an IHG Hotel",
+            "address":"Prague International Airport, K Letisti 1074/32",
+            "score":8.3,
+            "url":"https://www.booking.com/hotel/cz/hoteltranzitpraha.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/246706542.jpg?k=76e296ad96250675847461cd59291d823b6ad1bf6ab6f0ff312fea831e79ec4e&o=",
+            "price":84.55,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel White Lion",
+            "address":"Cimburkova 20",
+            "score":8.5,
+            "url":"https://www.booking.com/hotel/cz/bilylev.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/138098493.jpg?k=fc373b5289d867307ab43911b17568b305f4e07c91ed3d67060f5f7c748102b6&o=",
+            "price":74.52,
+            "currency":"EUR"
+         },
+         {
+            "name":"Don Giovanni Hotel Prague - Great Hotels of The World",
+            "address":"Vinohradska 157 a",
+            "score":9.0,
+            "url":"https://www.booking.com/hotel/cz/hotel-don-giovanni-prague.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/339833338.jpg?k=716745baa2e3d8a3ada530c7a0342b269dfa890593973c63c938d35d74925418&o=",
+            "price":122.54,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Tyl",
+            "address":"Tylovo n\u00e1m\u011bst\u00ed 5",
+            "score":7.8,
+            "url":"https://www.booking.com/hotel/cz/tyl.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/51507419.jpg?k=3e3173f16342a8fa953158bcac404a45a9adae9cf48ee1e239d80005c2791f35&o=",
+            "price":72.68,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Liberty",
+            "address":"ul. 28. \u0159\u00edjna 11/376",
+            "score":9.2,
+            "url":"https://www.booking.com/hotel/cz/liberty.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/310506260.jpg?k=9e78b242a67cc483107cf20aa1a1fe8ec2c4b20dfe54896641c516719126758a&o=",
+            "price":161.46,
+            "currency":"EUR"
+         },
+         {
+            "name":"Cathedral Prague Apartments",
+            "address":"T\u00fdnsk\u00e1 11",
+            "score":8.6,
+            "url":"https://www.booking.com/hotel/cz/cathedral-prague-apartments.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/19453576.jpg?k=1fca2ab24e9dc3a06fcf4c9ff3a80aa52702a83fb534ea81bdf2810216650764&o=",
+            "price":105,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Meteor Plaza Prague",
+            "address":"Hybernsk\u00e1 6",
+            "score":8.6,
+            "url":"https://www.booking.com/hotel/cz/hotelmeteor.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/98555466.jpg?k=8be5354697db7a9e69f25b7ab603a86e5088b3238f1dda63038c644394307fc7&o=",
+            "price":155,
+            "currency":"EUR"
+         },
+         {
+            "name":"Art Hotel Prague",
+            "address":"Nad Kr\u00e1lovskou oborou 53",
+            "score":8.5,
+            "url":"https://www.booking.com/hotel/cz/arthotelprague.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/321855980.jpg?k=7cda31a2258c3c4ef12166aa09ae8c301a2d41be4b38aa6ea08f40623a76b42f&o=",
+            "price":189,
+            "currency":"EUR"
+         },
+         {
+            "name":"Golden Prague Rooms",
+            "address":"4 Eli\u0161ky Kr\u00e1snohorsk\u00e9",
+            "score":8.4,
+            "url":"https://www.booking.com/hotel/cz/golden-prague-rooms.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/177463049.jpg?k=b9055e8b13f6e478dd6185726fbc27e6f04b6e11993f0f1c3dd93f019febb704&o=",
+            "price":135,
+            "currency":"EUR"
+         },
+         {
+            "name":"Gorgeous Prague Rooms",
+            "address":"Koste\u010dn\u00e1 3",
+            "score":8.8,
+            "url":"https://www.booking.com/hotel/cz/gorgeous-prague-rooms.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/79040726.jpg?k=80a541ce8280a55dcc7cd886ab39825b33840fdbf7efb432599fb5c8648f5d3f&o=",
+            "price":140,
+            "currency":"EUR"
+         },
+         {
+            "name":"Congress & Wellness Hotel Olsanka",
+            "address":"T\u00e1boritsk\u00e1 23",
+            "score":7.4,
+            "url":"https://www.booking.com/hotel/cz/olsanka.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/22301233.jpg?k=6606569c9f76a358800bc8972f3dde2cdc2d66a5e66ab1ee6dd178997a763e3b&o=",
+            "price":54,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel CUBE Prague",
+            "address":"K\u0159emencova 18",
+            "score":9.5,
+            "url":"https://www.booking.com/hotel/cz/cube-hlavni-mesto-praha.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/287389552.jpg?k=57f659a2d2b348577a0a5b9f7c9df4c6a093d49e58eedfa6b04cd09aca86483d&o=",
+            "price":189.74,
+            "currency":"EUR"
+         },
+         {
+            "name":"Emporio Prague Apartments",
+            "address":"Soukenicka 6",
+            "score":8.1,
+            "url":"https://www.booking.com/hotel/cz/aparthotel-bella-verona.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/246460615.jpg?k=9960bc617f8db64ea12ac25bf9ff3156d588f7f874a157e2f1f34c6d7d2724f6&o=",
+            "price":115,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Alwyn",
+            "address":"Vitkova 26",
+            "score":8.9,
+            "url":"https://www.booking.com/hotel/cz/alwyn.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/47416822.jpg?k=55c357335980060ce311e85533b4cc1f477f584ce87a6bd25e2afb1e1e2d092a&o=",
+            "price":74.52,
+            "currency":"EUR"
+         },
+         {
+            "name":"Mama Shelter Prague",
+            "address":"Veletr\u017en\u00ed 20",
+            "score":8.9,
+            "url":"https://www.booking.com/hotel/cz/parkhotel-praha.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/335315178.jpg?k=682cdc5e25e087896ac35eb00f152a1dd020745061fe4bb462201191785a1607&o=",
+            "price":86.85,
+            "currency":"EUR"
+         }
+      ]
+   },
+   {
+      "name":"Berlin",
+      "imageURL":"https://upload.wikimedia.org/wikipedia/commons/1/1f/Brandenburger_Tor_Blaue_Stunde.jpg",
+      "bookingURL":"https://www.booking.com/city/ de/Berlin.html",
+      "numberOfHotels":1309,
+      "distance":423.37,
+      "weather":[
+         {
+            "unixTime":1650020400,
+            "dayTemperature":9.45,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650106800,
+            "dayTemperature":10.36,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650193200,
+            "dayTemperature":11.81,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650279600,
+            "dayTemperature":12.81,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650366000,
+            "dayTemperature":13.02,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650452400,
+            "dayTemperature":14.53,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650538800,
+            "dayTemperature":15.07,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650625200,
+            "dayTemperature":12.48,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650711600,
+            "dayTemperature":14.7,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650798000,
+            "dayTemperature":8.43,
+            "weatherIcon":"Rain"
+         }
+      ],
+      "covid":{
+         "casesNew":160914,
+         "casesActive":3699501,
+         "casesCritical":1980,
+         "casesRecovered":19444600,
+         "casesPerOneMillion":276255,
+         "casesTotal":23277316,
+         "deathsNew":309,
+         "deathsPerOneMillion":1581,
+         "deathsTotal":133215,
+         "testsPerOneMillion":1451840,
+         "testsTotal":122332384
+      },
+      "hotels":[
+         {
+            "name":"Hollywood Media Hotel am Kurf\u00fcrstendamm",
+            "address":"Kurf\u00fcrstendamm 202",
+            "score":8.4,
+            "url":"https://www.booking.com/hotel/de/hollywood-media.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/142934061.jpg?k=bc51b00f896bc6e18dfe5b26bd39c2da53eccb69ce1ad46ca84e03c5361f6193&o=",
+            "price":99.18,
+            "currency":"EUR"
+         },
+         {
+            "name":"IntercityHotel Berlin Hauptbahnhof",
+            "address":"Katharina-Paulus-Str. 5",
+            "score":8.3,
+            "url":"https://www.booking.com/hotel/de/intercityhotel-berlin-hbf.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/42864818.jpg?k=78aeaf803745dbce5ea459ed06706b7819d7d397d8f0ba847fd81e544a5b6882&o=",
+            "price":103.01,
+            "currency":"EUR"
+         },
+         {
+            "name":"Riu Plaza Berlin",
+            "address":"Martin-Luther-Strasse 1",
+            "score":8.4,
+            "url":"https://www.booking.com/hotel/de/riu-plaza-berlin.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/331395602.jpg?k=469cc9865e3ee3d32bc8f9916c293bc82b754b778c3436ff19c2b2b069870a14&o=",
+            "price":159,
+            "currency":"EUR"
+         },
+         {
+            "name":"Park Inn by Radisson Berlin Alexanderplatz",
+            "address":"Alexanderplatz 7",
+            "score":7.5,
+            "url":"https://www.booking.com/hotel/de/park-inn-berlin-alexanderplatz.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/47871301.jpg?k=8f76eebf5d3a36a984cbfdbe34f1e32424964cc86ccb836eace3e63552ea8f10&o=",
+            "price":120.6,
+            "currency":"EUR"
+         },
+         {
+            "name":"Aspria Berlin Ku'damm",
+            "address":"Karlsruher Str. 20",
+            "score":8.1,
+            "url":"https://www.booking.com/hotel/de/aspria-spa-sporting-club.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/1815756.jpg?k=6887b494c6c39ea827b278b2f437c0a00d69b6ed8ab7d57ba6e5bd3bbce225b1&o=",
+            "price":94.46,
+            "currency":"EUR"
+         },
+         {
+            "name":"Classik Hotel Hackescher Markt",
+            "address":"Gro\u00dfe Pr\u00e4sidentenstr. 8",
+            "score":8.1,
+            "url":"https://www.booking.com/hotel/de/hotelhackeschermarkt.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/252755873.jpg?k=1e1a0454e5de2dc4cb338d466d2b561e03fcaca7d181eb2a7cd6b29243ddb428&o=",
+            "price":98,
+            "currency":"EUR"
+         },
+         {
+            "name":"Ku'Damm 101 Hotel",
+            "address":"Kurf\u00fcrstendamm 101",
+            "score":8.2,
+            "url":"https://www.booking.com/hotel/de/kudamm101.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/150184773.jpg?k=e23c1e1cf21960dd0672b0f530feb2d9c42fef6856364ef6fce6c2a3c3c456ef&o=",
+            "price":129,
+            "currency":"EUR"
+         },
+         {
+            "name":"Leonardo Hotel Berlin Mitte",
+            "address":"Bertolt Brecht Platz 4",
+            "score":8.2,
+            "url":"https://www.booking.com/hotel/de/leonardo-berlin-mitte.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/289208496.jpg?k=6910ba3e46a4abf23ae3dc4bf0719f7e07e3a86170043d2adcefbf0389562aae&o=",
+            "price":139,
+            "currency":"EUR"
+         },
+         {
+            "name":"Mercure Hotel Berlin Tempelhof",
+            "address":"Hermannstr. 214-216",
+            "score":7.9,
+            "url":"https://www.booking.com/hotel/de/mercureberlintempelhofairport.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/244503067.jpg?k=29db395dcc8719ed344a26a69f14b402c35cc6abcbc4cbc60706f182a027a64f&o=",
+            "price":104,
+            "currency":"EUR"
+         },
+         {
+            "name":"Holiday Inn Berlin City East Side, an IHG Hotel",
+            "address":"Wanda-Kallenbach-Strasse",
+            "score":8.7,
+            "url":"https://www.booking.com/hotel/de/holiday-inn-berlin-city-east-side.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/239800814.jpg?k=8733ea3c973dbff0f96633fc60f669d0c4235f8b85229fa7e6d4756b197b74ed&o=",
+            "price":143.1,
+            "currency":"EUR"
+         },
+         {
+            "name":"MOXY Berlin Humboldthain Park",
+            "address":"Hochstrasse 2",
+            "score":8.4,
+            "url":"https://www.booking.com/hotel/de/moxy-berlin-humboldthain-park.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/138237443.jpg?k=a3e875766624e7612ce3de5da35e5a6e2862fc0af7a0b7de5d246364473a6de9&o=",
+            "price":109,
+            "currency":"EUR"
+         },
+         {
+            "name":"Leonardo Royal Hotel Berlin Alexanderplatz",
+            "address":"Otto-Braun-Str. 90",
+            "score":8.5,
+            "url":"https://www.booking.com/hotel/de/royal-leonardo-berlin.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/317266547.jpg?k=c9e05cb51784f9fba0a017f9b4d42d313cbabc4b6015aaaf29ecfdcdc86caa96&o=",
+            "price":129,
+            "currency":"EUR"
+         },
+         {
+            "name":"NH Collection Berlin Mitte Friedrichstrasse",
+            "address":"Friedrichstr. 96",
+            "score":8.7,
+            "url":"https://www.booking.com/hotel/de/jollyvivaldi.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/346373084.jpg?k=e8f64d7213516be34b8097ad8a3220cbcb84a1d63c8f99b2d0a030babb89a7d4&o=",
+            "price":165.6,
+            "currency":"EUR"
+         },
+         {
+            "name":"Goodman's Living",
+            "address":"Wilmersdorfer Stra\u00dfe 36",
+            "score":8.8,
+            "url":"https://www.booking.com/hotel/de/goodman-s-living.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/42121736.jpg?k=a5d96bc4bb6ecb67490ff313b61ae9086f3fa57db40cbb324053d45ba7b40232&o=",
+            "price":90,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Berlin, Berlin",
+            "address":"L\u00fctzowplatz 17",
+            "score":8.1,
+            "url":"https://www.booking.com/hotel/de/bbberlin.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/261034248.jpg?k=634df832126beb1b943c243f0d1b90f3e4019f29e0f806ade7c304a28b308b3d&o=",
+            "price":126.65,
+            "currency":"EUR"
+         },
+         {
+            "name":"NH Berlin Kurf\u00fcrstendamm",
+            "address":"Grolmanstr. 41-43",
+            "score":8.2,
+            "url":"https://www.booking.com/hotel/de/topconcept.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/328267785.jpg?k=aebc9f654c53ff0ebee84e534f23b8e083079be6747a1e9968be399b923fb18b&o=",
+            "price":121.9,
+            "currency":"EUR"
+         },
+         {
+            "name":"NH Berlin City Ost",
+            "address":"Rathausstr. 2-3",
+            "score":8.2,
+            "url":"https://www.booking.com/hotel/de/frankfurter-allee.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/328267731.jpg?k=6f438820f336a2d3509f5772b010f8cd1d5f619433e30aeacd7e47e5c6598e64&o=",
+            "price":92.38,
+            "currency":"EUR"
+         },
+         {
+            "name":"M\u00f6venpick Hotel Berlin Am Potsdamer Platz",
+            "address":"Sch\u00f6neberger Str. 3",
+            "score":8.4,
+            "url":"https://www.booking.com/hotel/de/movenpick-berlin.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/163704372.jpg?k=907f598da206314510cf1b0e95a4b95f6f29d105ee6053277aec2ae92a5230b0&o=",
+            "price":125.1,
+            "currency":"EUR"
+         },
+         {
+            "name":"Leonardo Hotel Berlin KU'DAMM",
+            "address":"Kurf\u00fcrstendamm 35",
+            "score":7.7,
+            "url":"https://www.booking.com/hotel/de/california-am-kurfurstendamm.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/308229958.jpg?k=89ec3046b8dc178f9c9618f8b3f325bf986e67a3a123c218330890bb87e015bd&o=",
+            "price":109,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Indigo Berlin \u2013 Ku\u2019damm, an IHG Hotel",
+            "address":"Hardenbergstr. 15",
+            "score":8.6,
+            "url":"https://www.booking.com/hotel/de/indigo.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/269088516.jpg?k=9575f9c02a41aa166f11b589198a28d25de31c94a79b1030e2bb9a107b089056&o=",
+            "price":92.65,
+            "currency":"EUR"
+         }
+      ]
+   },
+   {
+      "name":"Bratys\u0142awa",
+      "imageURL":"https://upload.wikimedia.org/wikipedia/commons/1/1d/Bratislava_Panorama_R01.jpg",
+      "bookingURL":"https://www.booking.com/city/ sk/Bratislava.html",
+      "numberOfHotels":357,
+      "distance":435.77,
+      "weather":[
+         {
+            "unixTime":1650016800,
+            "dayTemperature":13.98,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650103200,
+            "dayTemperature":9.39,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650189600,
+            "dayTemperature":8.95,
+            "weatherIcon":"Clear"
+         },
+         {
+            "unixTime":1650276000,
+            "dayTemperature":8.86,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650362400,
+            "dayTemperature":9.05,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650448800,
+            "dayTemperature":12.0,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650535200,
+            "dayTemperature":9.55,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650621600,
+            "dayTemperature":7.57,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650708000,
+            "dayTemperature":11.52,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650794400,
+            "dayTemperature":12.78,
+            "weatherIcon":"Rain"
+         }
+      ],
+      "covid":{
+         "casesNew":2676,
+         "casesActive":48882,
+         "casesCritical":130,
+         "casesRecovered":1691241,
+         "casesPerOneMillion":322050,
+         "casesTotal":1759793,
+         "deathsNew":27,
+         "deathsPerOneMillion":3600,
+         "deathsTotal":19670,
+         "testsPerOneMillion":1281717,
+         "testsTotal":7003742
+      },
+      "hotels":[
+         {
+            "name":"Apollo Hotel Bratislava",
+            "address":"Dulovo n\u00e1mestie 1",
+            "score":8.4,
+            "url":"https://www.booking.com/hotel/sk/dukla.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/134311844.jpg?k=bf312b45d2d9825312707cebb8bc6c0e7b8d0319203c8cc72a5f3483ee8e78fa&o=",
+            "price":64.8,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Saffron",
+            "address":"Radlinsk\u00e9ho 27",
+            "score":8.6,
+            "url":"https://www.booking.com/hotel/sk/saffron.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/342673215.jpg?k=0637973e3f6eb1f5fca90039fdf679e42a8ce5b01000d719e3e1bea50d88c2a4&o=",
+            "price":45,
+            "currency":"EUR"
+         },
+         {
+            "name":"Patio Hostel",
+            "address":"\u0160pit\u00e1lska 35",
+            "score":8.1,
+            "url":"https://www.booking.com/hotel/sk/patio-hostel.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/154789709.jpg?k=ad6749901ad28e10ca18b490da6f68faf879d7718cbe282defdaa1193b3adc58&o=",
+            "price":16.83,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Tatra",
+            "address":"Namestie 1. maja 5",
+            "score":8.6,
+            "url":"https://www.booking.com/hotel/sk/tatra.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/302047430.jpg?k=30c1b787f58246faa54dbac2377874a2fc3b25b217cc538cb83ba4e4266a5e43&o=",
+            "price":72,
+            "currency":"EUR"
+         },
+         {
+            "name":"Unique Contactless Self Check-In Accommodation Sch\u00f6ndorf",
+            "address":"Obchodn\u00e1 48",
+            "score":9.0,
+            "url":"https://www.booking.com/hotel/sk/schondorf-hostel.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/343995875.jpg?k=135aabe77897aa6a4414774516b10d230d993ce3cc47676e85f0737bd151447b&o=",
+            "price":27,
+            "currency":"EUR"
+         },
+         {
+            "name":"Falkensteiner Hotel Bratislava",
+            "address":"Pilarikova 5",
+            "score":8.7,
+            "url":"https://www.booking.com/hotel/sk/falkensteiner-bratislava-besitz-s-r-o.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/239414444.jpg?k=dfad27ea4d643b2ad77530c8a9490039592cf86dc4b7037e2a3d84d3a7e3811b&o=",
+            "price":97.47,
+            "currency":"EUR"
+         },
+         {
+            "name":"LOFT Hotel Bratislava",
+            "address":"Stefanikova 4",
+            "score":9.3,
+            "url":"https://www.booking.com/hotel/sk/loft-hotel-bratislava.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/32102693.jpg?k=495509232df09ea4f5d13dbf912bc3629fce7d462f210b8264ed102343ac76ba&o=",
+            "price":93.56,
+            "currency":"EUR"
+         },
+         {
+            "name":"Aapartamentoos",
+            "address":"Vent\u00farska 14",
+            "score":8.9,
+            "url":"https://www.booking.com/hotel/sk/aapartamentoos.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/324598239.jpg?k=189ba0d25c11d1eafc4a9d41285a085742d3d88bc81af8968c55c72ce4f44666&o=",
+            "price":79.2,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Antares",
+            "address":"\u0160ulekova 15",
+            "score":8.5,
+            "url":"https://www.booking.com/hotel/sk/antares.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/329074949.jpg?k=1bb07dc39173cd0a8f1c5f0e466f9fbb8f62045dd82a64df630098c2048ce2b8&o=",
+            "price":55,
+            "currency":"EUR"
+         },
+         {
+            "name":"PREMIUM Business Hotel Bratislava",
+            "address":"Priekopy 20/A",
+            "score":8.5,
+            "url":"https://www.booking.com/hotel/sk/premium.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/26996489.jpg?k=219abfab37f46f19dbef5ca0dd328c822d01190f20c434667ad3701df85505aa&o=",
+            "price":75.6,
+            "currency":"EUR"
+         },
+         {
+            "name":"Radisson Blu Carlton Hotel, Bratislava",
+            "address":"Hviezdoslavovo namestie 3",
+            "score":9.0,
+            "url":"https://www.booking.com/hotel/sk/radisson-sas-carlton.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/232797742.jpg?k=ee074859749985532edf157f46291da58966daa2dea515d9f7f4a5a4f4181ae1&o=",
+            "price":107.1,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel SOREA REGIA",
+            "address":"Kr\u00e1\u013eovsk\u00e9 \u00fadolie 6",
+            "score":7.7,
+            "url":"https://www.booking.com/hotel/sk/sorea-regia.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/294639820.jpg?k=f3dd3804201e10df01bd3122d9eae0cf533d2336d266abb5ff729ce2ff6c063a&o=",
+            "price":45,
+            "currency":"EUR"
+         },
+         {
+            "name":"More Than Hotel & Accommodation",
+            "address":"8 Pan\u00f3nska cesta",
+            "score":9.2,
+            "url":"https://www.booking.com/hotel/sk/more-than-accommodation.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/214618763.jpg?k=e2fadbc0b0cc5ee31acc21b8d84d6ab69a246c1f66ae6d8984882c3566811dfe&o=",
+            "price":98,
+            "currency":"EUR"
+         },
+         {
+            "name":"Park Inn by Radisson Danube Bratislava",
+            "address":"Rybn\u00e9 n\u00e1mestie 1",
+            "score":8.7,
+            "url":"https://www.booking.com/hotel/sk/danube.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/232798488.jpg?k=93b8a76decd91e556427604716b9f11abfab726460392a7c3fdea8c57111e036&o=",
+            "price":109,
+            "currency":"EUR"
+         },
+         {
+            "name":"City Center Best Place Apartments",
+            "address":"18 Namestie SNP",
+            "score":8.8,
+            "url":"https://www.booking.com/hotel/sk/best-location.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/151424735.jpg?k=dc61a50f5301ce364a972cef057b51d03116b647081c87e7403e954b311b54b5&o=",
+            "price":89,
+            "currency":"EUR"
+         },
+         {
+            "name":"AC Hotel by Marriott Bratislava Old Town",
+            "address":"Vysoka 2A, Stare Mesto",
+            "score":8.9,
+            "url":"https://www.booking.com/hotel/sk/ac-bratislava-marriott-old-town.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/342852063.jpg?k=9dec4b04354c0285c3e3e471a99c1839ef3763f861492a7ef6d66fe59e54960a&o=",
+            "price":96.9,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel SET",
+            "address":"Kalinciakova 29",
+            "score":8.7,
+            "url":"https://www.booking.com/hotel/sk/set.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/104360921.jpg?k=2ac0da5ff00eeda0cb8c7522b68f740adde0dc7f6cc4062cf9eda90772b7accf&o=",
+            "price":61.92,
+            "currency":"EUR"
+         },
+         {
+            "name":"Clarion Congress Hotel Bratislava",
+            "address":"Zabotova street 2",
+            "score":8.8,
+            "url":"https://www.booking.com/hotel/sk/bratislava-centrum.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/337072465.jpg?k=2c508ce8c2fe301323480eaced65a6514b57a8f63b0ee31beab1e26820a6fbb9&o=",
+            "price":92.65,
+            "currency":"EUR"
+         },
+         {
+            "name":"Lindner Hotel Gallery Central",
+            "address":"Metodova 4",
+            "score":9.0,
+            "url":"https://www.booking.com/hotel/sk/lindner-gallery-central-bratislava.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/17289685.jpg?k=d7a793cf74c6ff4cf5102bc45b58b424afff050c1312aa96812985aaec71bc19&o=",
+            "price":108,
+            "currency":"EUR"
+         },
+         {
+            "name":"DoubleTree by Hilton Bratislava",
+            "address":"Trnavska Cesta 27/A",
+            "score":8.5,
+            "url":"https://www.booking.com/hotel/sk/doubletree-bratislava.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/75380135.jpg?k=a3b582a146aedd88fe24a7a6c866dec6bbc266bb015a8db93a63fe423338e67f&o=",
+            "price":111,
+            "currency":"EUR"
+         }
+      ]
+   },
+   {
+      "name":"Wiede\u0144",
+      "imageURL":"https://upload.wikimedia.org/wikipedia/commons/6/6b/Opera-Vienna-Austria-2005.jpg",
+      "bookingURL":"https://www.booking.com/city/ at/Vienna.html",
+      "numberOfHotels":2000,
+      "distance":452.16,
+      "weather":[
+         {
+            "unixTime":1650016800,
+            "dayTemperature":13.93,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650103200,
+            "dayTemperature":8.63,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650189600,
+            "dayTemperature":8.55,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650276000,
+            "dayTemperature":8.41,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650362400,
+            "dayTemperature":8.97,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650448800,
+            "dayTemperature":11.81,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650535200,
+            "dayTemperature":12.28,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650621600,
+            "dayTemperature":8.9,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650708000,
+            "dayTemperature":10.49,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650794400,
+            "dayTemperature":13.31,
+            "weatherIcon":"Rain"
+         }
+      ],
+      "covid":{
+         "casesNew":10483,
+         "casesActive":153634,
+         "casesCritical":187,
+         "casesRecovered":3857030,
+         "casesPerOneMillion":442639,
+         "casesTotal":4027023,
+         "deathsNew":35,
+         "deathsPerOneMillion":1798,
+         "deathsTotal":16359,
+         "testsPerOneMillion":19797803,
+         "testsTotal":180115697
+      },
+      "hotels":[
+         {
+            "name":"arte Hotel Wien Stadthalle",
+            "address":"Wurzbachgasse 17",
+            "score":8.4,
+            "url":"https://www.booking.com/hotel/at/atlantishotelvienna.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/133772861.jpg?k=7ba155e302b6fb1f04022512f8f2544df0c212f909dd8a05ad90e26f76843a5d&o=",
+            "price":108.81,
+            "currency":"EUR"
+         },
+         {
+            "name":"Austria Trend Hotel Ananas Wien",
+            "address":"Sonnenhofgasse 8-10",
+            "score":8.1,
+            "url":"https://www.booking.com/hotel/at/austriatrendananas.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/100113031.jpg?k=f090caddde76d5dd2794609f5ee57ff193362538d0df328e44e0dea23fc55a4a&o=",
+            "price":85.5,
+            "currency":"EUR"
+         },
+         {
+            "name":"Rioca Vienna Posto 2",
+            "address":"Viehmarktgasse 4",
+            "score":9.2,
+            "url":"https://www.booking.com/hotel/at/rioca-vienna-posto-2.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/307827787.jpg?k=f5573a8a528b586239998a79fe8ac11bf35fb53f2e010f4746a69f4b2e159f36&o=",
+            "price":72.79,
+            "currency":"EUR"
+         },
+         {
+            "name":"Ruby Lissi Hotel Vienna",
+            "address":"Fleischmarkt 19 / Laurenzerberg 2",
+            "score":8.5,
+            "url":"https://www.booking.com/hotel/at/ruby-lissi-vienna.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/217590829.jpg?k=844fb809997a1579f44702ee4cb17f76c3d8bd629ca164bee56ef1c7482c18d5&o=",
+            "price":138.6,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Wandl",
+            "address":"Petersplatz 9",
+            "score":8.6,
+            "url":"https://www.booking.com/hotel/at/wandl.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/46120148.jpg?k=8b577aa674fbc14797fe572221d00914f271d8fa0f1b20f3b92a40416ca98f75&o=",
+            "price":112.59,
+            "currency":"EUR"
+         },
+         {
+            "name":"Senator Hotel Vienna",
+            "address":"Hernalser Hauptstra\u00dfe 105",
+            "score":8.2,
+            "url":"https://www.booking.com/hotel/at/senator.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/181701424.jpg?k=13f3ad7fc485592365f394aa061402e10dd453274e522d7a04d5295de6519d06&o=",
+            "price":79.2,
+            "currency":"EUR"
+         },
+         {
+            "name":"Austria Trend Hotel Astoria Wien",
+            "address":"K\u00e4rntner Stra\u00dfe 32-34 / Eingang F\u00fchrichgasse 1",
+            "score":8.5,
+            "url":"https://www.booking.com/hotel/at/astoria-wien.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/98926301.jpg?k=15e5e0af1f82751200f1d06711053378bbc59b97609d1ce869d14b8df3ec2a32&o=",
+            "price":169,
+            "currency":"EUR"
+         },
+         {
+            "name":"DORMERO HoHo Wien",
+            "address":"Janis-Joplin-Promenade 26",
+            "score":9.2,
+            "url":"https://www.booking.com/hotel/at/dormero-hoho-wien.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/265251637.jpg?k=fd380b99f732a946ab27032a4a89590226ae29ff8c0f87633a45cdec567b266b&o=",
+            "price":120,
+            "currency":"EUR"
+         },
+         {
+            "name":"Best Western Plus Hotel Arcadia",
+            "address":"Max-Winter-Platz 5",
+            "score":8.3,
+            "url":"https://www.booking.com/hotel/at/arcadia.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/204112492.jpg?k=1cc69e19f439fccc344ed820be7a678e6d837027254b45e9160b95644814c50d&o=",
+            "price":84.55,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Erzherzog Rainer",
+            "address":"Wiedner Hauptstr. 27-29",
+            "score":9.1,
+            "url":"https://www.booking.com/hotel/at/erzherzograiner.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/30258537.jpg?k=0b92e38521082560df801f1a1448daa83712d2da3363a1d63690bcd73d6e1c42&o=",
+            "price":108,
+            "currency":"EUR"
+         },
+         {
+            "name":"NH Collection Wien Zentrum",
+            "address":"Mariahilfer Stra\u00dfe 78",
+            "score":8.9,
+            "url":"https://www.booking.com/hotel/at/nhatterseehaus.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/275273964.jpg?k=13503122fc1d30a8073bc8a4c53d42ca0c1125bd0abdc33afb020b079b8533e4&o=",
+            "price":143,
+            "currency":"EUR"
+         },
+         {
+            "name":"Austria Trend Hotel Bosei Wien",
+            "address":"Gutheil-Schoder-Gasse 7B",
+            "score":8.3,
+            "url":"https://www.booking.com/hotel/at/austria-trend-bosei.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/296861953.jpg?k=b30165d4e558a3be880ddc4a8a1aa488d416922b48672852d4f1f283f5220088&o=",
+            "price":99,
+            "currency":"EUR"
+         },
+         {
+            "name":"Living Hotel Kaiser Franz Joseph",
+            "address":"Sieveringer Stra\u00dfe 4",
+            "score":8.2,
+            "url":"https://www.booking.com/hotel/at/hotelkaiserfranzjoseph.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/128379796.jpg?k=a732bae620060ec121aabbc771b7259893ca400bcd764e502ffbac070a7c0c62&o=",
+            "price":68.85,
+            "currency":"EUR"
+         },
+         {
+            "name":"The Student Hotel Vienna",
+            "address":"47 Nordbahnstra\u00dfe",
+            "score":9.0,
+            "url":"https://www.booking.com/hotel/at/the-student-vienna.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/287233195.jpg?k=3f7b37ead146db6de633a6756a424bed10301fd15d522bad61ee2160df546be9&o=",
+            "price":82.4,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Brauhof Wien",
+            "address":"Mariahilferstrasse 156-158",
+            "score":9.1,
+            "url":"https://www.booking.com/hotel/at/brauhof-wien.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/296291135.jpg?k=c164911fa2b469ab9dfad8cf6a49111d1f2c55155ccdbb91ea93acccce1dafe6&o=",
+            "price":104.25,
+            "currency":"EUR"
+         },
+         {
+            "name":"AZIMUT Hotel Vienna",
+            "address":"Sonnwendgasse 8",
+            "score":8.5,
+            "url":"https://www.booking.com/hotel/at/delta-vienna.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/298539138.jpg?k=daddca6b465740df1075bc11f447280f18bb40d9714638f91bffe7ac3b798a07&o=",
+            "price":141.08,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Daniel Vienna",
+            "address":"Landstra\u00dfer G\u00fcrtel 5",
+            "score":8.4,
+            "url":"https://www.booking.com/hotel/at/daniel-vienna.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/316057733.jpg?k=b97a38cd027fdf28418f36b9333903a1fc95574632b931b47e705f65220313f2&o=",
+            "price":119,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Stefanie",
+            "address":"Taborstra\u00dfe 12",
+            "score":9.1,
+            "url":"https://www.booking.com/hotel/at/bestwesternhotelstefanie.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/37891787.jpg?k=f66e72aeb3fa4186d71d16ba9db13b470f9c9fa0e74b4a335f2825c6da3ecfdd&o=",
+            "price":124,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Am Parkring",
+            "address":"Parkring 12",
+            "score":9.0,
+            "url":"https://www.booking.com/hotel/at/am-parkring-vienna.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/304431833.jpg?k=7dbd3309689edeaa5ec65b74e8ef045439be0e5ee783a37da5fffd503d656717&o=",
+            "price":144,
+            "currency":"EUR"
+         },
+         {
+            "name":"SMARTments business Wien Heiligenstadt",
+            "address":"Leopold Unger Platz 3",
+            "score":8.7,
+            "url":"https://www.booking.com/hotel/at/smartments-business-wien-heiligenstadt.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/316890197.jpg?k=1aa606fe66ed32a6c1a3ac474a3a62c24828ab86e9a5b20cc90ca4aa7aa7cd43&o=",
+            "price":81.9,
+            "currency":"EUR"
+         }
+      ]
+   },
+   {
+      "name":"Budapeszt",
+      "imageURL":"https://upload.wikimedia.org/wikipedia/commons/e/eb/20190502_View_of_Buda_Castle_from_Gell%C3%A9rt_Hill_1636_2135_DxO.jpg",
+      "bookingURL":"https://www.booking.com/city/ hu/Budapest.html",
+      "numberOfHotels":2414,
+      "distance":474.78,
+      "weather":[
+         {
+            "unixTime":1650016800,
+            "dayTemperature":16.52,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650103200,
+            "dayTemperature":11.95,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650189600,
+            "dayTemperature":9.84,
+            "weatherIcon":"Clear"
+         },
+         {
+            "unixTime":1650276000,
+            "dayTemperature":8.89,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650362400,
+            "dayTemperature":7.93,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650448800,
+            "dayTemperature":11.76,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650535200,
+            "dayTemperature":8.37,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650621600,
+            "dayTemperature":9.91,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650708000,
+            "dayTemperature":13.78,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650794400,
+            "dayTemperature":14.34,
+            "weatherIcon":"Rain"
+         }
+      ],
+      "covid":{
+         "casesNew":2534,
+         "casesActive":84908,
+         "casesCritical":50,
+         "casesRecovered":1748707,
+         "casesPerOneMillion":195438,
+         "casesTotal":1879480,
+         "deathsNew":27,
+         "deathsPerOneMillion":4769,
+         "deathsTotal":45865,
+         "testsPerOneMillion":1169271,
+         "testsTotal":11244573
+      },
+      "hotels":[
+         {
+            "name":"Green Hotel Budapest",
+            "address":"Kerepesi \u00fat 34",
+            "score":6.9,
+            "url":"https://www.booking.com/hotel/hu/green-budapest.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/18982183.jpg?k=78d15853b5f9e2963166c363058bfd010efec8926db07cf10fabd4ca5c903358&o=",
+            "price":55.25,
+            "currency":"EUR"
+         },
+         {
+            "name":"City-Hotel Budapest",
+            "address":"H\u00e1rsfa utca 51.",
+            "score":8.6,
+            "url":"https://www.booking.com/hotel/hu/city-appartementhaus.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/58123672.jpg?k=fa86d865001699d1507721c05705999c0ec1076cc61430590009917a7e74aef4&o=",
+            "price":52.65,
+            "currency":"EUR"
+         },
+         {
+            "name":"Paulay Downtown Apartments",
+            "address":"13 Paulay Ede utca",
+            "score":8.6,
+            "url":"https://www.booking.com/hotel/hu/paulay-downtown-apartments.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/117705054.jpg?k=367c8f0cc99bc6e30b3f19b566473f7b179b0f032c08c077b12d4011ad123873&o=",
+            "price":54.45,
+            "currency":"EUR"
+         },
+         {
+            "name":"Ensana Grand Margaret Island",
+            "address":"Margitsziget",
+            "score":8.8,
+            "url":"https://www.booking.com/hotel/hu/margitszigetgrand.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/343091152.jpg?k=82874bdaec140a498b39eeeef08b3f1f901e8c824faa5ce4cc2658212b0694b1&o=",
+            "price":165,
+            "currency":"EUR"
+         },
+         {
+            "name":"BALTAZ\u00c1R Boutique Hotel by Zsidai Hotels at Buda Castle",
+            "address":"Orsz\u00e1gh\u00e1z utca 31.",
+            "score":8.7,
+            "url":"https://www.booking.com/hotel/hu/baltaza-r-budapest.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/21009483.jpg?k=ff270ca41b52cab3bd6a01689f0d3a970089c452b8f21511ea1a63bc20167068&o=",
+            "price":130,
+            "currency":"EUR"
+         },
+         {
+            "name":"Carat Boutique Hotel",
+            "address":"Kir\u00e1ly utca 6",
+            "score":8.8,
+            "url":"https://www.booking.com/hotel/hu/boutique-cosmo.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/92207776.jpg?k=e4cfd942e9c4c583b6c5d36a3d0d1513608e3f93e75c71662f54e8fc0cc3a672&o=",
+            "price":135,
+            "currency":"EUR"
+         },
+         {
+            "name":"Exe Carlton Hotel Budapest",
+            "address":"Apor Peter utca 3.",
+            "score":8.4,
+            "url":"https://www.booking.com/hotel/hu/carltonhotelbudapest.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/68540833.jpg?k=053eb34b391966d917a26e04e4c9ef85f837cf14dbb6ac6cc40ece7a0a59dd71&o=",
+            "price":139,
+            "currency":"EUR"
+         },
+         {
+            "name":"The Hotel Unforgettable - Hotel Tiliana by Homoky Hotels & Spa",
+            "address":"H\u00e1rshegyi \u00fat 1-3.",
+            "score":9.0,
+            "url":"https://www.booking.com/hotel/hu/tiliana.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/310628546.jpg?k=cef668b2af066c87e117f9bb0c6b39f1d58e007ba4e0db33dbf86af07c6c5965&o=",
+            "price":110.5,
+            "currency":"EUR"
+         },
+         {
+            "name":"Radisson Blu B\u00e9ke Hotel, Budapest",
+            "address":"Ter\u00e9z k\u00f6r\u00fat 43.",
+            "score":8.7,
+            "url":"https://www.booking.com/hotel/hu/radissonsasbeke.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/246569115.jpg?k=05d091b3d8d75d01afb32979d04cf4c7be4e04a1877ecfe12225a39469390c9a&o=",
+            "price":162,
+            "currency":"EUR"
+         },
+         {
+            "name":"IntercityHotel Budapest",
+            "address":"Baross t\u00e9r 7-8",
+            "score":8.9,
+            "url":"https://www.booking.com/hotel/hu/intercityhotel-budapest.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/300215044.jpg?k=0eac73d0a1c7a167103b09a9e30fa4e029517d8572b9e63a8dfdd5033e248180&o=",
+            "price":93.48,
+            "currency":"EUR"
+         },
+         {
+            "name":"Leonardo Hotel Budapest",
+            "address":"30-34 Tompa utca",
+            "score":8.4,
+            "url":"https://www.booking.com/hotel/hu/leonardo-hotels.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/292309589.jpg?k=4021b23163dc76aececc7fa331746c763d15f13ea81956c401f1f6a0b3b31914&o=",
+            "price":89.1,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Memories Budapest",
+            "address":"4 Wessel\u00e9nyi utca",
+            "score":8.7,
+            "url":"https://www.booking.com/hotel/hu/memories.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/205535337.jpg?k=beb49f795b6750c7d89280d21cf3cc0871e991807870e0491154524b8b47e022&o=",
+            "price":207,
+            "currency":"EUR"
+         },
+         {
+            "name":"Emerald Hotel",
+            "address":"20 V\u00e1rosh\u00e1z utca",
+            "score":9.5,
+            "url":"https://www.booking.com/hotel/hu/emerald.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/339051938.jpg?k=f6bdccc9c9b5509c0cbbccc36a60edbea72f17afd4f7cf0be85851328731305f&o=",
+            "price":125.1,
+            "currency":"EUR"
+         },
+         {
+            "name":"Danubius Hotel Helia",
+            "address":"K\u00e1rp\u00e1t u. 62-64.",
+            "score":8.2,
+            "url":"https://www.booking.com/hotel/hu/helia.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/287238220.jpg?k=6b9486ead15fe4309af57e56e60978984ec1d41bac3a45953c350131e7444604&o=",
+            "price":135,
+            "currency":"EUR"
+         },
+         {
+            "name":"Courtyard by Marriott Budapest City Center",
+            "address":"Jozsef korut 5",
+            "score":8.7,
+            "url":"https://www.booking.com/hotel/hu/courtyard-budapest-city-center.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/122376979.jpg?k=b34f56d5cf74a70e8b3104f5b5ce38d0a9fe341212066b5f1024b5604d0c584e&o=",
+            "price":108.36,
+            "currency":"EUR"
+         },
+         {
+            "name":"Marmara Hotel Budapest",
+            "address":"Nagy Ign\u00e1c str. 21.",
+            "score":7.7,
+            "url":"https://www.booking.com/hotel/hu/marmara-budapest.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/151365117.jpg?k=0ffd5e15168b62be284e542ff716716ed45bccfd5c0ad6e5b2d0a8384382fe6c&o=",
+            "price":80.33,
+            "currency":"EUR"
+         },
+         {
+            "name":"Leonardo Boutique Hotel Budapest M-Square",
+            "address":"Mad\u00e1ch T\u00e9r 2",
+            "score":9.0,
+            "url":"https://www.booking.com/hotel/hu/leonardo-boutique-hotel-budapest-m-square.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/292307605.jpg?k=d685f378b7f755af5d11d8d9a37ddfb50b5ce3b724bece6a130e649d7db1a0d4&o=",
+            "price":134.1,
+            "currency":"EUR"
+         },
+         {
+            "name":"Up Hotel Budapest",
+            "address":"31 Csengery utca",
+            "score":9.2,
+            "url":"https://www.booking.com/hotel/hu/up-budapest.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/331694259.jpg?k=86aa84039eabb3dcbb000bbbb94ddde1944b46170df040f7701d7ae7499adad6&o=",
+            "price":130.5,
+            "currency":"EUR"
+         },
+         {
+            "name":"Callas House",
+            "address":"Andr\u00e1ssy \u00fat 20.",
+            "score":9.1,
+            "url":"https://www.booking.com/hotel/hu/callas-house.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/92204901.jpg?k=6b2fac49b0c68913adcc751176cb039b3ae5e5742638a24bd4bff7d576397000&o=",
+            "price":128.09,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Vision",
+            "address":"24 Belgr\u00e1d rakpart",
+            "score":9.5,
+            "url":"https://www.booking.com/hotel/hu/vision.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/264821816.jpg?k=dd3e05ba8ae879f71f3adda89324cd8c6dfe5b67aa0a853f26e7db8141a8d572&o=",
+            "price":135.95,
+            "currency":"EUR"
+         }
+      ]
+   },
+   {
+      "name":"Wilno",
+      "imageURL":"https://upload.wikimedia.org/wikipedia/commons/9/99/Gediminas_Avenue_in_autumn.jpg",
+      "bookingURL":"https://www.booking.com/city/ lt/Vilnius.html",
+      "numberOfHotels":553,
+      "distance":505.97,
+      "weather":[
+         {
+            "unixTime":1650016800,
+            "dayTemperature":10.57,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650103200,
+            "dayTemperature":3.34,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650189600,
+            "dayTemperature":6.56,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650276000,
+            "dayTemperature":8.04,
+            "weatherIcon":"Clear"
+         },
+         {
+            "unixTime":1650362400,
+            "dayTemperature":9.22,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650448800,
+            "dayTemperature":6.84,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650535200,
+            "dayTemperature":12.0,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650621600,
+            "dayTemperature":9.64,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650708000,
+            "dayTemperature":9.55,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650794400,
+            "dayTemperature":15.1,
+            "weatherIcon":"Clouds"
+         }
+      ],
+      "covid":{
+         "casesNew":1287,
+         "casesActive":36951,
+         "casesCritical":47,
+         "casesRecovered":1000447,
+         "casesPerOneMillion":394155,
+         "casesTotal":1046395,
+         "deathsNew":6,
+         "deathsPerOneMillion":3389,
+         "deathsTotal":8997,
+         "testsPerOneMillion":3075438,
+         "testsTotal":8164615
+      },
+      "hotels":[
+         {
+            "name":"City Hotels R\u016bdninkai",
+            "address":"Rudninku g. 15/46",
+            "score":8.7,
+            "url":"https://www.booking.com/hotel/lt/rudninku-vartai.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/31828361.jpg?k=d5df6953f5c040f5e231bdfd2968875fb9dd97c4d719837c57e52fd943d452fe&o=",
+            "price":34.2,
+            "currency":"EUR"
+         },
+         {
+            "name":"Ratonda Centrum Hotels",
+            "address":"Gedimino av 52/Rotundo str 1",
+            "score":9.2,
+            "url":"https://www.booking.com/hotel/lt/ratonda.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/322410935.jpg?k=9e48c9dad493057a2081996e86bde4cb91184c42c13b74a4f61dd593a434db79&o=",
+            "price":73.8,
+            "currency":"EUR"
+         },
+         {
+            "name":"Best Western Vilnius",
+            "address":"Konstitucijos pr. 14",
+            "score":8.1,
+            "url":"https://www.booking.com/hotel/lt/bwnaujasis.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/215393295.jpg?k=d31a89893416eb4b22889c755b83b3609e5659fe7882b19a3baf9553ea3d1d9c&o=",
+            "price":55.25,
+            "currency":"EUR"
+         },
+         {
+            "name":"Grotthuss Boutique Hotel Vilnius",
+            "address":"Ligonin\u0117s g. 7",
+            "score":8.9,
+            "url":"https://www.booking.com/hotel/lt/grotthuss.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/287878868.jpg?k=d7f02f41be356193e15f0bb8b33bd44f0d863116a35296f034d498a40fbb6c15&o=",
+            "price":66.6,
+            "currency":"EUR"
+         },
+         {
+            "name":"Apartments Satva",
+            "address":"Totori\u0173 g. 24 - 4",
+            "score":9.6,
+            "url":"https://www.booking.com/hotel/lt/apartments-satva.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/76651344.jpg?k=bf340272f24828c7bf6a2350c474010b17f198f25e76d02c3e2b9aeef0a4bffa&o=",
+            "price":35.1,
+            "currency":"EUR"
+         },
+         {
+            "name":"Artis Centrum Hotels",
+            "address":"Totori\u0173 g. 23",
+            "score":8.7,
+            "url":"https://www.booking.com/hotel/lt/artis.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/34236324.jpg?k=cc49d0604bf62cef398f1389397b4142160ae9459ed4e835ead4259e34af090d&o=",
+            "price":67.5,
+            "currency":"EUR"
+         },
+         {
+            "name":"Moon Garden Hotel",
+            "address":"Bazilijon\u0173 g. 10",
+            "score":9.0,
+            "url":"https://www.booking.com/hotel/lt/moon-garden.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/187421278.jpg?k=303d0e692d3e6329782822ea5a10ec718fada988e23f8fa1fcb1f3e3ac2a0d91&o=",
+            "price":66.83,
+            "currency":"EUR"
+         },
+         {
+            "name":"Radisson Blu Hotel Lietuva",
+            "address":"Konstitucijos pr. 20",
+            "score":9.2,
+            "url":"https://www.booking.com/hotel/lt/hotellietuva-vilnius.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/156036361.jpg?k=1df0d06867ccf92f838c283524f06834cafc0a7da2c679a4f4ddf98a81f8c158&o=",
+            "price":70,
+            "currency":"EUR"
+         },
+         {
+            "name":"Park Inn by Radisson Vilnius Airport Hotel & Business Centre",
+            "address":"Oreivi\u0173 g. 32",
+            "score":9.3,
+            "url":"https://www.booking.com/hotel/lt/park-inn-by-radisson-vilnius-airport-business-centre.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/288164347.jpg?k=8cac6743f361beca716cb3852212c3d30f254e246dfc98a83d66742e81d05561&o=",
+            "price":57.6,
+            "currency":"EUR"
+         },
+         {
+            "name":"Mabre Residence",
+            "address":"Maironio g. 13",
+            "score":8.5,
+            "url":"https://www.booking.com/hotel/lt/mabre-residence.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/331087927.jpg?k=3d5fd13d9ecda30739b0eb4ee1385499ae625759a0fdd3d64d1822478cf0b5e7&o=",
+            "price":34.43,
+            "currency":"EUR"
+         },
+         {
+            "name":"Amberton Cathedral Square Hotel Vilnius",
+            "address":"L.Stuokos-Gucevi\u010diaus g.1",
+            "score":8.2,
+            "url":"https://www.booking.com/hotel/lt/city-park.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/185357694.jpg?k=4795ccd2e18463ab07ccf5ad090e7833720676a628dac98383c6b5fe0b45d42e&o=",
+            "price":64.8,
+            "currency":"EUR"
+         },
+         {
+            "name":"Vilnius Private Stay",
+            "address":"Pylimo g. 19",
+            "score":9.4,
+            "url":"https://www.booking.com/hotel/lt/vilnius-private-stay.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/74743461.jpg?k=415dfa68cfa533a29b4d39518fa668ce936a60c20a4442cfeca04e4cfd2c25d9&o=",
+            "price":55,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Vilnia",
+            "address":"Maironio g. 1",
+            "score":9.3,
+            "url":"https://www.booking.com/hotel/lt/vilnia-vilnius.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/174438942.jpg?k=c05d85af5cb22cb87f307dad8d1b1b0423b779f478528245d94b66f4b12747bd&o=",
+            "price":85,
+            "currency":"EUR"
+         },
+         {
+            "name":"Novotel Vilnius Centre",
+            "address":"Gedimino prospektas 16",
+            "score":9.0,
+            "url":"https://www.booking.com/hotel/lt/novotel-vilnius.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/249489110.jpg?k=8cc6fa9ffb7451097f5a6369a40f7e65d096ccade4c035cf7a8f6c3d17038d88&o=",
+            "price":80,
+            "currency":"EUR"
+         },
+         {
+            "name":"Loop Hotel Vilnius",
+            "address":"Dariaus ir Gir\u0117no g. 21",
+            "score":9.1,
+            "url":"https://www.booking.com/hotel/lt/quot-loop-quot-vilnius.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/342000598.jpg?k=ae455f948883c946775da1f70cb8b2d8ef10f6d25e11fa7807f1713c7d83dc0e&o=",
+            "price":40.5,
+            "currency":"EUR"
+         },
+         {
+            "name":"Park Villa",
+            "address":"Vaidilutes g. 6A",
+            "score":9.0,
+            "url":"https://www.booking.com/hotel/lt/park-villa.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/59214785.jpg?k=feb77d19eea90135ea94fe618bad97362da2fc2655244597eb33e390c474a810&o=",
+            "price":45,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hilton Garden Inn Vilnius City Centre",
+            "address":"Gedimino av. 44 B   ",
+            "score":9.3,
+            "url":"https://www.booking.com/hotel/lt/hilton-garden-inn-vilnius-city-centre.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/308805725.jpg?k=0b839adfb6d0986de92067b9a8dd67d116ec1673041a03d8fcccf84887a867fc&o=",
+            "price":90,
+            "currency":"EUR"
+         },
+         {
+            "name":"Neringa Hotel",
+            "address":"Gedimino Ave. 23",
+            "score":9.5,
+            "url":"https://www.booking.com/hotel/lt/neringa.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/318030432.jpg?k=be6b115c051b09de745a181100bc7844a1939c2e9aab86790d0b6fde11d887d5&o=",
+            "price":74,
+            "currency":"EUR"
+         },
+         {
+            "name":"Congress Avenue Hotel",
+            "address":"Gedimino pr. 12",
+            "score":9.3,
+            "url":"https://www.booking.com/hotel/lt/congress-avenue.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/53030367.jpg?k=ce22fa684b797077d779bda57c65d4174951528c4b9a32a9ed617e9d6e5ac91b&o=",
+            "price":85.5,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Congress",
+            "address":"Vilniaus g. 2/15",
+            "score":8.9,
+            "url":"https://www.booking.com/hotel/lt/congress.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/336317801.jpg?k=bdf8818c4afac21bba485874aa7017613479313935d59684299375876a56eabf&o=",
+            "price":76.5,
+            "currency":"EUR"
+         }
+      ]
+   },
+   {
+      "name":"Belgrad",
+      "imageURL":"https://upload.wikimedia.org/wikipedia/commons/4/4e/%D0%94%D0%BE%D0%BC_%D0%9D%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B5_%D0%A1%D0%BA%D1%83%D0%BF%D1%88%D1%82%D0%B8%D0%BD%D0%B5_%D0%A1%D1%80%D0%B1%D0%B8%D1%98%D0%B5.jpg",
+      "bookingURL":"https://www.booking.com/city/ rs/Beograd.html",
+      "numberOfHotels":1672,
+      "distance":775.55,
+      "weather":[
+         {
+            "unixTime":1650016800,
+            "dayTemperature":19.98,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650103200,
+            "dayTemperature":15.55,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650189600,
+            "dayTemperature":9.46,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650276000,
+            "dayTemperature":8.69,
+            "weatherIcon":"Clear"
+         },
+         {
+            "unixTime":1650362400,
+            "dayTemperature":5.26,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650448800,
+            "dayTemperature":11.17,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650535200,
+            "dayTemperature":13.19,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650621600,
+            "dayTemperature":14.66,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650708000,
+            "dayTemperature":14.43,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650794400,
+            "dayTemperature":14.06,
+            "weatherIcon":"Rain"
+         }
+      ],
+      "covid":{
+         "casesNew":984,
+         "casesActive":24610,
+         "casesCritical":24,
+         "casesRecovered":1953138,
+         "casesPerOneMillion":229822,
+         "casesTotal":1993661,
+         "deathsNew":7,
+         "deathsPerOneMillion":1834,
+         "deathsTotal":15913,
+         "testsPerOneMillion":1077859,
+         "testsTotal":9350216
+      },
+      "hotels":[
+         {
+            "name":"Belgrade Inn Garni Hotel",
+            "address":"Francuska 11",
+            "score":8.9,
+            "url":"https://www.booking.com/hotel/rs/budget.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/187949884.jpg?k=d3655cfdabd8bcd4ac0e2f3daf624b9db742b6ef7284a00e8c285b157005e503&o=",
+            "price":54,
+            "currency":"EUR"
+         },
+         {
+            "name":"Kopernikus Hotel Prag",
+            "address":"Kraljice Natalije 27",
+            "score":8.6,
+            "url":"https://www.booking.com/hotel/rs/prag.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/192503022.jpg?k=32942b7e98905a322aa49f1ffea7dc647f30b7be6405e421488115678c015afd&o=",
+            "price":54.68,
+            "currency":"EUR"
+         },
+         {
+            "name":"Savamala b&b",
+            "address":"6 Kraljevi\u0107a Marka",
+            "score":9.4,
+            "url":"https://www.booking.com/hotel/rs/savamala-b-amp-b.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/317536081.jpg?k=48ee09b1b85c0765ea52ff0cf084860ec6d096319ce6f68b88d79dddeba7aa1d&o=",
+            "price":36.45,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Passport Garni",
+            "address":"Jurija Gagarina 153 a",
+            "score":8.5,
+            "url":"https://www.booking.com/hotel/rs/passport.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/345402339.jpg?k=f2795c8c071df615cf1d3f3fb00d4739c42319d285847aac099c3e0b252d836b&o=",
+            "price":41.4,
+            "currency":"EUR"
+         },
+         {
+            "name":"Galaxy Apartments",
+            "address":"448 \u0412\u043e\u0458\u0432\u043e\u0452\u0430\u043d\u0441\u043a\u0430",
+            "score":9.7,
+            "url":"https://www.booking.com/hotel/rs/galaxy.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/331738304.jpg?k=a61b11dc24d960ddb96ba18c9199e1e08cc854194b22db4021391c9385abfbcf&o=",
+            "price":28.35,
+            "currency":"EUR"
+         },
+         {
+            "name":"Apartments Legacy",
+            "address":"Kosovska 39",
+            "score":9.5,
+            "url":"https://www.booking.com/hotel/rs/legacy-apartmani.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/73732540.jpg?k=27cce194fe95677438dfc5ad000caf126fb8c13bd0eefa4e2e15770d5bef519e&o=",
+            "price":50,
+            "currency":"EUR"
+         },
+         {
+            "name":"Privilege Suites by Central Park",
+            "address":"8 \u010cika Ljubina",
+            "score":8.8,
+            "url":"https://www.booking.com/hotel/rs/privilege-suites.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/267556643.jpg?k=483ca9840f238c1b3d1a1734984608cb84119004c9f17a52e2cfa1edebefff33&o=",
+            "price":51.03,
+            "currency":"EUR"
+         },
+         {
+            "name":"Maccani Black Luxury Suites",
+            "address":"Trg Nikole Pa\u0161i\u0107a 3, sprat 5",
+            "score":9.1,
+            "url":"https://www.booking.com/hotel/rs/maccani-black-luxury-suites.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/235669243.jpg?k=a9e1dee5a1f160bb43339797bd7b20a0a550f0c40f08ebb3cdd8efd4e6bc7c65&o=",
+            "price":58.5,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Opera Garni",
+            "address":"Bra\u0107e Jugovi\u0107a 16",
+            "score":9.1,
+            "url":"https://www.booking.com/hotel/rs/opera.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/347824212.jpg?k=0f2ff1a985b85ec6d13911aea11b7b7730c0d4a86d093af9c5e43b31cb9904e0&o=",
+            "price":99.45,
+            "currency":"EUR"
+         },
+         {
+            "name":"Stay In Apartments",
+            "address":"16 Kosovska",
+            "score":8.3,
+            "url":"https://www.booking.com/hotel/rs/stay-in-belgrade.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/32385038.jpg?k=db38764f106f2780d75c0063154861c3544153bac46462c70d0618aa9e1bd24a&o=",
+            "price":40.5,
+            "currency":"EUR"
+         },
+         {
+            "name":"APARTMAN KLARA, MAKSIMA GORKOG 6, BEOGRAD",
+            "address":"MAKSIMA GORKOG 6 5. SPRAT, STAN BROJ 15",
+            "score":10.0,
+            "url":"https://www.booking.com/hotel/rs/apartman-klara-maksima-gorkog-6-beograd.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/332995520.jpg?k=7e54188070790f58ffc39cdbd279b4332354f465e4ec9cbfce9d0066be6d1512&o=",
+            "price":60.75,
+            "currency":"EUR"
+         },
+         {
+            "name":"Apartments Royal - Belgrade Waterfront",
+            "address":"Bulevar Vudroa Vilsona 8 ",
+            "score":9.6,
+            "url":"https://www.booking.com/hotel/rs/belgrade-waterfront-royal-1-beograd-na-vodi.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/248313934.jpg?k=ddd071a752e0ebbc2b7ea4ad4d2b71160795102624da8a61161f6508ef022e0e&o=",
+            "price":63.75,
+            "currency":"EUR"
+         },
+         {
+            "name":"Garni Hotel Mint",
+            "address":"Kvarnerska 4",
+            "score":9.5,
+            "url":"https://www.booking.com/hotel/rs/mint.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/52999252.jpg?k=1cd806e686f93f7145a97e4b9dd059129d3317f35eed6154197697f2585d9a2a&o=",
+            "price":72.25,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Botanica",
+            "address":"Vojvode Dobrnjca 20",
+            "score":9.4,
+            "url":"https://www.booking.com/hotel/rs/botanica-by-art-hotels.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/342486090.jpg?k=9ccbf09d1ca353c97fc39968127556680c38b077e528ab1c931b5d0d0ff12905&o=",
+            "price":52.2,
+            "currency":"EUR"
+         },
+         {
+            "name":"Sky Hotel",
+            "address":"Lomina 28",
+            "score":9.0,
+            "url":"https://www.booking.com/hotel/rs/sky.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/178827561.jpg?k=df1b77b64ebd01eda5532c72a542106ccd8930cebd2c18b113ee57618c895871&o=",
+            "price":92.11,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Nota",
+            "address":"Gr\u010di\u0107a Milenka 8",
+            "score":9.4,
+            "url":"https://www.booking.com/hotel/rs/garni-nota.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/200079247.jpg?k=8c39a0fd2048c973ae6211555bdd41dd8c77ad70169b1eec5dc2152891bf55c6&o=",
+            "price":68.85,
+            "currency":"EUR"
+         },
+         {
+            "name":"Holiday Inn Belgrade, an IHG Hotel",
+            "address":"Spanskih Boraca 74",
+            "score":8.6,
+            "url":"https://www.booking.com/hotel/rs/holiday-inn.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/244301074.jpg?k=04c977adeb1c5eff68948d537332b2846797434551a218c18e1eefba4e99e97d&o=",
+            "price":71.25,
+            "currency":"EUR"
+         },
+         {
+            "name":"The Location",
+            "address":"25 Kneginje Ljubice",
+            "score":9.4,
+            "url":"https://www.booking.com/hotel/rs/the-location.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/264465417.jpg?k=6d03e7894d2aa3da1e965570bc4126b79b6845a4e220efee466c93b922c4703e&o=",
+            "price":82.8,
+            "currency":"EUR"
+         },
+         {
+            "name":"Central Park Apartments",
+            "address":"Studenski trg 21",
+            "score":8.5,
+            "url":"https://www.booking.com/hotel/rs/town-lux-apartments.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/16164849.jpg?k=aafa1e52da2f94b7ef94712978252547b98406eedcdfa4fcaeeb28d63e7ef53d&o=",
+            "price":67.5,
+            "currency":"EUR"
+         },
+         {
+            "name":"Garni Hotel D10",
+            "address":"Dunavska 10, Zemun",
+            "score":9.7,
+            "url":"https://www.booking.com/hotel/rs/d10.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/141811012.jpg?k=bbc0abd185c0b58484596b34dd0a14aabeb6c987c34662cc675a51992aef4db3&o=",
+            "price":45,
+            "currency":"EUR"
+         }
+      ]
+   },
+   {
+      "name":"Milan",
+      "imageURL":"https://upload.wikimedia.org/wikipedia/commons/8/85/GalleriaVittorioEmanueleII20020323.JPG",
+      "bookingURL":"https://www.booking.com/city/ it/Milano.html",
+      "numberOfHotels":3313,
+      "distance":1027.78,
+      "weather":[
+         {
+            "unixTime":1650020400,
+            "dayTemperature":20.82,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650106800,
+            "dayTemperature":19.68,
+            "weatherIcon":"Clear"
+         },
+         {
+            "unixTime":1650193200,
+            "dayTemperature":15.48,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650279600,
+            "dayTemperature":16.01,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650366000,
+            "dayTemperature":11.48,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650452400,
+            "dayTemperature":17.12,
+            "weatherIcon":"Clear"
+         },
+         {
+            "unixTime":1650538800,
+            "dayTemperature":17.87,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1650625200,
+            "dayTemperature":13.49,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650711600,
+            "dayTemperature":11.35,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1650798000,
+            "dayTemperature":16.92,
+            "weatherIcon":"Rain"
+         }
+      ],
+      "covid":{
+         "casesNew":64951,
+         "casesActive":1227662,
+         "casesCritical":420,
+         "casesRecovered":14144014,
+         "casesPerOneMillion":257579,
+         "casesTotal":15533012,
+         "deathsNew":149,
+         "deathsPerOneMillion":2675,
+         "deathsTotal":161336,
+         "testsPerOneMillion":3449438,
+         "testsTotal":208014099
+      },
+      "hotels":[
+         {
+            "name":"J24 Hotel Milano",
+            "address":"24 Viale Edoardo Jenner",
+            "score":8.5,
+            "url":"https://www.booking.com/hotel/it/j24-milano.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/175749600.jpg?k=207dd7e6b917c414681bda6d6c01123b2f100b651a85f6765d0c219ff44733bc&o=",
+            "price":64.9,
+            "currency":"EUR"
+         },
+         {
+            "name":"Agriturismo Dolce Luna",
+            "address":"Via Airaghi, 131",
+            "score":8.7,
+            "url":"https://www.booking.com/hotel/it/beautiful-farmholidays-in-milan.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/157292257.jpg?k=9012e38634ca8968e24a4275633db30c240b2c0affe11c66955da5f1375a7042&o=",
+            "price":85.5,
+            "currency":"EUR"
+         },
+         {
+            "name":"Novotel Milano Nord Ca' Granda",
+            "address":"Viale Suzzani 13",
+            "score":7.3,
+            "url":"https://www.booking.com/hotel/it/nvtlmilanonordcagranda.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/321343730.jpg?k=61643a30c2b4d218502c788ef5ab596ca5e8371d4dfe0d1616c16b1626022204&o=",
+            "price":83,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel degli Arcimboldi",
+            "address":"Viale Sarca 336",
+            "score":8.1,
+            "url":"https://www.booking.com/hotel/it/hotel-degli-arcimboldi.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/43331849.jpg?k=3b1b38ac3d6fa282df11191e47eb8a4ed8adb6ea67a123d806a295fe08c4edea&o=",
+            "price":65.9,
+            "currency":"EUR"
+         },
+         {
+            "name":"Acca Palace",
+            "address":"Via Giovanni Nicotera 9",
+            "score":8.5,
+            "url":"https://www.booking.com/hotel/it/acca-palace.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/58647259.jpg?k=b0f15811326e23b7e8eeed9612f4d5f04f1132acadc083d38fa1f09ae7855fb9&o=",
+            "price":66.6,
+            "currency":"EUR"
+         },
+         {
+            "name":"Leonardo Hotel Milan City Center",
+            "address":"Via Messina 10",
+            "score":8.3,
+            "url":"https://www.booking.com/hotel/it/leonardo-hotels-milan.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/292311476.jpg?k=9b22bb6ae50d3beef3b4ad773bd4b09880cdf34d1e319edc89a14d353e2c6de0&o=",
+            "price":89.1,
+            "currency":"EUR"
+         },
+         {
+            "name":"NYX Hotel Milan by Leonardo Hotels",
+            "address":"Piazza Quattro Novembre 3",
+            "score":8.8,
+            "url":"https://www.booking.com/hotel/it/nyx-milan.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/292312510.jpg?k=c25c113839d1f6f2aeb397b5950bf61249df578a51ada41b2f6aad16124844ec&o=",
+            "price":116.1,
+            "currency":"EUR"
+         },
+         {
+            "name":"Best Western Hotel Major",
+            "address":"Viale Isonzo 2",
+            "score":8.2,
+            "url":"https://www.booking.com/hotel/it/best-western-major.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/257564071.jpg?k=791f005def887858ef42ad29bf632b80c378a744cd2cf209e9b9d8f66540e45a&o=",
+            "price":79,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Lombardia",
+            "address":"Viale Lombardia 74/76",
+            "score":7.9,
+            "url":"https://www.booking.com/hotel/it/lombardia-milano.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/36525104.jpg?k=e95f00117fcaa0ecbcdfe6fc00e4f006f8e7e3b0f0a6a7dda9ecb655915ff1e3&o=",
+            "price":75.6,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Bristol",
+            "address":"Via Domenico Scarlatti 32",
+            "score":8.1,
+            "url":"https://www.booking.com/hotel/it/bristol-milano.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/4906933.jpg?k=9ac72600de1c58501498137f3c07fb877662c410ab5ede939d53cbf84efdd41f&o=",
+            "price":100.8,
+            "currency":"EUR"
+         },
+         {
+            "name":"Holiday Inn Milan Garibaldi Station, an IHG Hotel",
+            "address":"Via Ugo Bassi 1/A Ang. Via C. Farini",
+            "score":7.9,
+            "url":"https://www.booking.com/hotel/it/milan-garibaldi-station.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/247010338.jpg?k=7cf9ac077c2e3e55b4135481271e63df4a888d1d5403e5faf96cc9212f3cc089&o=",
+            "price":95,
+            "currency":"EUR"
+         },
+         {
+            "name":"BB Hotels Aparthotel Arcimboldi",
+            "address":"Viale Sarca 90",
+            "score":8.5,
+            "url":"https://www.booking.com/hotel/it/bb-hotels-residenza-arcimboldi.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/40944696.jpg?k=4083a42dfb1bca2d3de05e250601ef4dca6343bc6b3757aa248eb03fe404628c&o=",
+            "price":71.1,
+            "currency":"EUR"
+         },
+         {
+            "name":"Best Western Hotel City",
+            "address":"Corso Buenos Aires 42/5",
+            "score":8.3,
+            "url":"https://www.booking.com/hotel/it/bestwesternhotelcitymilano.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/257074182.jpg?k=089c9e044234c7efaad208312d37dae3ac77025431fdba4494a0fc3cb4d49f88&o=",
+            "price":99,
+            "currency":"EUR"
+         },
+         {
+            "name":"Starhotels Business Palace",
+            "address":"Via Pietro Gaggia 3",
+            "score":7.9,
+            "url":"https://www.booking.com/hotel/it/businesspalace.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/269020572.jpg?k=1683bdf9fcf13d7f2cdb5a2fe4cf5c20e0732a810bb4d4e59ee9da74ba8f8e4b&o=",
+            "price":90,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Colombia",
+            "address":"Via Roberto Lepetit 15",
+            "score":8.3,
+            "url":"https://www.booking.com/hotel/it/colombia.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/276775299.jpg?k=ebdc74dd10d886c13842c80e2d34d2212b297118ed763494d29d15bb6f632a32&o=",
+            "price":81.45,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Marconi",
+            "address":"Via Fabio Filzi 3",
+            "score":8.5,
+            "url":"https://www.booking.com/hotel/it/hotelmarconi.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/121938044.jpg?k=99a1ec8fe2919b2fbb7eff85db7c23ccca4db8d21f5be317ed889c51a6eeaf9f&o=",
+            "price":103.5,
+            "currency":"EUR"
+         },
+         {
+            "name":"Admiral Hotel",
+            "address":"Via Domodossola 16",
+            "score":7.4,
+            "url":"https://www.booking.com/hotel/it/hoteladmiral.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/83956398.jpg?k=e01db943579c4c6ac65187a9bcad9be66098ad1405b59ee65037dac6213ff0aa&o=",
+            "price":98.1,
+            "currency":"EUR"
+         },
+         {
+            "name":"Hotel Mirage Sure Hotel Collection by Best Western",
+            "address":"Viale Certosa 104/106",
+            "score":8.3,
+            "url":"https://www.booking.com/hotel/it/mirage-milano.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/257571626.jpg?k=154b9ece82eefd3c5b493716e5ac0e8a886ec479bee49cb53e37246e698c5fec&o=",
+            "price":74,
+            "currency":"EUR"
+         },
+         {
+            "name":"Magville",
+            "address":"Via Carlo Goldoni, 31",
+            "score":8.8,
+            "url":"https://www.booking.com/hotel/it/magville.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/175238753.jpg?k=1bd66c7b5abfe86b53601715ba2acc643bdbe4338656b56885083f707c74eb07&o=",
+            "price":129,
+            "currency":"EUR"
+         },
+         {
+            "name":"iH Hotels Milano Watt 13",
+            "address":"Via Giacomo Watt 13",
+            "score":7.9,
+            "url":"https://www.booking.com/hotel/it/watt-tredici.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/172405398.jpg?k=f46686876eb87bde2b74a8d4698dec21eb94c8009c997bf7b73f8dc1328a4027&o=",
+            "price":86.91,
+            "currency":"EUR"
+         }
+      ]
+   }
+]
