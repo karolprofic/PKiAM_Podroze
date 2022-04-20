@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap');
+
+body {
+    background-color: #f1f1f2;
+    font-family: Jost, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.container {
+    margin: auto;
+    width: min(1500px, 100%);
+    min-height: 100vh;
+    position: relative;
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+}
+nav {
+    color: #d33100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: calc(100% - 200px);
+    font-weight: 300;
+}
+ul.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+}
+ul.menu > li {
+    font-size: 28px;
+    width: 25%;
+    text-align: center;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+}
+.recomendations {
+    padding: 3em;
+}
+
+.element {
+    display: flex;
+    margin: 2em 0;
+    position: relative;
+}
+
+.info {
+    padding: 0 1em;
+}
+.weather {
+    display: flex;
+}
+.heart {
+    color: #7f8c8d;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 5em;
+    cursor: pointer;
+}
