@@ -25,23 +25,47 @@ def databse_connect():
 # - logout
 # - token is valid
 #######################################################################
-# Ulubione
-# - GET  | Pobierz wszystko z ulubionych
-# - POST | Dodaj do ulubionych
-# - DEL  | Usuń z ulubionych
-#######################################################################
 
-
-@app.route("/favorites/", methods=['GET', 'POST', 'DEL'])
+@app.route("/favorites/", methods=['GET', 'DEL', 'PUT'])
 def favorites():
     db = databse_connect()
     cursor = db.cursor()
     if request.method == 'GET':
         params = request.json
+        if not ("user_id" in params):
+            return jsonify({"status": "not enough data"})
+
+        cursor.execute("SELECT * FROM favorites WHERE user_id = " + params["user_id"])
+        results = cursor.fetchall()
+        return jsonify(results)
+
     if request.method == 'DEL':
         params = request.json
-    if request.method == 'POST':
+        if not ("user_id" in params and "city" in params):
+            return jsonify({"status": "not enough data"})
+
+        sql = "DELETE FROM favorites WHERE user_id = %s AND city = %s"
+        val = (params["user_id"], params["city"])
+        cursor.execute(sql, val)
+        db.commit()
+        if cursor.rowcount == 0:
+            return jsonify({"status": "failure"})
+        else:
+            return jsonify({"status": "success"})
+
+    if request.method == 'PUT':
         params = request.json
+        if not ("user_id" in params and "city" in params):
+            return jsonify({"status": "not enough data"})
+
+        sql = "INSERT INTO favorites (user_id, city) VALUES (%s, %s)"
+        val = (params["user_id"], params["city"])
+        cursor.execute(sql, val)
+        db.commit()
+        if cursor.rowcount == 0:
+            return jsonify({"status": "failure"})
+        else:
+            return jsonify({"status": "success"})
 
 
 @app.route("/user/", methods=['GET', 'POST', 'DEL', 'PUT'])
@@ -72,7 +96,11 @@ def user():
 
     if request.method == 'PUT':
         params = request.json
-        if not ("name" in params and "surname" in params and "city" in params and "currency" in params and "avatar" in params):
+        if not ("name" in params and
+                "surname" in params and
+                "city" in params and
+                "currency" in params and
+                "avatar" in params):
             return jsonify({"status": "not enough data"})
 
         sql = "INSERT INTO users (name, surname, city, currency, avatar) VALUES (%s, %s, %s, %s, %s)"
@@ -86,8 +114,14 @@ def user():
 
     if request.method == 'POST':
         params = request.json
-        if not ("id" in params and "name" in params and "surname" in params and "city" in params and "currency" in params and "avatar" in params):
+        if not ("id" in params and
+                "name" in params and
+                "surname" in params and
+                "city" in params and
+                "currency" in params and
+                "avatar" in params):
             return jsonify({"status": "not enough data"})
+
         cursor = db.cursor()
         sql = "UPDATE users SET name = %s, surname = %s, city = %s, currency = %s, avatar = %s WHERE id = %s"
         val = (params["name"], params["surname"], params["city"], params["currency"], params["avatar"], params["id"])
@@ -98,6 +132,7 @@ def user():
             return jsonify({"status": "failure"})
         else:
             return jsonify({"status": "success"})
+
 
 # Strana główna
 @app.route("/availableCities/")
