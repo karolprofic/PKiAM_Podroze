@@ -1,34 +1,14 @@
 import json
 from flask import Flask, request, jsonify
-from destinations import getTravelDestinations
-import mysql.connector
+from database import database_connect
+from destinations import getTravelDestinations, getFavoritesDestinations
 
 app = Flask(__name__)
 
 
-def databse_connect():
-    mysql_db = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="",
-        database="travel_app"
-    )
-
-    return mysql_db
-
-
-#######################################################################
-# TODO
-#######################################################################
-# Autoryzacja
-# - login
-# - logout
-# - token is valid
-#######################################################################
-
 @app.route("/favorites/", methods=['GET', 'DEL', 'PUT'])
 def favorites():
-    db = databse_connect()
+    db = database_connect()
     cursor = db.cursor()
     if request.method == 'GET':
         params = request.json
@@ -37,7 +17,11 @@ def favorites():
 
         cursor.execute("SELECT * FROM favorites WHERE user_id = " + params["user_id"])
         results = cursor.fetchall()
-        return jsonify(results)
+        listOfCites = []
+        for i in results:
+            listOfCites.append(i[2])
+        data = getFavoritesDestinations(listOfCites)
+        return jsonify(data)
 
     if request.method == 'DEL':
         params = request.json
@@ -70,7 +54,7 @@ def favorites():
 
 @app.route("/user/", methods=['GET', 'POST', 'DEL', 'PUT'])
 def user():
-    db = databse_connect()
+    db = database_connect()
     cursor = db.cursor()
 
     if request.method == 'GET':
@@ -134,30 +118,59 @@ def user():
             return jsonify({"status": "success"})
 
 
-# Strana główna
-@app.route("/availableCities/")
+@app.route("/availableCities/", methods=['GET'])
 def availableCities():
     file = open('Data/cities.json', encoding="utf8")
     data = json.load(file)
     return jsonify(data)
 
 
-# Lista potencjalnych kierunków
-@app.route("/travelDestinations/")
+@app.route("/travelDestinations/", methods=['GET'])
 def travelDestinations():
-    startingCity = request.args.get('startingCity', "Łódź")
-    weatherForecastDays = request.args.get('weatherForecastDays', 10)
-    numberOfPeople = request.args.get('numberOfPeople', 1)
-    startDate = request.args.get('startDate', "2022-09-30")
-    endDate = request.args.get('endDate', "2022-10-01")
-    pageNumber = request.args.get('pageNumber', 1)
-    data = getTravelDestinations(startingCity, weatherForecastDays, numberOfPeople, startDate, endDate, pageNumber)
+    params = request.json
+    if not ("startingCity" in params and
+            "weatherForecastDays" in params and
+            "numberOfPeople" in params and
+            "startDate" in params and
+            "endDate" in params and
+            "pageNumber" in params):
+        return jsonify({"status": "not enough data"})
+
+    data = getTravelDestinations(params["startingCity"], params["weatherForecastDays"], params["numberOfPeople"], params["startDate"], params["endDate"], params["pageNumber"])
     return jsonify(data)
 
 
-# Lista potencjalnych kierunków - bez wykorzystywania limitów
-@app.route("/fakeTravelDestinations/")
+@app.route("/fakeTravelDestinations/", methods=['GET'])
 def fakeTravelDestinations():
+    params = request.json
+    if not ("startingCity" in params and
+            "weatherForecastDays" in params and
+            "numberOfPeople" in params and
+            "startDate" in params and
+            "endDate" in params and
+            "pageNumber" in params):
+        return jsonify({"status": "not enough data"})
+
     file = open('Data/destinations.json', encoding="utf8")
     data = json.load(file)
     return jsonify(data)
+
+
+@app.route("/fakeGetFavorites/", methods=['GET'])
+def fakeGetFavorites():
+    params = request.json
+    if not ("user_id" in params):
+        return jsonify({"status": "not enough data"})
+    file = open('Data/favorites.json', encoding="utf8")
+    data = json.load(file)
+    return jsonify(data)
+
+
+#######################################################################
+# TODO
+#######################################################################
+# Authorization
+# - login
+# - logout
+# - token is valid
+#######################################################################

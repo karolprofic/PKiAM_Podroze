@@ -7,11 +7,13 @@ API_COVID_URL = "https://covid-193.p.rapidapi.com/statistics"
 API_COVID_KEY = "29eefaae15mshfb32eab96aade47p18cf99jsn3e2b70595940"
 API_COVID_HOST = "covid-193.p.rapidapi.com"
 
+
 def convertToInt(data):
     if data is None:
         return 0
     else:
         return int(data)
+
 
 def getCovidStatistics(countryName):
     headers = {
