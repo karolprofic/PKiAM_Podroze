@@ -8,11 +8,11 @@ API_BOOKING_KEY = "29eefaae15mshfb32eab96aade47p18cf99jsn3e2b70595940"
 API_BOOKING_HOST = "booking-com.p.rapidapi.com"
 
 
-def getHotelsInCity(checkinDate, checkoutDate, numberOfPeople, cityID):
+def getHotelsInCity(checkInDate, checkoutDate, numberOfPeople, cityID):
 
     querystring = {
         "room_number": "1",
-        "checkin_date": checkinDate,
+        "checkin_date": checkInDate,
         "filter_by_currency": "PLN",
         "order_by": "popularity",
         "adults_number": numberOfPeople,

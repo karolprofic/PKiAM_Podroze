@@ -1,7 +1,7 @@
 import hashlib
 import json
 from flask import Flask, request, jsonify, session
-from database import database_connect
+from db_connect import database_connect
 from destinations import getTravelDestinations, getFavoritesDestinations
 from flask_cors import CORS
 from datetime import timedelta
@@ -44,7 +44,6 @@ def logout():
 
 @app.route("/favorites/", methods=['GET', 'DEL', 'PUT'])
 def favorites():
-
     if 'username' not in session:
         return jsonify({'status': 'unauthorized'})
 
@@ -95,7 +94,6 @@ def favorites():
 
 @app.route("/user/", methods=['GET', 'POST', 'DEL', 'PUT'])
 def user():
-
     if 'username' not in session:
         return jsonify({'status': 'unauthorized'})
 
@@ -104,19 +102,19 @@ def user():
 
     if request.method == 'GET':
         params = request.json
-        if not ("id" in params):
+        if not ("username" in params):
             return jsonify({"status": "not enough data"})
 
-        cursor.execute("SELECT * FROM users WHERE id = " + params["id"])
+        cursor.execute("SELECT * FROM users WHERE username = " + params["username"])
         results = cursor.fetchall()
         return jsonify(results)
 
     if request.method == 'DEL':
         params = request.json
-        if not ("id" in params):
+        if not ("username" in params):
             return jsonify({"status": "not enough data"})
 
-        cursor.execute("DELETE FROM users WHERE id = " + params["id"])
+        cursor.execute("DELETE FROM users WHERE username = " + params["username"])
         db.commit()
         if cursor.rowcount == 0:
             return jsonify({"status": "failure"})
@@ -139,7 +137,7 @@ def user():
             params["currency"] = "PLN"
 
         if "city" not in params:
-            params["avatar"] = "Warszawa"
+            params["city"] = "Warszawa"
 
         hashed_password = hashlib.sha256(params["password"].encode('utf-8')).hexdigest()
 
