@@ -1,15 +1,56 @@
+import hashlib
 import json
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, session
 from database import database_connect
 from destinations import getTravelDestinations, getFavoritesDestinations
+from flask_cors import CORS
+from datetime import timedelta
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'pkiam-podroze'
+app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=10)
+CORS(app)
+
+# pip install -U flask-cors
+# set FLASK_APP=hello
+# flask run
+
+@app.route('/login/', methods=['POST'])
+def login():
+    params = request.json
+    if params['username'] and params['password']:
+        db = database_connect()
+        cursor = db.cursor()
+        cursor.execute("SELECT * FROM users WHERE username = '" + params["username"] + "'")
+        row = cursor.fetchone()
+        password = row[7]
+        hashed_password = hashlib.sha256(params["password"].encode('utf-8')).hexdigest()
+
+        if len(row) > 0 and password == hashed_password:
+            session['username'] = params["username"]
+            return jsonify({'status': 'logged successfully'})
+        else:
+            return jsonify({'status': 'wrong password'})
+    else:
+        return jsonify({'status': 'wrong login and password'})
+
+
+@app.route('/logout/')
+def logout():
+    if 'username' in session:
+        session.pop('username', None)
+    return jsonify({'status': 'successfully logged out'})
 
 
 @app.route("/favorites/", methods=['GET', 'DEL', 'PUT'])
 def favorites():
+
+    if 'username' not in session:
+        return jsonify({'status': 'unauthorized'})
+
     db = database_connect()
     cursor = db.cursor()
+
     if request.method == 'GET':
         params = request.json
         if not ("user_id" in params):
@@ -54,6 +95,10 @@ def favorites():
 
 @app.route("/user/", methods=['GET', 'POST', 'DEL', 'PUT'])
 def user():
+
+    if 'username' not in session:
+        return jsonify({'status': 'unauthorized'})
+    
     db = database_connect()
     cursor = db.cursor()
 
@@ -82,13 +127,25 @@ def user():
         params = request.json
         if not ("name" in params and
                 "surname" in params and
-                "city" in params and
-                "currency" in params and
-                "avatar" in params):
+                "username" in params and
+                "password" in params):
             return jsonify({"status": "not enough data"})
 
-        sql = "INSERT INTO users (name, surname, city, currency, avatar) VALUES (%s, %s, %s, %s, %s)"
-        val = (params["name"], params["surname"], params["city"], params["currency"], params["avatar"])
+
+        if "avatar" not in params:
+            params["avatar"] = "https://eu.ui-avatars.com/api/?name=" + params["name"] + "+" + params["surname"] + "&size=250"
+
+        if "currency" not in params:
+            params["currency"] = "PLN"
+
+        if "city" not in params:
+            params["avatar"] = "Warszawa"
+
+        hashed_password = hashlib.sha256(params["password"].encode('utf-8')).hexdigest()
+
+        sql = "INSERT INTO users (name, surname, city, currency, avatar, username, password) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+        val = (params["name"], params["surname"], params["city"], params["currency"], params["avatar"], params["username"], hashed_password)
+
         cursor.execute(sql, val)
         db.commit()
         if cursor.rowcount == 0:
@@ -165,12 +222,3 @@ def fakeGetFavorites():
     data = json.load(file)
     return jsonify(data)
 
-
-#######################################################################
-# TODO
-#######################################################################
-# Authorization
-# - login
-# - logout
-# - token is valid
-#######################################################################
