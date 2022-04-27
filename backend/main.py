@@ -12,7 +12,7 @@ app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=10)
 CORS(app)
 
 # pip install -U flask-cors
-# set FLASK_APP=hello
+# set FLASK_APP=main
 # flask run
 
 @app.route('/login/', methods=['POST'])
@@ -98,7 +98,7 @@ def user():
 
     if 'username' not in session:
         return jsonify({'status': 'unauthorized'})
-    
+
     db = database_connect()
     cursor = db.cursor()
 
