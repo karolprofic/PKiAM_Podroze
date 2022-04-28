@@ -1,19 +1,34 @@
 import hashlib
+import mysql.connector
 import json
 from flask import Flask, request, jsonify, session
-from db_connect import database_connect
-from destinations import getTravelDestinations, getFavoritesDestinations
+from Destinations import Destinations
+from Favorites import Favorites
 from flask_cors import CORS
 from datetime import timedelta
 
+DEVELOPMENT_MODE = True
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'pkiam-podroze'
-app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=10)
+app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=60)
 CORS(app)
 
-# pip install -U flask-cors
-# set FLASK_APP=main
-# flask run
+def requestHaveRequiredParameters(requiredParams, listOfParams):
+    for param in requiredParams:
+        if param not in listOfParams:
+            return True
+    return False
+
+def database_connect():
+    mysql_db = mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="",
+        database="travel_app"
+    )
+
+    return mysql_db
 
 @app.route('/login/', methods=['POST'])
 def login():
@@ -23,14 +38,16 @@ def login():
         cursor = db.cursor()
         cursor.execute("SELECT * FROM users WHERE username = '" + params["username"] + "'")
         row = cursor.fetchone()
-        password = row[7]
-        hashed_password = hashlib.sha256(params["password"].encode('utf-8')).hexdigest()
-
-        if len(row) > 0 and password == hashed_password:
-            session['username'] = params["username"]
-            return jsonify({'status': 'logged successfully'})
+        if len(row) > 0:
+            password = row[7]
+            hashed_password = hashlib.sha256(params["password"].encode('utf-8')).hexdigest()
+            if password == hashed_password:
+                session['username'] = params["username"]
+                return jsonify({'status': 'logged successfully'})
+            else:
+                return jsonify({'status': 'wrong password'})
         else:
-            return jsonify({'status': 'wrong password'})
+            return jsonify({'status': 'wrong login'})
     else:
         return jsonify({'status': 'wrong login and password'})
 
@@ -52,20 +69,29 @@ def favorites():
 
     if request.method == 'GET':
         params = request.json
-        if not ("user_id" in params):
+        requiredParams = ["user_id"]
+
+        if requestHaveRequiredParameters(requiredParams, params):
             return jsonify({"status": "not enough data"})
 
-        cursor.execute("SELECT * FROM favorites WHERE user_id = " + params["user_id"])
-        results = cursor.fetchall()
-        listOfCites = []
-        for i in results:
-            listOfCites.append(i[2])
-        data = getFavoritesDestinations(listOfCites)
-        return jsonify(data)
+        if DEVELOPMENT_MODE:
+            file = open('Data/favorites.json', encoding="utf8")
+            data = json.load(file)
+            return jsonify(data)
+        else:
+            cursor.execute("SELECT * FROM favorites WHERE user_id = " + params["user_id"])
+            results = cursor.fetchall()
+            listOfCites = []
+            for i in results:
+                listOfCites.append(i[2])
+            fav = Favorites(listOfCites)
+            return jsonify(fav.getFavoritesDestinations())
 
     if request.method == 'DEL':
         params = request.json
-        if not ("user_id" in params and "city" in params):
+        requiredParams = ["user_id", "city"]
+
+        if requestHaveRequiredParameters(requiredParams, params):
             return jsonify({"status": "not enough data"})
 
         sql = "DELETE FROM favorites WHERE user_id = %s AND city = %s"
@@ -79,7 +105,9 @@ def favorites():
 
     if request.method == 'PUT':
         params = request.json
-        if not ("user_id" in params and "city" in params):
+        requiredParams = ["user_id", "city"]
+
+        if requestHaveRequiredParameters(requiredParams, params):
             return jsonify({"status": "not enough data"})
 
         sql = "INSERT INTO favorites (user_id, city) VALUES (%s, %s)"
@@ -102,7 +130,9 @@ def user():
 
     if request.method == 'GET':
         params = request.json
-        if not ("username" in params):
+        requiredParams = ["username"]
+
+        if requestHaveRequiredParameters(requiredParams, params):
             return jsonify({"status": "not enough data"})
 
         cursor.execute("SELECT * FROM users WHERE username = " + params["username"])
@@ -111,7 +141,9 @@ def user():
 
     if request.method == 'DEL':
         params = request.json
-        if not ("username" in params):
+        requiredParams = ["username"]
+
+        if requestHaveRequiredParameters(requiredParams, params):
             return jsonify({"status": "not enough data"})
 
         cursor.execute("DELETE FROM users WHERE username = " + params["username"])
@@ -123,12 +155,10 @@ def user():
 
     if request.method == 'PUT':
         params = request.json
-        if not ("name" in params and
-                "surname" in params and
-                "username" in params and
-                "password" in params):
-            return jsonify({"status": "not enough data"})
+        requiredParams = ["name", "surname", "username", "password"]
 
+        if requestHaveRequiredParameters(requiredParams, params):
+            return jsonify({"status": "not enough data"})
 
         if "avatar" not in params:
             params["avatar"] = "https://eu.ui-avatars.com/api/?name=" + params["name"] + "+" + params["surname"] + "&size=250"
@@ -153,12 +183,9 @@ def user():
 
     if request.method == 'POST':
         params = request.json
-        if not ("id" in params and
-                "name" in params and
-                "surname" in params and
-                "city" in params and
-                "currency" in params and
-                "avatar" in params):
+        requiredParams = ["id", "name", "surname", "city", "currency" , "avatar"]
+
+        if requestHaveRequiredParameters(requiredParams, params):
             return jsonify({"status": "not enough data"})
 
         cursor = db.cursor()
@@ -183,40 +210,15 @@ def availableCities():
 @app.route("/travelDestinations/", methods=['GET'])
 def travelDestinations():
     params = request.json
-    if not ("startingCity" in params and
-            "weatherForecastDays" in params and
-            "numberOfPeople" in params and
-            "startDate" in params and
-            "endDate" in params and
-            "pageNumber" in params):
+    requiredParams = ["startingCity", "weatherForecastDays", "numberOfPeople", "startDate", "endDate", "pageNumber"]
+
+    if requestHaveRequiredParameters(requiredParams, params):
         return jsonify({"status": "not enough data"})
 
-    data = getTravelDestinations(params["startingCity"], params["weatherForecastDays"], params["numberOfPeople"], params["startDate"], params["endDate"], params["pageNumber"])
-    return jsonify(data)
-
-
-@app.route("/fakeTravelDestinations/", methods=['GET'])
-def fakeTravelDestinations():
-    params = request.json
-    if not ("startingCity" in params and
-            "weatherForecastDays" in params and
-            "numberOfPeople" in params and
-            "startDate" in params and
-            "endDate" in params and
-            "pageNumber" in params):
-        return jsonify({"status": "not enough data"})
-
-    file = open('Data/destinations.json', encoding="utf8")
-    data = json.load(file)
-    return jsonify(data)
-
-
-@app.route("/fakeGetFavorites/", methods=['GET'])
-def fakeGetFavorites():
-    params = request.json
-    if not ("user_id" in params):
-        return jsonify({"status": "not enough data"})
-    file = open('Data/favorites.json', encoding="utf8")
-    data = json.load(file)
-    return jsonify(data)
-
+    if DEVELOPMENT_MODE:
+        file = open('Data/destinations.json', encoding="utf8")
+        data = json.load(file)
+        return jsonify(data)
+    else:
+        destinations = Destinations(params["startingCity"], params["weatherForecastDays"], params["numberOfPeople"], params["startDate"], params["endDate"], params["pageNumber"])
+        return jsonify(destinations.findTravelDestinations())
