@@ -19,4 +19,12 @@ CREATE TABLE `travel_app`.`favorites` (
 
 INSERT INTO `users` (`id`, `name`, `surname`, `city`, `currency`, `avatar`, `username`, `password`)
 VALUES (NULL, 'Jan', 'Kowalski', 'Łódź', 'PLN', 'https://cdn.pixabay.com/photo/2018/08/28/12/41/avatar-3637425__340.png', 'jan123', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8');
+INSERT INTO `users` (`id`, `name`, `surname`, `city`, `currency`, `avatar`, `username`, `password`)
+VALUES (NULL, 'Anna', 'Nowak', 'Warszawa', 'PLN', 'https://cdn.pixabay.com/photo/2018/08/28/12/41/avatar-3637425__340.png', 'anna123', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8');
 
+INSERT INTO `favorites` (`id`, `user_id`, `city`)
+VALUES (NULL, '1', 'Praga');
+INSERT INTO `favorites` (`id`, `user_id`, `city`)
+VALUES (NULL, '1', 'Berlin');
+INSERT INTO `favorites` (`id`, `user_id`, `city`)
+VALUES (NULL, '2', 'Ateny');
