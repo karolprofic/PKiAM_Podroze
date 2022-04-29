@@ -7,7 +7,7 @@ from Favorites import Favorites
 from flask_cors import CORS
 from datetime import timedelta
 
-DEVELOPMENT_MODE = True
+DEVELOPMENT_MODE = False
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'pkiam-podroze'
@@ -22,7 +22,7 @@ def requestHaveRequiredParameters(requiredParams, listOfParams):
 
 def database_connect():
     mysql_db = mysql.connector.connect(
-        host="127.0.0.1",
+        host="db",
         user="root",
         password="root",
         database="travel_app"
@@ -52,7 +52,7 @@ def login():
         return jsonify({'status': 'wrong login and password'})
 
 
-@app.route('/logout/')
+@app.route('/logout/', methods=['POST'])
 def logout():
     if 'username' in session:
         session.pop('username', None)
@@ -183,14 +183,14 @@ def user():
 
     if request.method == 'POST':
         params = request.json
-        requiredParams = ["id", "name", "surname", "city", "currency" , "avatar"]
+        requiredParams = ["id", "name", "surname", "city", "currency" , "avatar", "username"]
 
         if requestHaveRequiredParameters(requiredParams, params):
             return jsonify({"status": "not enough data"})
 
         cursor = db.cursor()
-        sql = "UPDATE users SET name = %s, surname = %s, city = %s, currency = %s, avatar = %s WHERE id = %s"
-        val = (params["name"], params["surname"], params["city"], params["currency"], params["avatar"], params["id"])
+        sql = "UPDATE users SET name = %s, surname = %s, city = %s, currency = %s, avatar = %s, username = %s WHERE id = %s"
+        val = (params["name"], params["surname"], params["city"], params["currency"], params["avatar"], params["username"], params["id"])
         cursor.execute(sql, val)
         db.commit()
         print(cursor.rowcount, "record(s) affected")
