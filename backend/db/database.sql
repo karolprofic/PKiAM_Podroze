@@ -1,6 +1,7 @@
-CREATE DATABASE travel_app
+CREATE DATABASE travel_app;
+use travel_app;
 
-CREATE TABLE `travel_app`.`users` (
+CREATE TABLE `users` (
     `id` INT NOT NULL AUTO_INCREMENT ,
     `name` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_polish_ci NOT NULL ,
     `surname` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_polish_ci NOT NULL ,
@@ -11,7 +12,7 @@ CREATE TABLE `travel_app`.`users` (
     `password` VARCHAR(1024) CHARACTER SET utf8 COLLATE utf8_polish_ci NOT NULL ,
     PRIMARY KEY (`id`)) ENGINE = InnoDB;
 
-CREATE TABLE `travel_app`.`favorites` (
+CREATE TABLE `favorites` (
     `id` INT NOT NULL AUTO_INCREMENT ,
     `user_id` INT NOT NULL ,
     `city` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_polish_ci NOT NULL ,
