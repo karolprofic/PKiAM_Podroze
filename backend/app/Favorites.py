@@ -13,7 +13,7 @@ class Favorites:
     def getFavoritesDestinations(self):
         file = open('data/cities.json', encoding="utf8")
         cities = json.load(file)
-        cities = self.completeCitiesData(cities)
+        cities = self.completeCitiesData(cities["cities"])
 
         favoritesDestinations = []
         for city in cities:
@@ -26,6 +26,7 @@ class Favorites:
 
     def completeCitiesData(self, cities):
         favouriteCities = []
+
         for city in cities:
             for cityName in self.listOfCities:
                 if city["namePL"] == cityName:

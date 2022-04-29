@@ -7,7 +7,7 @@ from Favorites import Favorites
 from flask_cors import CORS
 from datetime import timedelta
 
-DEVELOPMENT_MODE = False
+DEVELOPMENT_MODE = True
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'pkiam-podroze'
@@ -27,7 +27,6 @@ def database_connect():
         password="root",
         database="travel_app"
     )
-
     return mysql_db
 
 @app.route('/login/', methods=['POST'])
@@ -86,7 +85,6 @@ def favorites():
                 listOfCites.append(i[2])
             fav = Favorites(listOfCites)
             return jsonify(fav.getFavoritesDestinations())
-
     if request.method == 'DEL':
         params = request.json
         requiredParams = ["user_id", "city"]

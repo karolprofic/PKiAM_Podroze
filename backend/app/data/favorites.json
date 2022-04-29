@@ -1,528 +1,175 @@
 [
    {
-      "name":"Warszawa",
-      "imageURL":"https://upload.wikimedia.org/wikipedia/commons/2/2a/Panorama_siekierkowski.jpg",
-      "bookingURL":"https://www.booking.com/city/ pl/Warszawa.html",
-      "numberOfHotels":2694,
-      "distance":0,
-      "weather":[
-         {
-            "unixTime":1650708000,
-            "dayTemperature":8.63,
-            "weatherIcon":"Clouds"
-         },
-         {
-            "unixTime":1650794400,
-            "dayTemperature":13.97,
-            "weatherIcon":"Rain"
-         },
-         {
-            "unixTime":1650880800,
-            "dayTemperature":6.34,
-            "weatherIcon":"Rain"
-         },
-         {
-            "unixTime":1650967200,
-            "dayTemperature":10.88,
-            "weatherIcon":"Clouds"
-         },
-         {
-            "unixTime":1651053600,
-            "dayTemperature":11.78,
-            "weatherIcon":"Rain"
-         },
-         {
-            "unixTime":1651140000,
-            "dayTemperature":9.61,
-            "weatherIcon":"Clouds"
-         },
-         {
-            "unixTime":1651226400,
-            "dayTemperature":13.31,
-            "weatherIcon":"Rain"
-         },
-         {
-            "unixTime":1651312800,
-            "dayTemperature":15.9,
-            "weatherIcon":"Clouds"
-         },
-         {
-            "unixTime":1651399200,
-            "dayTemperature":14.69,
-            "weatherIcon":"Rain"
-         },
-         {
-            "unixTime":1651485600,
-            "dayTemperature":14.5,
-            "weatherIcon":"Clear"
-         }
-      ],
-      "covid":{
-         "casesNew":1240,
-         "casesActive":540564,
-         "casesCritical":1588,
-         "casesRecovered":5334341,
-         "casesPerOneMillion":158606,
-         "casesTotal":5990853,
-         "deathsNew":22,
-         "deathsPerOneMillion":3070,
-         "deathsTotal":115948,
-         "testsPerOneMillion":953622,
-         "testsTotal":36020113
-      },
-      "hotels":[
-         {
-            "name":"NYX Hotel Warsaw by Leonardo Hotels",
-            "address":"71 Chmielna",
-            "score":9.3,
-            "url":"https://www.booking.com/hotel/pl/nyx-warsaw-by-leonardo-hotels.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/294206427.jpg?k=a473a9fab540cf3db188731f395d5f5e402b436f51f18ae83e4a85a9f9b9475b&o=",
-            "price":4567,
-            "currency":"PLN"
-         },
-         {
-            "name":"Vienna House Mokotow Warsaw Airport",
-            "address":"ul. Post\u0119pu 4",
-            "score":9.1,
-            "url":"https://www.booking.com/hotel/pl/vienna-house-mokotow-warsaw.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/185812659.jpg?k=7c882360a365294b1688ef4d132fcbf376451b7bdfb64126be942094e3bc6b01&o=",
-            "price":3383,
-            "currency":"PLN"
-         }
-      ]
-   },
-   {
-      "name":"Krak\u00f3w",
-      "imageURL":"https://upload.wikimedia.org/wikipedia/commons/0/06/XII%2C_XIV%2C_XIX%2C_Krak%C3%B3w.jpg",
-      "bookingURL":"https://www.booking.com/city/ pl/Krak\u00f3w.html",
-      "numberOfHotels":2184,
-      "distance":0,
-      "weather":[
-         {
-            "unixTime":1650708000,
-            "dayTemperature":10.31,
-            "weatherIcon":"Clouds"
-         },
-         {
-            "unixTime":1650794400,
-            "dayTemperature":7.03,
-            "weatherIcon":"Rain"
-         },
-         {
-            "unixTime":1650880800,
-            "dayTemperature":6.42,
-            "weatherIcon":"Rain"
-         },
-         {
-            "unixTime":1650967200,
-            "dayTemperature":10.29,
-            "weatherIcon":"Clouds"
-         },
-         {
-            "unixTime":1651053600,
-            "dayTemperature":12.91,
-            "weatherIcon":"Rain"
-         },
-         {
-            "unixTime":1651140000,
-            "dayTemperature":7.21,
-            "weatherIcon":"Clouds"
-         },
-         {
-            "unixTime":1651226400,
-            "dayTemperature":12.24,
-            "weatherIcon":"Clear"
-         },
-         {
-            "unixTime":1651312800,
-            "dayTemperature":14.32,
-            "weatherIcon":"Clouds"
-         },
-         {
-            "unixTime":1651399200,
-            "dayTemperature":16.13,
-            "weatherIcon":"Rain"
-         },
-         {
-            "unixTime":1651485600,
-            "dayTemperature":14.34,
-            "weatherIcon":"Clouds"
-         }
-      ],
-      "covid":{
-         "casesNew":1240,
-         "casesActive":540564,
-         "casesCritical":1588,
-         "casesRecovered":5334341,
-         "casesPerOneMillion":158606,
-         "casesTotal":5990853,
-         "deathsNew":22,
-         "deathsPerOneMillion":3070,
-         "deathsTotal":115948,
-         "testsPerOneMillion":953622,
-         "testsTotal":36020113
-      },
-      "hotels":[
-         {
-            "name":"1891 Garni Hotel",
-            "address":"4 Podbrzezie",
-            "score":9.0,
-            "url":"https://www.booking.com/hotel/pl/1891-garni-hotel.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/350247525.jpg?k=6ee1309d80841b6676cf853b969b36ad747e7aecfce472e07c795c40a1b6f9dd&o=",
-            "price":3824,
-            "currency":"PLN"
-         },
-         {
-            "name":"Hotel Swing",
-            "address":"Dobrego Pasterza 124",
-            "score":8.5,
-            "url":"https://www.booking.com/hotel/pl/swing-krakow.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/236247267.jpg?k=ab5880d8a3927b48aa84b9f8730f3a3a5f751101e142c16febd33b0d1f396124&o=",
-            "price":2934.23,
-            "currency":"PLN"
-         },
-         {
-            "name":"Golden Tulip Krakow Kazimierz",
-            "address":"ul. Krakowska 28",
-            "score":8.8,
-            "url":"https://www.booking.com/hotel/pl/golden-tulip-krakow-kazimierz.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/288477600.jpg?k=6a041eb444008cbb0bd7963e6e7299182031a25bf2c33b6fc675dffe7f07cc73&o=",
-            "price":3230.1,
-            "currency":"PLN"
-         },
-         {
-            "name":"Hilton Garden Inn Krakow",
-            "address":"Marii Konopnickiej 33",
-            "score":8.9,
-            "url":"https://www.booking.com/hotel/pl/krakow-hilton-garden-inn.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/331985014.jpg?k=fd5f8cb38aec2e2c6a6367a787aadd2df38cb113faeed5055f8f35800f6c8166&o=",
-            "price":4146.12,
-            "currency":"PLN"
-         },
-         {
-            "name":"Q Hotel Plus Krak\u00f3w",
-            "address":"ul. Wygrana 6",
-            "score":8.7,
-            "url":"https://www.booking.com/hotel/pl/best-western-plus-q-krakow.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/208513568.jpg?k=8c3ab739636a09f6c1f79affb294068f1d494885c2560d7cc2a4e65dd0ecf348&o=",
-            "price":3519,
-            "currency":"PLN"
-         },
-         {
-            "name":"DReAM Boutique Residence",
-            "address":"ul. Wojciecha Bogus\u0142awskiego 8",
-            "score":9.1,
-            "url":"https://www.booking.com/hotel/pl/aparthotel-prime.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/314536385.jpg?k=85340b70bc6abda2be79858a77000a9a62b1f828c708fcf75fca0b317a769fde&o=",
-            "price":4113,
-            "currency":"PLN"
-         },
-         {
-            "name":"INX Design Hotel",
-            "address":"ul. Starowi\u015blna 91",
-            "score":9.0,
-            "url":"https://www.booking.com/hotel/pl/inx-design-krakow.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/308781360.jpg?k=162e2d82b3defa4b1787c96987fb2b65e6bdc805c0c0e44af561addb14b63c15&o=",
-            "price":3395.52,
-            "currency":"PLN"
-         },
-         {
-            "name":"Hotel Polski Pod Bia\u0142ym Or\u0142em",
-            "address":"ul. Pijarska 17",
-            "score":9.1,
-            "url":"https://www.booking.com/hotel/pl/polski-pod-bialym-orlem.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/80322231.jpg?k=b7505646d8e3ead726c5fed79880b265dc677fd4f01f5c8e15f2e648cc2def9b&o=",
-            "price":3580,
-            "currency":"PLN"
-         },
-         {
-            "name":"Golden Tulip Krakow City Center",
-            "address":"ul. \u0141obzowska 8",
-            "score":8.5,
-            "url":"https://www.booking.com/hotel/pl/tulip-inn-krakow-city-center.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/268076588.jpg?k=e71927673b6eff0e331c2b7c0154d8e3bc91c59f5aa9b3ebaebb88adf861e797&o=",
-            "price":3230.1,
-            "currency":"PLN"
-         },
-         {
-            "name":"Vienna House Andel\u2019s Cracow",
-            "address":"ul. Pawia 3",
-            "score":9.0,
-            "url":"https://www.booking.com/hotel/pl/andelscracow.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/310810314.jpg?k=c87ffca34329a0eb00c78a9873de52dd4da8773b5298c60a8804a148064bd5c0&o=",
-            "price":4640,
-            "currency":"PLN"
-         },
-         {
-            "name":"Hotel Lenart",
-            "address":"ul. Narutowicza 1",
-            "score":8.6,
-            "url":"https://www.booking.com/hotel/pl/lenart.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/288510566.jpg?k=8e74725365edc744b58d97543163433435ace15c8cdf6aaa44d682ca4d758771&o=",
-            "price":2790,
-            "currency":"PLN"
-         },
-         {
-            "name":"Hotel Witek",
-            "address":"Ul. Handlowc\u00f3w 14",
-            "score":8.7,
-            "url":"https://www.booking.com/hotel/pl/centrumhotelowokonferencyjnewitekmodlniczka.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/274766589.jpg?k=ffefe30c95003c0bed411499d444907564a2fc55cc04c54654fabf28b0004e05&o=",
-            "price":2792.25,
-            "currency":"PLN"
-         }
-      ]
-   },
-   {
       "name":"Berlin",
       "imageURL":"https://upload.wikimedia.org/wikipedia/commons/1/1f/Brandenburger_Tor_Blaue_Stunde.jpg",
       "bookingURL":"https://www.booking.com/city/ de/Berlin.html",
-      "numberOfHotels":1283,
+      "numberOfHotels":1201,
       "distance":0,
       "weather":[
          {
-            "unixTime":1650711600,
-            "dayTemperature":16.06,
-            "weatherIcon":"Clear"
-         },
-         {
-            "unixTime":1650798000,
-            "dayTemperature":14.91,
-            "weatherIcon":"Rain"
-         },
-         {
-            "unixTime":1650884400,
-            "dayTemperature":9.23,
-            "weatherIcon":"Rain"
-         },
-         {
-            "unixTime":1650970800,
-            "dayTemperature":14.13,
-            "weatherIcon":"Rain"
-         },
-         {
-            "unixTime":1651057200,
-            "dayTemperature":15.19,
-            "weatherIcon":"Clouds"
-         },
-         {
-            "unixTime":1651143600,
-            "dayTemperature":18.34,
-            "weatherIcon":"Clouds"
-         },
-         {
             "unixTime":1651230000,
-            "dayTemperature":17.76,
-            "weatherIcon":"Clear"
+            "dayTemperature":17.59,
+            "weatherIcon":"Clouds"
          },
          {
             "unixTime":1651316400,
-            "dayTemperature":16.46,
+            "dayTemperature":17.92,
             "weatherIcon":"Clouds"
          },
          {
             "unixTime":1651402800,
-            "dayTemperature":16.73,
-            "weatherIcon":"Clouds"
+            "dayTemperature":15.1,
+            "weatherIcon":"Rain"
          },
          {
             "unixTime":1651489200,
-            "dayTemperature":17.19,
+            "dayTemperature":17.37,
             "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1651575600,
+            "dayTemperature":12.96,
+            "weatherIcon":"Rain"
+         },
+         {
+            "unixTime":1651662000,
+            "dayTemperature":13.81,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1651748400,
+            "dayTemperature":17.1,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1651834800,
+            "dayTemperature":20.06,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1651921200,
+            "dayTemperature":19.41,
+            "weatherIcon":"Clouds"
+         },
+         {
+            "unixTime":1652007600,
+            "dayTemperature":19.82,
+            "weatherIcon":"Clear"
          }
       ],
       "covid":{
-         "casesNew":0,
-         "casesActive":2705897,
-         "casesCritical":1980,
-         "casesRecovered":21179400,
-         "casesPerOneMillion":285044,
-         "casesTotal":24019768,
-         "deathsNew":0,
-         "deathsPerOneMillion":1596,
-         "deathsTotal":134471,
-         "testsPerOneMillion":1451727,
+         "casesNew":75572,
+         "casesActive":2320280,
+         "casesCritical":1446,
+         "casesRecovered":22227600,
+         "casesPerOneMillion":292907,
+         "casesTotal":24683646,
+         "deathsNew":158,
+         "deathsPerOneMillion":1611,
+         "deathsTotal":135766,
+         "testsPerOneMillion":1451651,
          "testsTotal":122332384
       },
       "hotels":[
          {
-            "name":"Park Inn by Radisson Berlin Alexanderplatz",
-            "address":"Alexanderplatz 7",
-            "score":7.5,
-            "url":"https://www.booking.com/hotel/de/park-inn-berlin-alexanderplatz.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/47871301.jpg?k=8f76eebf5d3a36a984cbfdbe34f1e32424964cc86ccb836eace3e63552ea8f10&o=",
-            "price":1294.65,
+            "name":"ibis Berlin Messe",
+            "address":"Messedamm 10",
+            "score":7.6,
+            "url":"https://www.booking.com/hotel/de/ibisberlinmesse.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/251657530.jpg?k=362dcff96ce826f6242e76b1a0519d3c9f30b0455b6fd3dc3da9126e1428bffe&o=",
+            "price":859,
             "currency":"EUR"
+         }
+      ]
+   },
+   {
+      "name":"Praga",
+      "imageURL":"https://upload.wikimedia.org/wikipedia/commons/a/a7/Prague_%286365119737%29.jpg",
+      "bookingURL":"https://www.booking.com/city/ cz/Prague.html",
+      "numberOfHotels":1617,
+      "distance":0,
+      "weather":[
+         {
+            "unixTime":1651226400,
+            "dayTemperature":15.6,
+            "weatherIcon":"Clouds"
          },
          {
-            "name":"Hotel Berlin, Berlin",
-            "address":"L\u00fctzowplatz 17",
-            "score":8.1,
-            "url":"https://www.booking.com/hotel/de/bbberlin.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/261034248.jpg?k=634df832126beb1b943c243f0d1b90f3e4019f29e0f806ade7c304a28b308b3d&o=",
-            "price":1532,
-            "currency":"EUR"
+            "unixTime":1651312800,
+            "dayTemperature":17.07,
+            "weatherIcon":"Clouds"
          },
          {
-            "name":"Scandic Berlin Potsdamer Platz",
-            "address":"Gabriele-Tergit-Promenade 19",
-            "score":8.5,
-            "url":"https://www.booking.com/hotel/de/scandic-berlin-potsdamer-platz.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/283440615.jpg?k=b1ef4c51fe424bd1d21c78c0fe1736815ec704a58aab69e940f29ae2aa28074b&o=",
-            "price":1373,
-            "currency":"EUR"
+            "unixTime":1651399200,
+            "dayTemperature":16.24,
+            "weatherIcon":"Rain"
          },
          {
-            "name":"Leonardo Hotel Berlin KU'DAMM",
-            "address":"Kurf\u00fcrstendamm 35",
-            "score":7.7,
-            "url":"https://www.booking.com/hotel/de/california-am-kurfurstendamm.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/308229958.jpg?k=89ec3046b8dc178f9c9618f8b3f325bf986e67a3a123c218330890bb87e015bd&o=",
-            "price":1139.25,
-            "currency":"EUR"
+            "unixTime":1651485600,
+            "dayTemperature":13.3,
+            "weatherIcon":"Clouds"
          },
          {
-            "name":"Leonardo Royal Hotel Berlin Alexanderplatz",
-            "address":"Otto-Braun-Str. 90",
-            "score":8.5,
-            "url":"https://www.booking.com/hotel/de/royal-leonardo-berlin.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/317266547.jpg?k=c9e05cb51784f9fba0a017f9b4d42d313cbabc4b6015aaaf29ecfdcdc86caa96&o=",
-            "price":1328.25,
-            "currency":"EUR"
+            "unixTime":1651572000,
+            "dayTemperature":14.34,
+            "weatherIcon":"Rain"
          },
          {
-            "name":"Leonardo Hotel Berlin Mitte",
-            "address":"Bertolt Brecht Platz 4",
-            "score":8.2,
-            "url":"https://www.booking.com/hotel/de/leonardo-berlin-mitte.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/289208496.jpg?k=6910ba3e46a4abf23ae3dc4bf0719f7e07e3a86170043d2adcefbf0389562aae&o=",
-            "price":1412.25,
-            "currency":"EUR"
+            "unixTime":1651658400,
+            "dayTemperature":12.77,
+            "weatherIcon":"Clouds"
          },
          {
-            "name":"Mercure Hotel Berlin Tempelhof",
-            "address":"Hermannstr. 214-216",
-            "score":7.9,
-            "url":"https://www.booking.com/hotel/de/mercureberlintempelhofairport.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/244503067.jpg?k=29db395dcc8719ed344a26a69f14b402c35cc6abcbc4cbc60706f182a027a64f&o=",
-            "price":1261,
-            "currency":"EUR"
+            "unixTime":1651744800,
+            "dayTemperature":13.61,
+            "weatherIcon":"Clouds"
          },
          {
-            "name":"H+ Hotel Berlin Mitte",
-            "address":"Chausseestr. 118-120",
-            "score":8.5,
-            "url":"https://www.booking.com/hotel/de/h-hotel-berlin-mitte.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/53565241.jpg?k=6b232ea6ff3be691935be6a71a8be8adaf36f82b1b93f423bcaccb3246a9ce9e&o=",
-            "price":1284.3,
-            "currency":"EUR"
+            "unixTime":1651831200,
+            "dayTemperature":16.8,
+            "weatherIcon":"Clouds"
          },
          {
-            "name":"TITANIC Chaussee Berlin",
-            "address":"Chausseestra\u00dfe 30",
-            "score":8.2,
-            "url":"https://www.booking.com/hotel/de/titanic-chaussee-berlin.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/68180903.jpg?k=13a2dc0000b3c284e158a926c589946f3ce90dfd365115c5330bd6cbe0e08507&o=",
-            "price":1440,
-            "currency":"EUR"
+            "unixTime":1651917600,
+            "dayTemperature":16.74,
+            "weatherIcon":"Clouds"
          },
          {
-            "name":"H4 Hotel Berlin Alexanderplatz",
-            "address":"Karl-Liebknecht-Strasse 32",
-            "score":8.5,
-            "url":"https://www.booking.com/hotel/de/h4-hotel-berlin-alexanderplatz.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/118769167.jpg?k=405c933b82a50bbe1def3660ba4252ba1e1ebf406b6b4277490c2c4674ddf8c4&o=",
-            "price":1419.3,
-            "currency":"EUR"
-         },
+            "unixTime":1652004000,
+            "dayTemperature":16.21,
+            "weatherIcon":"Clear"
+         }
+      ],
+      "covid":{
+         "casesNew":1561,
+         "casesActive":18528,
+         "casesCritical":33,
+         "casesRecovered":3844988,
+         "casesPerOneMillion":363296,
+         "casesTotal":3903659,
+         "deathsNew":8,
+         "deathsPerOneMillion":3736,
+         "deathsTotal":40143,
+         "testsPerOneMillion":5135933,
+         "testsTotal":55186195
+      },
+      "hotels":[
          {
-            "name":"Mercure Hotel MOA Berlin",
-            "address":"Stephanstr. 41",
-            "score":8.4,
-            "url":"https://www.booking.com/hotel/de/moa-berlin.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/339224256.jpg?k=21fe6de167956d9b8fac53074ce86104cf42b5ecefd7d3d4b2becd5d152479c2&o=",
-            "price":2050,
-            "currency":"EUR"
-         },
-         {
-            "name":"Scandic Berlin Kurf\u00fcrstendamm",
-            "address":"Augsburgerstrasse 5",
-            "score":8.4,
-            "url":"https://www.booking.com/hotel/de/scandic-kurfurstendamm.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/350641744.jpg?k=23074993d3c0dc96ab7890e942c7efb0e4f9ce78bca25605e90f8d9a7f0d24d7&o=",
-            "price":1111.2,
-            "currency":"EUR"
-         },
-         {
-            "name":"Living Hotel Berlin Mitte",
-            "address":"Neue Rossstr. 13",
-            "score":8.4,
-            "url":"https://www.booking.com/hotel/de/derag-livinghotel-berlin-mitte.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/345174436.jpg?k=36183a964ee322fe384bb0a38b596cd5b81cd6d64100bc0781c8234d8f5f6cc5&o=",
-            "price":1391,
-            "currency":"EUR"
-         },
-         {
-            "name":"SANA Berlin Hotel",
-            "address":"N\u00fcrnberger Stra\u00dfe 33/34",
+            "name":"Hotel St George",
+            "address":"Tyr\u0161ova 2",
             "score":8.7,
-            "url":"https://www.booking.com/hotel/de/sana-berlin.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/300143050.jpg?k=e3874998e8797d9ff987bbdc76127cbb6e3c796f475afe3248ae06caf1f4d7ef&o=",
-            "price":1917.027,
+            "url":"https://www.booking.com/hotel/cz/saint-george.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/312804174.jpg?k=6de5960dc68cd5a6476bd0c8a9a0e39d7f2d886db6b699fbbff8265c1de2aed3&o=",
+            "price":988.8,
             "currency":"EUR"
          },
          {
-            "name":"Leonardo Boutique Hotel Berlin City South",
-            "address":"Rudower Stra\u00dfe 80-82",
+            "name":"Wenceslas Square Hotel",
+            "address":"Mezibransk\u00e1 13",
             "score":8.4,
-            "url":"https://www.booking.com/hotel/de/leonardo-hotel-berlin-city-sud.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/159022844.jpg?k=79f2c6d5dcf0f6f24d66995d47286327e6f44dafa0325df26a786d06dfd0933f&o=",
-            "price":1081.5,
-            "currency":"EUR"
-         },
-         {
-            "name":"Select Hotel Berlin Spiegelturm",
-            "address":"Freiheit 5",
-            "score":7.8,
-            "url":"https://www.booking.com/hotel/de/winter-s-berlin-im-spiegelturm.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/59986818.jpg?k=7842a04e5b5c94eddc28e411b1daaafae118f93f2a4bdb0627b9efe74acb9e24&o=",
-            "price":1051.96261682243,
-            "currency":"EUR"
-         },
-         {
-            "name":"Best Western Plus Plaza Berlin Kurf\u00fcrstendamm",
-            "address":"Kurf\u00fcrstendamm 203",
-            "score":7.8,
-            "url":"https://www.booking.com/hotel/de/amedia-berlin-kurfa1-4rstendamm.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/343270727.jpg?k=e53050eda5236279c365d1c95df7000ea08494053454772306dfd28a3a03e288&o=",
-            "price":1111.5,
-            "currency":"EUR"
-         },
-         {
-            "name":"Victor's Residenz-Hotel Berlin",
-            "address":"Am Friedrichshain 17",
-            "score":8.3,
-            "url":"https://www.booking.com/hotel/de/victor-s-residenz-berlin.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/237441661.jpg?k=040e39aef50f869bd2bc208c8c9ccfdc849b27c413b45ae75a87baaa818184dd&o=",
-            "price":1227.81308411215,
-            "currency":"EUR"
-         },
-         {
-            "name":"Wyndham Garden Berlin Mitte",
-            "address":"Osloer Stra\u00dfe 116a",
-            "score":7.2,
-            "url":"https://www.booking.com/hotel/de/wyndham-garden-berlin-mitte.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/13572082.jpg?k=4991092c30c08bf0831ad22491983c1fa075aab3b55297a2b5f4c37a5b0db8ae&o=",
-            "price":1207.5,
-            "currency":"EUR"
-         },
-         {
-            "name":"Mercure Hotel Chateau Berlin am Kurf\u00fcrstendamm",
-            "address":"Knesebeckstr. 38-49",
-            "score":7.5,
-            "url":"https://www.booking.com/hotel/de/ringhotel-chateau-berlin.html",
-            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/252155968.jpg?k=7dd73d6d8a36087ed058eeb3d6fcbd88c48bae7ae91a093efd26ef0cd81fc23f&o=",
-            "price":864,
+            "url":"https://www.booking.com/hotel/cz/wenceslas-square.html",
+            "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/346523906.jpg?k=b187f686f3f34806368972f11e45cc652240cc2d9f7bd08fee7deb9f5a32311e&o=",
+            "price":994.52,
             "currency":"EUR"
          }
       ]
