@@ -11,7 +11,7 @@ class Favorites:
         self.endDate = self.startDate + datetime.timedelta(days=10)
 
     def getFavoritesDestinations(self):
-        file = open('Data/cities.json', encoding="utf8")
+        file = open('data/cities.json', encoding="utf8")
         cities = json.load(file)
         cities = self.completeCitiesData(cities)
 
@@ -19,7 +19,7 @@ class Favorites:
         for city in cities:
             favoritesDestinations.append(getCityData(city, self.weatherForecastDays, self.startDate, self.endDate, self.numberOfPeople))
 
-        with open('Data/favorites.json', 'w') as file:
+        with open('data/favorites.json', 'w') as file:
             json.dump(favoritesDestinations, file)
 
         return favoritesDestinations

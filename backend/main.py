@@ -75,7 +75,7 @@ def favorites():
             return jsonify({"status": "not enough data"})
 
         if DEVELOPMENT_MODE:
-            file = open('Data/favorites.json', encoding="utf8")
+            file = open('data/favorites.json', encoding="utf8")
             data = json.load(file)
             return jsonify(data)
         else:
@@ -202,7 +202,7 @@ def user():
 
 @app.route("/availableCities/", methods=['GET'])
 def availableCities():
-    file = open('Data/cities.json', encoding="utf8")
+    file = open('data/cities.json', encoding="utf8")
     data = json.load(file)
     return jsonify(data)
 
@@ -216,9 +216,13 @@ def travelDestinations():
         return jsonify({"status": "not enough data"})
 
     if DEVELOPMENT_MODE:
-        file = open('Data/destinations.json', encoding="utf8")
+        file = open('data/destinations.json', encoding="utf8")
         data = json.load(file)
         return jsonify(data)
     else:
         destinations = Destinations(params["startingCity"], params["weatherForecastDays"], params["numberOfPeople"], params["startDate"], params["endDate"], params["pageNumber"])
         return jsonify(destinations.findTravelDestinations())
+
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0')

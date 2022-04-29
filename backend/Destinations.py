@@ -12,7 +12,7 @@ class Destinations:
         self.pageNumber = pageNumber
 
     def findTravelDestinations(self):
-        file = open('Data/cities.json', encoding="utf8")
+        file = open('data/cities.json', encoding="utf8")
         cities = json.load(file)
         cities = self.removeStartingLocation(cities["cities"])
         cities = self.addDistanceFromStartingCity(cities[0], cities[1])
@@ -23,7 +23,7 @@ class Destinations:
         for city in cities:
             travelDestinations.append(getCityData(city, self.weatherForecastDays, self.startDate, self.endDate, self.numberOfPeople))
 
-        with open('Data/destinations.json', 'w') as file:
+        with open('data/destinations.json', 'w') as file:
             json.dump(travelDestinations, file)
 
         return travelDestinations
