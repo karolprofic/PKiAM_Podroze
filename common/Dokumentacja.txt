@@ -1,0 +1,141 @@
+///////////////////////////////////////////////////////////////////////////////////
+// Ogólne
+///////////////////////////////////////////////////////////////////////////////////
+Aplikację odpalamy używając: docker-compose up
+Adres na którym działa API: http://127.0.0.1:5000/
+
+-----------------------------------------------------------------------------------
+Limit zapytań wynosi 500 na miesiąc, więc dodałem zmienną: DEVELOPMENT_MODE
+    True - wysyła zapisane wcześniej wyniki zapytań z dysku
+    False - wykonuj zapytania do zewnętrzych API
+
+Domyślnie ustawiona jest wartość True więc można robić nieograniczoną liczbę zapytań
+
+-----------------------------------------------------------------------------------
+Poniżej opisu dodałem przykładową zawartość body w zapytaniu
+
+///////////////////////////////////////////////////////////////////////////////////
+// System logowania 
+///////////////////////////////////////////////////////////////////////////////////
+Endpoint: /login/ 
+Metoda: POST
+Opis: Logowanie 
+{
+    "username": "jan123",
+    "password": "password"
+}
+
+-----------------------------------------------------------------------------------
+Endpoint: /logout/
+Metoda: POST
+Opis: Wylogowywanie 
+{}
+
+
+///////////////////////////////////////////////////////////////////////////////////
+// Użytkownicy
+///////////////////////////////////////////////////////////////////////////////////
+-----------------------------------------------------------------------------------
+Endpoint: /user/ 
+Metoda: PUT
+Opis: Dodanie nowego użytkownika
+{
+    "name": "Janhina",
+    "surname": "Okoń",
+    "city": "Katowice",
+    "currency": "PLN",
+    "avatar": "http://wwww.zdjecia.pl/image.jpg",
+    "username": "aga",
+    "password": "password"
+}
+
+-----------------------------------------------------------------------------------
+Endpoint: /user/ 
+Metoda: GET
+Opis: Pobiera informacje o użytkowniku 
+{
+    "username": "jan123"
+}
+
+-----------------------------------------------------------------------------------
+Endpoint: /user/ 
+Metoda: DEL
+Opis: Usunięcie użytkownika o podanym loginie
+{
+    "username": "jan123"
+}
+
+-----------------------------------------------------------------------------------
+Endpoint: /user/ 
+Metoda: POST
+Opis: Uaktualnia dane dla użytkownika o konkretnym id. 
+      Wartość id można pobrać za pomocą metody GET w /user/. 
+      Należy podać wszystkie wartości. 
+      Brak możliwości zmiany hasła
+{
+    "id": "2",
+    "name": "Janhina",
+    "surname": "Okoń",
+    "city": "Katowice",
+    "currency": "PLN",
+    "avatar": "http://wwww.zdjecia.pl/image.jpg",
+    "username": "nowa_nazwa"
+}
+
+///////////////////////////////////////////////////////////////////////////////////
+// Ulubione
+///////////////////////////////////////////////////////////////////////////////////
+Info: Parametr user_id może zostać pobrany kiedy użytkownik jest zalogowany. 
+      Można to zrobić wykonując zapytanie GET na /user/ jeżeli znamy nazwę 
+      użytkownika, jeżeli jej nie znamy to można ją sprawdzić w sesji logowania.
+      W JavaScript powinno działać: var login = '<%=Session["username"]%>'
+-----------------------------------------------------------------------------------
+Endpoint: /favorites/ 
+Metoda: GET
+Opis: Pobiera kierunki podróży dodane do ulubionych przez użytkownika. 
+{
+    "user_id": "1"
+}
+
+-----------------------------------------------------------------------------------
+Endpoint: /favorites/ 
+Metoda: DEL
+Opis: Usuwa kierunek podróży z ulubionych
+{
+    "user_id": "1",
+    "city": "Praga"
+}
+
+-----------------------------------------------------------------------------------
+Endpoint: /favorites/ 
+Metoda: PUT
+Opis: Dodaje kierunek podróży do ulubionych
+{
+    "user_id": "1",
+    "city": "Berlin"
+}
+
+///////////////////////////////////////////////////////////////////////////////////
+// Inne
+///////////////////////////////////////////////////////////////////////////////////
+-----------------------------------------------------------------------------------
+Endpoint: /availableCities/ 
+Metoda: GET
+Opis: Zwraca JSON z wszystkimi miastami obsługującymi przez apliakcje.
+      Do wykorzystania na stronie głównej, użytkownik może podczas wpisywania 
+      wybrać tylko miasta z tej listy, jeżeli poda miasto którego nie ma w tej 
+      liście powinien wyskoczyć komunikat o błędnych danych
+{}
+
+-----------------------------------------------------------------------------------
+Endpoint: /travelDestinations/ 
+Metoda: GET
+Opis: Zwraca propozycję kierunków podróży
+{
+    "startingCity": "Łódź",
+    "weatherForecastDays": 10,
+    "numberOfPeople": 1,
+    "startDate": "2022-09-30",
+    "endDate": "2022-10-01",
+    "pageNumber": 1
+}
