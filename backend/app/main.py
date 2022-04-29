@@ -22,7 +22,7 @@ def requestHaveRequiredParameters(requiredParams, listOfParams):
 
 def database_connect():
     mysql_db = mysql.connector.connect(
-        host="localhost",
+        host="127.0.0.1",
         user="root",
         password="root",
         database="travel_app"
@@ -79,7 +79,7 @@ def favorites():
             data = json.load(file)
             return jsonify(data)
         else:
-            cursor.execute("SELECT * FROM favorites WHERE user_id = " + params["user_id"])
+            cursor.execute("SELECT * FROM favorites WHERE user_id = '" + params["user_id"] + "'")
             results = cursor.fetchall()
             listOfCites = []
             for i in results:
@@ -135,7 +135,7 @@ def user():
         if requestHaveRequiredParameters(requiredParams, params):
             return jsonify({"status": "not enough data"})
 
-        cursor.execute("SELECT * FROM users WHERE username = " + params["username"])
+        cursor.execute("SELECT * FROM users WHERE username = '" + params["username"] +"'")
         results = cursor.fetchall()
         return jsonify(results)
 
@@ -146,7 +146,7 @@ def user():
         if requestHaveRequiredParameters(requiredParams, params):
             return jsonify({"status": "not enough data"})
 
-        cursor.execute("DELETE FROM users WHERE username = " + params["username"])
+        cursor.execute("DELETE FROM users WHERE username = '" + params["username"] +"'")
         db.commit()
         if cursor.rowcount == 0:
             return jsonify({"status": "failure"})
