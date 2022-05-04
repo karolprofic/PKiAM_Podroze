@@ -4,15 +4,18 @@ import json
 from flask import Flask, request, jsonify, session
 from Destinations import Destinations
 from Favorites import Favorites
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
+from flask_session import Session
 from datetime import timedelta
 
 DEVELOPMENT_MODE = True
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'pkiam-podroze'
-app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=60)
-CORS(app)
+app.config["SESSION_PERMANENT"] = False
+app.config["SESSION_TYPE"] = "filesystem"
+Session(app)
+cors = CORS(app)
 
 def requestHaveRequiredParameters(requiredParams, listOfParams):
     for param in requiredParams:
@@ -30,6 +33,7 @@ def database_connect():
     return mysql_db
 
 @app.route('/login/', methods=['POST'])
+@cross_origin(supports_credentials=True)
 def login():
     params = request.json
     if params['username'] and params['password']:
@@ -42,6 +46,7 @@ def login():
             hashed_password = hashlib.sha256(params["password"].encode('utf-8')).hexdigest()
             if password == hashed_password:
                 session['username'] = params["username"]
+                print(session)
                 return jsonify({'status': 'logged successfully'})
             else:
                 return jsonify({'status': 'wrong password'})
@@ -52,6 +57,7 @@ def login():
 
 
 @app.route('/logout/', methods=['POST'])
+@cross_origin(supports_credentials=True)
 def logout():
     if 'username' in session:
         session.pop('username', None)
@@ -59,6 +65,7 @@ def logout():
 
 
 @app.route("/favorites/", methods=['GET', 'DEL', 'PUT'])
+@cross_origin(supports_credentials=True)
 def favorites():
     if 'username' not in session:
         return jsonify({'status': 'unauthorized'})
@@ -119,15 +126,16 @@ def favorites():
 
 
 @app.route("/user/", methods=['GET', 'POST', 'DEL', 'PUT'])
+@cross_origin(supports_credentials=True)
 def user():
     if 'username' not in session:
         return jsonify({'status': 'unauthorized'})
-
     db = database_connect()
     cursor = db.cursor()
 
     if request.method == 'GET':
         params = request.json
+        print(params)
         requiredParams = ["username"]
 
         if requestHaveRequiredParameters(requiredParams, params):
@@ -199,6 +207,7 @@ def user():
 
 
 @app.route("/availableCities/", methods=['GET'])
+@cross_origin(supports_credentials=True)
 def availableCities():
     file = open('data/cities.json', encoding="utf8")
     data = json.load(file)
@@ -206,6 +215,7 @@ def availableCities():
 
 
 @app.route("/travelDestinations/", methods=['GET'])
+@cross_origin(supports_credentials=True)
 def travelDestinations():
     params = request.json
     requiredParams = ["startingCity", "weatherForecastDays", "numberOfPeople", "startDate", "endDate", "pageNumber"]

@@ -71,3 +71,35 @@ ul.menu > li {
     right: 5em;
     cursor: pointer;
 }
+.main-page {
+    background-image: url(../background.jpg);
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100vh;
+    filter: saturate(200%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-page h1 {
+    padding: 0 0 0.5em 0;
+    color: white;
+    font-size: 56px;
+    text-shadow: 2px 2px black;
+    font-weight: 400;
+    margin: 0 auto;
+}
+.main-page h4 {
+    margin: 0;
+    color: white;
+    font-size: 28px;
+    text-shadow: 2px 2px black;
+    font-weight: 300;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+.form {
+    background-color: white;
+    border-radius: 5px;
+    margin: 0 auto;
+}

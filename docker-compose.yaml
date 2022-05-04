@@ -5,8 +5,28 @@ services:
     image: app_frontend
     build: ./frontend
     container_name: podroze_frontend
+    links:
+      - app
+    depends_on:
+      - app
     ports:
       - 3000:3000
     volumes:
       - ./frontend:/app/
       - /app/frontend/node_modules    
+  app:
+    build: ./backend/app
+    links:
+      - db
+    ports:
+      - "5000:5000"
+
+  db:
+    image: mysql:8.0.21
+    command: --default-authentication-plugin=caching_sha2_password
+    ports:
+      - "32000:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - ./backend/db:/docker-entrypoint-initdb.d/:ro
