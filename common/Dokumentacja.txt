@@ -36,8 +36,8 @@ Opis: Wylogowywanie
 // Użytkownicy
 ///////////////////////////////////////////////////////////////////////////////////
 -----------------------------------------------------------------------------------
-Endpoint: /user/ 
-Metoda: PUT
+Endpoint: /addUser/ 
+Metoda: POST
 Opis: Dodanie nowego użytkownika
 {
     "name": "Janhina",
@@ -50,23 +50,23 @@ Opis: Dodanie nowego użytkownika
 }
 
 -----------------------------------------------------------------------------------
-Endpoint: /user/ 
-Metoda: GET
+Endpoint: /getUser/ 
+Metoda: POST
 Opis: Pobiera informacje o użytkowniku 
 {
     "username": "jan123"
 }
 
 -----------------------------------------------------------------------------------
-Endpoint: /user/ 
-Metoda: DEL
+Endpoint: /removeUser/ 
+Metoda: POST
 Opis: Usunięcie użytkownika o podanym loginie
 {
     "username": "jan123"
 }
 
 -----------------------------------------------------------------------------------
-Endpoint: /user/ 
+Endpoint: /updateUser/ 
 Metoda: POST
 Opis: Uaktualnia dane dla użytkownika o konkretnym id. 
       Wartość id można pobrać za pomocą metody GET w /user/. 
@@ -90,16 +90,16 @@ Info: Parametr user_id może zostać pobrany kiedy użytkownik jest zalogowany.
       użytkownika, jeżeli jej nie znamy to można ją sprawdzić w sesji logowania.
       W JavaScript powinno działać: var login = '<%=Session["username"]%>'
 -----------------------------------------------------------------------------------
-Endpoint: /favorites/ 
-Metoda: GET
+Endpoint: /getFavorites/ 
+Metoda: POST
 Opis: Pobiera kierunki podróży dodane do ulubionych przez użytkownika. 
 {
     "user_id": "1"
 }
 
 -----------------------------------------------------------------------------------
-Endpoint: /favorites/ 
-Metoda: DEL
+Endpoint: /removeFavorite/ 
+Metoda: POST
 Opis: Usuwa kierunek podróży z ulubionych
 {
     "user_id": "1",
@@ -107,8 +107,8 @@ Opis: Usuwa kierunek podróży z ulubionych
 }
 
 -----------------------------------------------------------------------------------
-Endpoint: /favorites/ 
-Metoda: PUT
+Endpoint: /addFavorites/ 
+Metoda: POST
 Opis: Dodaje kierunek podróży do ulubionych
 {
     "user_id": "1",
@@ -120,7 +120,7 @@ Opis: Dodaje kierunek podróży do ulubionych
 ///////////////////////////////////////////////////////////////////////////////////
 -----------------------------------------------------------------------------------
 Endpoint: /availableCities/ 
-Metoda: GET
+Metoda: POST
 Opis: Zwraca JSON z wszystkimi miastami obsługującymi przez apliakcje.
       Do wykorzystania na stronie głównej, użytkownik może podczas wpisywania 
       wybrać tylko miasta z tej listy, jeżeli poda miasto którego nie ma w tej 
@@ -129,7 +129,7 @@ Opis: Zwraca JSON z wszystkimi miastami obsługującymi przez apliakcje.
 
 -----------------------------------------------------------------------------------
 Endpoint: /travelDestinations/ 
-Metoda: GET
+Metoda: POST
 Opis: Zwraca propozycję kierunków podróży
 {
     "startingCity": "Łódź",

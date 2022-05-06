@@ -25,21 +25,18 @@ def requestHaveRequiredParameters(requiredParams, listOfParams):
 
 def database_connect():
     mysql_db = mysql.connector.connect(
-        # host="db",
-        # user="root",
-        # password="root",
-        # database="travel_app"
-        host="localhost",
+        host="db",
         user="root",
-        password="",
+        password="root",
         database="travel_app"
     )
     return mysql_db
 
-@app.route('/')
+# For testing
+@app.route('/main/', methods=['POST'])
 @cross_origin(supports_credentials=True)
 def main():
-    return jsonify({'status': 'login/logout successfully'})
+    return jsonify({'status': 'main page or login/logout redirection'})
 
 @app.route('/login/', methods=['POST'])
 @cross_origin(supports_credentials=True)
@@ -55,7 +52,9 @@ def login():
             hashed_password = hashlib.sha256(params["password"].encode('utf-8')).hexdigest()
             if password == hashed_password:
                 session['username'] = params["username"]
-                return redirect('/')
+                # return redirect('/main/')
+                return jsonify({'status': 'logged successfully'})
+
             else:
                 return jsonify({'status': 'wrong password'})
         else:
@@ -69,7 +68,8 @@ def login():
 def logout():
     if 'username' in session:
         session.pop('username', None)
-    return redirect('/')
+    # return redirect('/main/')
+    return jsonify({'status': 'logout successfully'})
 
 @app.route("/getFavorites/", methods=['POST'])
 @cross_origin(supports_credentials=True)
@@ -99,9 +99,9 @@ def getFavorites():
         return jsonify(fav.getFavoritesDestinations())
 
 
-@app.route("/delFavorites/", methods=['POST'])
+@app.route("/removeFavorite/", methods=['POST'])
 @cross_origin(supports_credentials=True)
-def delFavorites():
+def removeFavorite():
     if 'username' not in session:
         return jsonify({'status': 'unauthorized'})
 
@@ -123,9 +123,9 @@ def delFavorites():
         return jsonify({"status": "success"})
 
 
-@app.route("/putFavorites/", methods=['POST'])
+@app.route("/addFavorites/", methods=['POST'])
 @cross_origin(supports_credentials=True)
-def putFavorites():
+def addFavorites():
     if 'username' not in session:
         return jsonify({'status': 'unauthorized'})
 
@@ -167,9 +167,9 @@ def getUser():
     return jsonify(results)
 
 
-@app.route("/delUser/", methods=['POST'])
+@app.route("/removeUser/", methods=['POST'])
 @cross_origin(supports_credentials=True)
-def delUser():
+def removeUser():
     if 'username' not in session:
         return jsonify({'status': 'unauthorized'})
     db = database_connect()
@@ -189,9 +189,9 @@ def delUser():
 
 
 
-@app.route("/putUser/", methods=['POST'])
+@app.route("/addUser/", methods=['POST'])
 @cross_origin(supports_credentials=True)
-def putUser():
+def addUser():
     if 'username' not in session:
         return jsonify({'status': 'unauthorized'})
     db = database_connect()
@@ -224,9 +224,9 @@ def putUser():
     else:
         return jsonify({"status": "success"})
 
-@app.route("/postUser/", methods=['POST'])
+@app.route("/updateUser/", methods=['POST'])
 @cross_origin(supports_credentials=True)
-def postUser():
+def updateUser():
     if 'username' not in session:
         return jsonify({'status': 'unauthorized'})
     db = database_connect()
@@ -237,7 +237,6 @@ def postUser():
     if requestHaveRequiredParameters(requiredParams, params):
         return jsonify({"status": "not enough data"})
 
-    cursor = db.cursor()
     sql = "UPDATE users SET name = %s, surname = %s, city = %s, currency = %s, avatar = %s, username = %s WHERE id = %s"
     val = (params["name"], params["surname"], params["city"], params["currency"], params["avatar"], params["username"],
            params["id"])
@@ -276,5 +275,5 @@ def travelDestinations():
         return jsonify(destinations.findTravelDestinations())
 
 
-# if __name__ == '__main__':
-#     app.run(debug=True, host='0.0.0.0')
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0')
