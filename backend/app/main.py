@@ -2,11 +2,12 @@ import hashlib
 import mysql.connector
 import json
 from flask import Flask, request, jsonify, session
+from werkzeug.utils import redirect
+
 from Destinations import Destinations
 from Favorites import Favorites
 from flask_cors import CORS, cross_origin
 from flask_session import Session
-from datetime import timedelta
 
 DEVELOPMENT_MODE = True
 
@@ -15,7 +16,7 @@ app.config['SECRET_KEY'] = 'pkiam-podroze'
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
-cors = CORS(app)
+CORS(app)
 
 def requestHaveRequiredParameters(requiredParams, listOfParams):
     for param in requiredParams:
@@ -25,9 +26,13 @@ def requestHaveRequiredParameters(requiredParams, listOfParams):
 
 def database_connect():
     mysql_db = mysql.connector.connect(
-        host="db",
+        # host="db",
+        # user="root",
+        # password="root",
+        # database="travel_app"
+        host="localhost",
         user="root",
-        password="root",
+        password="",
         database="travel_app"
     )
     return mysql_db
@@ -46,7 +51,8 @@ def login():
             hashed_password = hashlib.sha256(params["password"].encode('utf-8')).hexdigest()
             if password == hashed_password:
                 session['username'] = params["username"]
-                print(session)
+                return redirect('/availableCities/')
+
                 return jsonify({'status': 'logged successfully'})
             else:
                 return jsonify({'status': 'wrong password'})
@@ -64,7 +70,7 @@ def logout():
     return jsonify({'status': 'successfully logged out'})
 
 
-@app.route("/favorites/", methods=['GET', 'DEL', 'PUT'])
+@app.route("/favorites/", methods=['GET', 'DEL', 'PUT', 'POST'])
 @cross_origin(supports_credentials=True)
 def favorites():
     if 'username' not in session:
@@ -72,6 +78,13 @@ def favorites():
 
     db = database_connect()
     cursor = db.cursor()
+
+    if request.method == 'POST':
+        # content = request.data.decode('UTF-8')
+        content = request.json
+        print(content)
+
+        return {"dupa": "dupsza"}
 
     if request.method == 'GET':
         params = request.json
@@ -232,5 +245,5 @@ def travelDestinations():
         return jsonify(destinations.findTravelDestinations())
 
 
-if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+# if __name__ == '__main__':
+#     app.run(debug=True, host='0.0.0.0')
