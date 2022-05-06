@@ -3,7 +3,6 @@ import mysql.connector
 import json
 from flask import Flask, request, jsonify, session
 from werkzeug.utils import redirect
-
 from Destinations import Destinations
 from Favorites import Favorites
 from flask_cors import CORS, cross_origin
@@ -40,7 +39,7 @@ def database_connect():
 @app.route('/')
 @cross_origin(supports_credentials=True)
 def main():
-    return jsonify({'status': 'logged successfully'})
+    return jsonify({'status': 'login/logout successfully'})
 
 @app.route('/login/', methods=['POST'])
 @cross_origin(supports_credentials=True)
@@ -56,7 +55,6 @@ def login():
             hashed_password = hashlib.sha256(params["password"].encode('utf-8')).hexdigest()
             if password == hashed_password:
                 session['username'] = params["username"]
-                # return jsonify({'status': 'logged successfully'})
                 return redirect('/')
             else:
                 return jsonify({'status': 'wrong password'})
@@ -71,15 +69,7 @@ def login():
 def logout():
     if 'username' in session:
         session.pop('username', None)
-    # return jsonify({'status': 'successfully logged out'})
     return redirect('/')
-
-
-
-
-
-
-
 
 @app.route("/getFavorites/", methods=['POST'])
 @cross_origin(supports_credentials=True)
