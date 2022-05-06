@@ -37,6 +37,11 @@ def database_connect():
     )
     return mysql_db
 
+@app.route('/')
+@cross_origin(supports_credentials=True)
+def main():
+    return jsonify({'status': 'logged successfully'})
+
 @app.route('/login/', methods=['POST'])
 @cross_origin(supports_credentials=True)
 def login():
@@ -51,9 +56,8 @@ def login():
             hashed_password = hashlib.sha256(params["password"].encode('utf-8')).hexdigest()
             if password == hashed_password:
                 session['username'] = params["username"]
-                return redirect('/availableCities/')
-
-                return jsonify({'status': 'logged successfully'})
+                # return jsonify({'status': 'logged successfully'})
+                return redirect('/')
             else:
                 return jsonify({'status': 'wrong password'})
         else:
@@ -67,8 +71,8 @@ def login():
 def logout():
     if 'username' in session:
         session.pop('username', None)
-    return jsonify({'status': 'successfully logged out'})
-
+    # return jsonify({'status': 'successfully logged out'})
+    return redirect('/')
 
 @app.route("/favorites/", methods=['GET', 'DEL', 'PUT', 'POST'])
 @cross_origin(supports_credentials=True)
