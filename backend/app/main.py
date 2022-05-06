@@ -74,156 +74,193 @@ def logout():
     # return jsonify({'status': 'successfully logged out'})
     return redirect('/')
 
-@app.route("/favorites/", methods=['GET', 'DEL', 'PUT', 'POST'])
+
+
+
+
+
+
+
+@app.route("/getFavorites/", methods=['POST'])
 @cross_origin(supports_credentials=True)
-def favorites():
+def getFavorites():
     if 'username' not in session:
         return jsonify({'status': 'unauthorized'})
 
     db = database_connect()
     cursor = db.cursor()
+    params = request.json
+    requiredParams = ["user_id"]
 
-    if request.method == 'POST':
-        # content = request.data.decode('UTF-8')
-        content = request.json
-        print(content)
+    if requestHaveRequiredParameters(requiredParams, params):
+        return jsonify({"status": "not enough data"})
 
-        return {"dupa": "dupsza"}
-
-    if request.method == 'GET':
-        params = request.json
-        requiredParams = ["user_id"]
-
-        if requestHaveRequiredParameters(requiredParams, params):
-            return jsonify({"status": "not enough data"})
-
-        if DEVELOPMENT_MODE:
-            file = open('data/favorites.json', encoding="utf8")
-            data = json.load(file)
-            return jsonify(data)
-        else:
-            cursor.execute("SELECT * FROM favorites WHERE user_id = '" + params["user_id"] + "'")
-            results = cursor.fetchall()
-            listOfCites = []
-            for i in results:
-                listOfCites.append(i[2])
-            fav = Favorites(listOfCites)
-            return jsonify(fav.getFavoritesDestinations())
-    if request.method == 'DEL':
-        params = request.json
-        requiredParams = ["user_id", "city"]
-
-        if requestHaveRequiredParameters(requiredParams, params):
-            return jsonify({"status": "not enough data"})
-
-        sql = "DELETE FROM favorites WHERE user_id = %s AND city = %s"
-        val = (params["user_id"], params["city"])
-        cursor.execute(sql, val)
-        db.commit()
-        if cursor.rowcount == 0:
-            return jsonify({"status": "failure"})
-        else:
-            return jsonify({"status": "success"})
-
-    if request.method == 'PUT':
-        params = request.json
-        requiredParams = ["user_id", "city"]
-
-        if requestHaveRequiredParameters(requiredParams, params):
-            return jsonify({"status": "not enough data"})
-
-        sql = "INSERT INTO favorites (user_id, city) VALUES (%s, %s)"
-        val = (params["user_id"], params["city"])
-        cursor.execute(sql, val)
-        db.commit()
-        if cursor.rowcount == 0:
-            return jsonify({"status": "failure"})
-        else:
-            return jsonify({"status": "success"})
-
-
-@app.route("/user/", methods=['GET', 'POST', 'DEL', 'PUT'])
-@cross_origin(supports_credentials=True)
-def user():
-    if 'username' not in session:
-        return jsonify({'status': 'unauthorized'})
-    db = database_connect()
-    cursor = db.cursor()
-
-    if request.method == 'GET':
-        params = request.json
-        print(params)
-        requiredParams = ["username"]
-
-        if requestHaveRequiredParameters(requiredParams, params):
-            return jsonify({"status": "not enough data"})
-
-        cursor.execute("SELECT * FROM users WHERE username = '" + params["username"] +"'")
+    if DEVELOPMENT_MODE:
+        file = open('data/favorites.json', encoding="utf8")
+        data = json.load(file)
+        return jsonify(data)
+    else:
+        cursor.execute("SELECT * FROM favorites WHERE user_id = '" + params["user_id"] + "'")
         results = cursor.fetchall()
-        return jsonify(results)
-
-    if request.method == 'DEL':
-        params = request.json
-        requiredParams = ["username"]
-
-        if requestHaveRequiredParameters(requiredParams, params):
-            return jsonify({"status": "not enough data"})
-
-        cursor.execute("DELETE FROM users WHERE username = '" + params["username"] +"'")
-        db.commit()
-        if cursor.rowcount == 0:
-            return jsonify({"status": "failure"})
-        else:
-            return jsonify({"status": "success"})
-
-    if request.method == 'PUT':
-        params = request.json
-        requiredParams = ["name", "surname", "username", "password"]
-
-        if requestHaveRequiredParameters(requiredParams, params):
-            return jsonify({"status": "not enough data"})
-
-        if "avatar" not in params:
-            params["avatar"] = "https://eu.ui-avatars.com/api/?name=" + params["name"] + "+" + params["surname"] + "&size=250"
-
-        if "currency" not in params:
-            params["currency"] = "PLN"
-
-        if "city" not in params:
-            params["city"] = "Warszawa"
-
-        hashed_password = hashlib.sha256(params["password"].encode('utf-8')).hexdigest()
-
-        sql = "INSERT INTO users (name, surname, city, currency, avatar, username, password) VALUES (%s, %s, %s, %s, %s, %s, %s)"
-        val = (params["name"], params["surname"], params["city"], params["currency"], params["avatar"], params["username"], hashed_password)
-
-        cursor.execute(sql, val)
-        db.commit()
-        if cursor.rowcount == 0:
-            return jsonify({"status": "failure"})
-        else:
-            return jsonify({"status": "success"})
-
-    if request.method == 'POST':
-        params = request.json
-        requiredParams = ["id", "name", "surname", "city", "currency" , "avatar", "username"]
-
-        if requestHaveRequiredParameters(requiredParams, params):
-            return jsonify({"status": "not enough data"})
-
-        cursor = db.cursor()
-        sql = "UPDATE users SET name = %s, surname = %s, city = %s, currency = %s, avatar = %s, username = %s WHERE id = %s"
-        val = (params["name"], params["surname"], params["city"], params["currency"], params["avatar"], params["username"], params["id"])
-        cursor.execute(sql, val)
-        db.commit()
-        print(cursor.rowcount, "record(s) affected")
-        if cursor.rowcount == 0:
-            return jsonify({"status": "failure"})
-        else:
-            return jsonify({"status": "success"})
+        listOfCites = []
+        for i in results:
+            listOfCites.append(i[2])
+        fav = Favorites(listOfCites)
+        return jsonify(fav.getFavoritesDestinations())
 
 
-@app.route("/availableCities/", methods=['GET'])
+@app.route("/delFavorites/", methods=['POST'])
+@cross_origin(supports_credentials=True)
+def delFavorites():
+    if 'username' not in session:
+        return jsonify({'status': 'unauthorized'})
+
+    db = database_connect()
+    cursor = db.cursor()
+    params = request.json
+    requiredParams = ["user_id", "city"]
+
+    if requestHaveRequiredParameters(requiredParams, params):
+        return jsonify({"status": "not enough data"})
+
+    sql = "DELETE FROM favorites WHERE user_id = %s AND city = %s"
+    val = (params["user_id"], params["city"])
+    cursor.execute(sql, val)
+    db.commit()
+    if cursor.rowcount == 0:
+        return jsonify({"status": "failure"})
+    else:
+        return jsonify({"status": "success"})
+
+
+@app.route("/putFavorites/", methods=['POST'])
+@cross_origin(supports_credentials=True)
+def putFavorites():
+    if 'username' not in session:
+        return jsonify({'status': 'unauthorized'})
+
+    db = database_connect()
+    cursor = db.cursor()
+    params = request.json
+    requiredParams = ["user_id", "city"]
+
+    if requestHaveRequiredParameters(requiredParams, params):
+        return jsonify({"status": "not enough data"})
+
+    sql = "INSERT INTO favorites (user_id, city) VALUES (%s, %s)"
+    val = (params["user_id"], params["city"])
+    cursor.execute(sql, val)
+    db.commit()
+    if cursor.rowcount == 0:
+        return jsonify({"status": "failure"})
+    else:
+        return jsonify({"status": "success"})
+
+
+
+@app.route("/getUser/", methods=['POST'])
+@cross_origin(supports_credentials=True)
+def getUser():
+    if 'username' not in session:
+        return jsonify({'status': 'unauthorized'})
+    db = database_connect()
+    cursor = db.cursor()
+    params = request.json
+    print(params)
+    requiredParams = ["username"]
+
+    if requestHaveRequiredParameters(requiredParams, params):
+        return jsonify({"status": "not enough data"})
+
+    cursor.execute("SELECT * FROM users WHERE username = '" + params["username"] + "'")
+    results = cursor.fetchall()
+    return jsonify(results)
+
+
+@app.route("/delUser/", methods=['POST'])
+@cross_origin(supports_credentials=True)
+def delUser():
+    if 'username' not in session:
+        return jsonify({'status': 'unauthorized'})
+    db = database_connect()
+    cursor = db.cursor()
+    params = request.json
+    requiredParams = ["username"]
+
+    if requestHaveRequiredParameters(requiredParams, params):
+        return jsonify({"status": "not enough data"})
+
+    cursor.execute("DELETE FROM users WHERE username = '" + params["username"] + "'")
+    db.commit()
+    if cursor.rowcount == 0:
+        return jsonify({"status": "failure"})
+    else:
+        return jsonify({"status": "success"})
+
+
+
+@app.route("/putUser/", methods=['POST'])
+@cross_origin(supports_credentials=True)
+def putUser():
+    if 'username' not in session:
+        return jsonify({'status': 'unauthorized'})
+    db = database_connect()
+    cursor = db.cursor()
+    params = request.json
+    requiredParams = ["name", "surname", "username", "password"]
+
+    if requestHaveRequiredParameters(requiredParams, params):
+        return jsonify({"status": "not enough data"})
+
+    if "avatar" not in params:
+        params["avatar"] = "https://eu.ui-avatars.com/api/?name=" + params["name"] + "+" + params["surname"] + "&size=250"
+
+    if "currency" not in params:
+        params["currency"] = "PLN"
+
+    if "city" not in params:
+        params["city"] = "Warszawa"
+
+    hashed_password = hashlib.sha256(params["password"].encode('utf-8')).hexdigest()
+
+    sql = "INSERT INTO users (name, surname, city, currency, avatar, username, password) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+    val = (params["name"], params["surname"], params["city"], params["currency"], params["avatar"], params["username"],
+           hashed_password)
+
+    cursor.execute(sql, val)
+    db.commit()
+    if cursor.rowcount == 0:
+        return jsonify({"status": "failure"})
+    else:
+        return jsonify({"status": "success"})
+
+@app.route("/postUser/", methods=['POST'])
+@cross_origin(supports_credentials=True)
+def postUser():
+    if 'username' not in session:
+        return jsonify({'status': 'unauthorized'})
+    db = database_connect()
+    cursor = db.cursor()
+    params = request.json
+    requiredParams = ["id", "name", "surname", "city", "currency", "avatar", "username"]
+
+    if requestHaveRequiredParameters(requiredParams, params):
+        return jsonify({"status": "not enough data"})
+
+    cursor = db.cursor()
+    sql = "UPDATE users SET name = %s, surname = %s, city = %s, currency = %s, avatar = %s, username = %s WHERE id = %s"
+    val = (params["name"], params["surname"], params["city"], params["currency"], params["avatar"], params["username"],
+           params["id"])
+    cursor.execute(sql, val)
+    db.commit()
+    print(cursor.rowcount, "record(s) affected")
+    if cursor.rowcount == 0:
+        return jsonify({"status": "failure"})
+    else:
+        return jsonify({"status": "success"})
+
+
+@app.route("/availableCities/", methods=['POST'])
 @cross_origin(supports_credentials=True)
 def availableCities():
     file = open('data/cities.json', encoding="utf8")
@@ -231,7 +268,7 @@ def availableCities():
     return jsonify(data)
 
 
-@app.route("/travelDestinations/", methods=['GET'])
+@app.route("/travelDestinations/", methods=['POST'])
 @cross_origin(supports_credentials=True)
 def travelDestinations():
     params = request.json
