@@ -1,18 +1,18 @@
 import { React, useEffect } from 'react'
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Autocomplete from '@mui/material/Autocomplete';
+import Button from '@mui/material/Button'
 import axios from 'axios';
+import { Link, useNavigate } from 'react-router-dom';
 export default function MainPage() {
-  const getData = async () => { 
+  const getData = async () => {
     const response = await axios.post(
-      `http://${window.location.hostname}:5000/login/`,
+      `http://localhost:5000/api/login`,
       {
         "username": "jan123",
         "password": "password"
       },
-      { headers: { "Content-Type": "application/json" } }
+      { headers: { "Content-Type": "application/json" , }, withCredentials: true }
     )
     console.log(response.data)
 
@@ -20,13 +20,33 @@ export default function MainPage() {
   useEffect(() => {
     getData();
   })
-  const login = async () => {
+  const getInfo = async () => {
     const user = await axios.get(
-      `http://${window.location.hostname}:5000/user/`,
-      { "username": "jan123" }
+      `http://localhost:5000/getUser`,
+      { headers: { "Content-Type": "application/json" }, withCredentials: true }
     );
     console.log(user.data)
   }
+  const zeroPad = (num, places) => String(num).padStart(places, '0')
+  const dateToStringFormat = (date) => {
+    return zeroPad(date.getFullYear(), 4) + '-' + zeroPad(date.getMonth() + 1, 2) + '-' + zeroPad(date.getDate(), 2)
+  }
+  const currentDate = new Date()
+  const nextDate = new Date(Date.now() + 3600 * 1000 * 24)
+
+  const getLink = (city, num, start, end) => {
+    return `startingCity=${city};numberOfPeople=${num};startDate=${start};endDate=${end}`
+  }
+
+  let navigate = useNavigate();
+  const redirect  = async (event) => {
+    event.preventDefault();
+    const data = new FormData(event.currentTarget);
+    console.log()
+    const slug = getLink(data.get('city'), data.get('num'), data.get('dateFrom'), data.get('dateTo'))
+    navigate(`/polecane/${slug}`)
+  }
+
   return (
     <div className='main-page'>
       <h1>Zaplanuj swoją przygodę</h1>
@@ -37,31 +57,36 @@ export default function MainPage() {
           sx={{
             '& > :not(style)': { m: 1, width: '25ch' },
           }}
-
+          onSubmit={redirect} 
+          noValidate
           style={{ position: 'relative' }}
         >
-          <TextField id="outlined-basic" label="Gdzie chcesz pojechać?" variant="outlined" />
-          <Autocomplete
-            id="combo-box-demo"
-            options={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
-            renderInput={(params) => <TextField {...params} label="Liczba" />}
-          />
+          <TextField id="outlined-basic" label="Gdzie chcesz pojechać?" variant="outlined" name="city" style={{ width: '35ch' }} />
+          <TextField id="outlined-basic" label="Ile osób?" variant="outlined" defaultValue="1" name="num" style={{ width: '10ch' }} />
           <TextField
-            id="date"
+            id="dateFrom"
+            name="dateFrom"
             label="Od"
             type="date"
-            defaultValue="2022-05-24"
+            defaultValue={dateToStringFormat(currentDate)}
           />
           <TextField
-            id="date"
+            id="dateTo"
+            name="dateTo"
             label="Do"
             type="date"
-            defaultValue="2022-05-24"
+            defaultValue={dateToStringFormat(nextDate)}
           />
 
-          <Button onClick={login} variant="contained" style={{ height: '56px' }}>Szukaj</Button>
+          <Button type="submit" variant="contained" style={{ height: '56px' }}>Szukaj</Button>
         </Box>
       </div>
+      <div className="login-buttons">
+        <Link to='/logowanie'><Button variant="contained" style={{ height: '64px' }}>Zaloguj się</Button></Link>
+        <Link to='/rejestracja'><Button variant="contained" style={{ height: '64px', marginLeft: '50px' }}>Zarejstruj się</Button></Link>
+      </div>
+
+
     </div>
   )
 }

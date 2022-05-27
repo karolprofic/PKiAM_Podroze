@@ -4,28 +4,45 @@ import Weather from './Weather';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeartCircleMinus } from '@fortawesome/free-solid-svg-icons'
 import { faHeartCirclePlus } from '@fortawesome/free-solid-svg-icons'
+import { useParams } from 'react-router-dom';
+import axios from 'axios';
 
 export default function UserPage() {
+    let { queryData } = useParams()
 
+    const parseQueryData = (queryData) => {
+        const args = queryData.split(';')
+        const data = {}
+        for (const arg of args) {
+            const pair = arg.split('=')
+            if (pair[0] === 'numberOfPeople')
+                data[pair[0]] = parseInt(pair[1])
+            else
+                data[pair[0]] = pair[1]
+        }
+        data['weatherForecastDays'] = 10
+        data['pageNumber'] = 1
+        return data
+    }
     const [data, setData] = useState([]);
     const [userData, setUserData] = useState({});
-    const getData = () => {
-        fetch('destinations.json'
-            , {
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                }
-            }
+    const getData = async () => {
+        const xd = parseQueryData(queryData)
+        console.log(xd)
+        const response = await axios.post(
+            `http://localhost:5000/api/travelDestinations`,
+            {
+                "startingCity": "Warszawa",
+                "weatherForecastDays": 10,
+                "numberOfPeople": 1,
+                "startDate": "2022-09-30",
+                "endDate": "2022-10-01",
+                "pageNumber": 1
+            },
+            { headers: { "Content-Type": "application/json"}, withCredentials: true }
         )
-            .then(function (response) {
-                console.log(response)
-                return response.json();
-            })
-            .then(function (myJson) {
-                console.log(myJson);
-                setData(myJson)
-            });
+        console.log(response.data)
+        setData(response.data)
     }
     const getUserData = () => {
         let temp = {
@@ -34,6 +51,7 @@ export default function UserPage() {
         setUserData(temp)
     }
     useEffect(() => {
+        parseQueryData(queryData)
         getData()
         getUserData()
     }, [])
@@ -63,8 +81,8 @@ export default function UserPage() {
                                 <div className="heart">
                                     {
                                         userData.favouritesLocations.has(element.name) ?
-                                        <FontAwesomeIcon icon={faHeartCircleMinus} style={{color: '#c0392b'}} onClick={() => removeFromFavourites(element.name)}/> :
-                                        <FontAwesomeIcon icon={faHeartCirclePlus} onClick={() => addToFavourites(element.name)}/>
+                                            <FontAwesomeIcon icon={faHeartCircleMinus} style={{ color: '#c0392b' }} onClick={() => removeFromFavourites(element.name)} /> :
+                                            <FontAwesomeIcon icon={faHeartCirclePlus} onClick={() => addToFavourites(element.name)} />
                                     }
                                 </div>
                                 <img src={element.imageURL} alt="" width={300} height={300} />

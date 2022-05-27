@@ -103,3 +103,7 @@ ul.menu > li {
     border-radius: 5px;
     margin: 0 auto;
 }
+
+.login-buttons {
+    margin: 50px auto -30px;
+}

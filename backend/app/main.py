@@ -15,7 +15,18 @@ app.config['SECRET_KEY'] = 'pkiam-podroze'
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
-CORS(app)
+
+
+config = {
+    'origins': '*',
+    'methods': ['OPTIONS', 'GET', 'POST'],
+    'allow_headers': ['Authorization', 'Content-Type'],
+    'supports_credentials': True
+}
+
+# CORS(app, resources={
+#     r"/api/*" : config
+# })
 
 def requestHaveRequiredParameters(requiredParams, listOfParams):
     for param in requiredParams:
@@ -34,12 +45,12 @@ def database_connect():
 
 # For testing
 @app.route('/main/', methods=['POST'])
-@cross_origin(supports_credentials=True)
+@cross_origin(**config)
 def main():
     return jsonify({'status': 'main page or login/logout redirection'})
 
-@app.route('/login/', methods=['POST'])
-@cross_origin(supports_credentials=True)
+@app.route('/api/login', methods=['POST'])
+@cross_origin(**config)
 def login():
     params = request.json
     if params['username'] and params['password']:
@@ -63,16 +74,16 @@ def login():
         return jsonify({'status': 'wrong login and password'})
 
 
-@app.route('/logout/', methods=['POST'])
-@cross_origin(supports_credentials=True)
+@app.route('/api/logout', methods=['POST'])
+@cross_origin(**config)
 def logout():
     if 'username' in session:
         session.pop('username', None)
     # return redirect('/main/')
     return jsonify({'status': 'logout successfully'})
 
-@app.route("/getFavorites/", methods=['POST'])
-@cross_origin(supports_credentials=True)
+@app.route("/api/getFavorites", methods=['POST'])
+@cross_origin(**config)
 def getFavorites():
     if 'username' not in session:
         return jsonify({'status': 'unauthorized'})
@@ -99,8 +110,8 @@ def getFavorites():
         return jsonify(fav.getFavoritesDestinations())
 
 
-@app.route("/removeFavorite/", methods=['POST'])
-@cross_origin(supports_credentials=True)
+@app.route("/api/removeFavorite", methods=['POST'])
+@cross_origin(**config)
 def removeFavorite():
     if 'username' not in session:
         return jsonify({'status': 'unauthorized'})
@@ -123,8 +134,8 @@ def removeFavorite():
         return jsonify({"status": "success"})
 
 
-@app.route("/addFavorites/", methods=['POST'])
-@cross_origin(supports_credentials=True)
+@app.route("/api/addFavorites", methods=['POST'])
+@cross_origin(**config)
 def addFavorites():
     if 'username' not in session:
         return jsonify({'status': 'unauthorized'})
@@ -148,27 +159,27 @@ def addFavorites():
 
 
 
-@app.route("/getUser/", methods=['POST'])
-@cross_origin(supports_credentials=True)
+@app.route("/api/getUser", methods=['GET'])
+@cross_origin(**config)
 def getUser():
     if 'username' not in session:
         return jsonify({'status': 'unauthorized'})
     db = database_connect()
     cursor = db.cursor()
-    params = request.json
-    print(params)
-    requiredParams = ["username"]
+    # params = request.json
+    # print(params)
+    # requiredParams = ["username"]
 
-    if requestHaveRequiredParameters(requiredParams, params):
-        return jsonify({"status": "not enough data"})
+    # if requestHaveRequiredParameters(requiredParams, params):
+    #     return jsonify({"status": "not enough data"})
 
-    cursor.execute("SELECT * FROM users WHERE username = '" + params["username"] + "'")
+    cursor.execute("SELECT * FROM users WHERE username = '" + session["username"] + "'")
     results = cursor.fetchall()
     return jsonify(results)
 
 
-@app.route("/removeUser/", methods=['POST'])
-@cross_origin(supports_credentials=True)
+@app.route("/api/removeUser", methods=['POST'])
+@cross_origin(**config)
 def removeUser():
     if 'username' not in session:
         return jsonify({'status': 'unauthorized'})
@@ -189,8 +200,8 @@ def removeUser():
 
 
 
-@app.route("/addUser/", methods=['POST'])
-@cross_origin(supports_credentials=True)
+@app.route("/api/addUser", methods=['POST'])
+@cross_origin(**config)
 def addUser():
     if 'username' not in session:
         return jsonify({'status': 'unauthorized'})
@@ -224,8 +235,8 @@ def addUser():
     else:
         return jsonify({"status": "success"})
 
-@app.route("/updateUser/", methods=['POST'])
-@cross_origin(supports_credentials=True)
+@app.route("/api/updateUser", methods=['POST'])
+@cross_origin(**config)
 def updateUser():
     if 'username' not in session:
         return jsonify({'status': 'unauthorized'})
@@ -249,16 +260,16 @@ def updateUser():
         return jsonify({"status": "success"})
 
 
-@app.route("/availableCities/", methods=['POST'])
-@cross_origin(supports_credentials=True)
+@app.route("/api/availableCities", methods=['POST'])
+@cross_origin(**config)
 def availableCities():
     file = open('data/cities.json', encoding="utf8")
     data = json.load(file)
     return jsonify(data)
 
 
-@app.route("/travelDestinations/", methods=['POST'])
-@cross_origin(supports_credentials=True)
+@app.route("/api/travelDestinations", methods=['POST'])
+@cross_origin(**config)
 def travelDestinations():
     params = request.json
     requiredParams = ["startingCity", "weatherForecastDays", "numberOfPeople", "startDate", "endDate", "pageNumber"]

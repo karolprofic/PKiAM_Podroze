@@ -10,9 +10,6 @@ export default function Navigation({ name, logged }) {
                     <li className="item" >
                         <Link to='/'>Strona główna</Link>
                     </li>
-                    <li className="item" >
-                        <Link to='/polecane' style={name === 'user-page' ? { fontWeight: 700 } : null}>Polecane</Link>
-                    </li>
                     <li className="item" style={logged === false ? { display: 'none' } : null}>
                         <Link to='/ulubione' style={name === 'favourites' ? { fontWeight: 700 } : null}>Ulubione</Link>
                     </li>
