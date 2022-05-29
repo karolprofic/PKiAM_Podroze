@@ -16,24 +16,26 @@ const theme = createTheme();
 export default function SignUp() {
   let navigate = useNavigate();
   const redirect = () => {
-    navigate('/')
+    navigate('/logowanie')
   };
   const handleSubmit = async (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     // eslint-disable-next-line no-console
     let xd = {
-      email: data.get('email'),
-      password: data.get('password'),
-      firstName: data.get('firstName'),
-      lastName: data.get('lastName'),
-      role: data.get('role')
+      "name": data.get('firstName'),
+      "surname": data.get('lastName'),
+      "city": data.get('city'),
+      "currency": data.get('currency'),
+      "avatar": data.get('avatar'),
+      "username": data.get('username'),
+      "password": data.get('password')
     };
-
+    console.log(xd)
     const response = await axios.post(
-      `http://${window.location.hostname}:8080/api/user`,
+      `http://localhost:5000/api/addUser`,
       xd,
-      { headers: { "Content-Type": "application/json" } }
+      { headers: { "Content-Type": "application/json" }, withCredentials: true }
     );
     console.log(response)
     redirect()
@@ -98,6 +100,16 @@ export default function SignUp() {
                   label="Waluta"
                   name="currency"
                   autoComplete="currency"
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  required
+                  fullWidth
+                  id="avatar"
+                  label="Avatar"
+                  name="avatar"
+                  autoComplete="avatar"
                 />
               </Grid>
               <Grid item xs={12}>

@@ -14,8 +14,8 @@ const theme = createTheme();
 
 export default function SignIn() {
   let navigate = useNavigate();
-  const redirect = (id) => {
-    navigate(`/user/${id}`)
+  const redirect = () => {
+    navigate(`/`)
   };
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -29,9 +29,10 @@ export default function SignIn() {
     const response = await axios.post(
       `http://localhost:5000/api/login`,
       loginData,
-      { headers: { "Content-Type": "application/json" , }, withCredentials: true }
-    )
-    console.log(response.data)
+      { headers: { "Content-Type": "application/json", }, withCredentials: true }
+    ).then(redirect).catch((reason) => {
+      window.alert('Wrong username or password!')
+    })
   };
 
   return (
@@ -90,7 +91,7 @@ export default function SignIn() {
                     {"Nie masz konta? Zarejestruj się"}
                   </RootLink>
                 </Link>
-                <br/>
+                <br />
                 <Link variant="body2">
                   <RootLink to="/">
                     {"Powrót do strony głównej"}

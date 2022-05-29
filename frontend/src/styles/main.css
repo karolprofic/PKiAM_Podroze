@@ -107,3 +107,23 @@ ul.menu > li {
 .login-buttons {
     margin: 50px auto -30px;
 }
+
+.query-data {
+    margin: 1em 2em;
+    font-size: 28px;
+}
+
+.hotels {
+    display: flex;
+    justify-content: center;
+}
+.hotel {
+    font-size: 20px;
+    padding: 1em;
+    text-align: center;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+.hotel:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}

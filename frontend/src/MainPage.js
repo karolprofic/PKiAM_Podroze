@@ -1,32 +1,9 @@
-import { React, useEffect } from 'react'
+import { React} from 'react'
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button'
-import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 export default function MainPage() {
-  const getData = async () => {
-    const response = await axios.post(
-      `http://localhost:5000/api/login`,
-      {
-        "username": "jan123",
-        "password": "password"
-      },
-      { headers: { "Content-Type": "application/json" , }, withCredentials: true }
-    )
-    console.log(response.data)
-
-  };
-  useEffect(() => {
-    getData();
-  })
-  const getInfo = async () => {
-    const user = await axios.get(
-      `http://localhost:5000/getUser`,
-      { headers: { "Content-Type": "application/json" }, withCredentials: true }
-    );
-    console.log(user.data)
-  }
   const zeroPad = (num, places) => String(num).padStart(places, '0')
   const dateToStringFormat = (date) => {
     return zeroPad(date.getFullYear(), 4) + '-' + zeroPad(date.getMonth() + 1, 2) + '-' + zeroPad(date.getDate(), 2)
@@ -61,7 +38,7 @@ export default function MainPage() {
           noValidate
           style={{ position: 'relative' }}
         >
-          <TextField id="outlined-basic" label="Gdzie chcesz pojechać?" variant="outlined" name="city" style={{ width: '35ch' }} />
+          <TextField id="outlined-basic" label="Skąd chcesz pojechać?" variant="outlined" name="city" style={{ width: '35ch' }} />
           <TextField id="outlined-basic" label="Ile osób?" variant="outlined" defaultValue="1" name="num" style={{ width: '10ch' }} />
           <TextField
             id="dateFrom"
